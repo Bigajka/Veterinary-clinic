@@ -1,0 +1,41 @@
+\doxysection{Serwis\+Wizyt.\+h}
+\hypertarget{_serwis_wizyt_8h_source}{}\label{_serwis_wizyt_8h_source}\mbox{\hyperlink{_serwis_wizyt_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}StatusWizyty.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_wizyta_8h}{Wizyta.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_czytacz_wizyt_8h}{CzytaczWizyt.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include<list>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_serwis_wizyt}{SerwisWizyt}}\ \{}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ shared\_ptr<CzytaczWizyt>\ czytaczWizyt;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ idWizytyIndeks\ =\ 0;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ idLekarzaIndeks\ =\ 1;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ idWlasicielaZwierzeciaIndeks\ =\ 2;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ idZwierzeciaIndeks\ =\ 3;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ godzinaWizytyIndeks\ =\ 4;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ dzienWizytyIndeks\ =\ 5;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ miesiacWizytyIndeks\ =\ 6;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ rokWizytyIndeks\ =\ 7;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ typUslugiIndeks\ =\ 8;}
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_serwis_wizyt}{SerwisWizyt}}(shared\_ptr<CzytaczWizyt>\ czytaczWizyt);}
+\DoxyCodeLine{00043\ \ \ \ \ StatusWizyty\ \mbox{\hyperlink{class_serwis_wizyt_a9c34dc53238e3166507395a40804687b}{zarezerujWizyte}}(\mbox{\hyperlink{class_wizyta}{Wizyta}}\ wizyta);}
+\DoxyCodeLine{00049\ \ \ \ \ StatusWizyty\ \mbox{\hyperlink{class_serwis_wizyt_aa3b407d6e4fd35e6b22902f077660e4b}{anulujWizyte}}(\textcolor{keywordtype}{int}\ idWizyty);}
+\DoxyCodeLine{00055\ \ \ \ \ StatusWizyty\ \mbox{\hyperlink{class_serwis_wizyt_af134868a1d98c1e649143f7839b93e79}{anulujWizyteDlaZwierzaka}}(\textcolor{keywordtype}{int}\ idZwierzaka);}
+\DoxyCodeLine{00061\ \ \ \ \ list<shared\_ptr<Wizyta>>\ \mbox{\hyperlink{class_serwis_wizyt_afea33040c113ae26da2321110b59ecbb}{przegladWizytPoIdWlasiciela}}(\textcolor{keywordtype}{int}\ idWlasicielZwierzecia);}
+\DoxyCodeLine{00069\ \ \ \ \ list<shared\_ptr<Wizyta>>\ \mbox{\hyperlink{class_serwis_wizyt_a8084ddcd384b5e0b3237b48ecc2e7e8f}{zaladujWizytyDlaDaty}}(\textcolor{keywordtype}{int}\ rok,\ \textcolor{keywordtype}{int}\ miesiac,\ \textcolor{keywordtype}{int}\ dzien);}
+\DoxyCodeLine{00075\ \ \ \ \ list<shared\_ptr<Wizyta>>\ \mbox{\hyperlink{class_serwis_wizyt_ae629ec52b27747aee1f3469e3aabb620}{przegladWizytPoIdLekarza}}(\textcolor{keywordtype}{int}\ idLekarza);}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_serwis_wizyt_ae598f1f4dc6ae421180b45690d3209e4}{getNastepneId}}();}
+\DoxyCodeLine{00081\ \};}
+
+\end{DoxyCode}

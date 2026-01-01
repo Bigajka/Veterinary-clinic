@@ -1,0 +1,101 @@
+\doxysection{Menu\+Wlasiciela\+Zwierzecia Class Reference}
+\hypertarget{class_menu_wlasiciela_zwierzecia}{}\label{class_menu_wlasiciela_zwierzecia}\index{MenuWlasicielaZwierzecia@{MenuWlasicielaZwierzecia}}
+
+
+Klasa opisujaca cale menu wlascicela zwierzecia.  
+
+
+
+
+{\ttfamily \#include $<$Menu\+Wlasiciela\+Zwierzecia.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_menu_wlasiciela_zwierzecia_a9d34ef933b9efb47a4bcfbefc271d506}\label{class_menu_wlasiciela_zwierzecia_a9d34ef933b9efb47a4bcfbefc271d506} 
+{\bfseries Menu\+Wlasiciela\+Zwierzecia} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia}{Sesja\+Wlasciciela\+Zwierzecia}} $>$ sesja, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_planer_wizyt}{Planer\+Wizyt}} $>$ planer, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_uslug}{Serwis\+Uslug}} $>$ serwis\+Uslug, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_lekarza}{Serwis\+Lekarza}} $>$ serwis\+Lekarza, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_wizyt}{Serwis\+Wizyt}} $>$ serwis\+Wizyt, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_zwierzat}{Serwis\+Zwierzat}} $>$ serwis\+Zwierzat)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy sesje, planner, serwis uslug, serwis lekarza, serwis zwierzat, serwis wizyt. \end{DoxyCompactList}\item 
+OPCJA\+\_\+\+POCZATKOWE\+\_\+\+WLASICIELA \mbox{\hyperlink{class_menu_wlasiciela_zwierzecia_af6a890414669f439ca045317e7fc6a06}{wyswietl\+Menu\+Poczatkowe}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajaca menu poczatkowe dla wlasciciela zwierzecia. \end{DoxyCompactList}\item 
+OPCJA\+\_\+\+PLANOWANIA\+\_\+\+WIZYTY \mbox{\hyperlink{class_menu_wlasiciela_zwierzecia_a2e9bcfd5693433e0d6b6d8ff87631674}{wyswietl\+Menu\+Do\+Planowania\+Wizyty}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietla menu do planowania wizyty Wyswietlaja sie wszystkie zwierzeta jakie mozemy wybrac. \end{DoxyCompactList}\item 
+OPCJA\+\_\+\+USLUGI \mbox{\hyperlink{class_menu_wlasiciela_zwierzecia_a849ddb1648ecc300b96fdb07f54c4399}{wswietl\+Menu\+Uslug}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajaca wszytskie uslugi dla danego zwierzaka. \end{DoxyCompactList}\item 
+OPCJA\+\_\+\+TERMINU\+\_\+\+WIZYTY \mbox{\hyperlink{class_menu_wlasiciela_zwierzecia_adfc303b08f0c0d55c44611794a810134}{wyswietl\+Menu\+Wyboru\+Terminu}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajaca menu wyboru terminu Najpierw wybieramy jeden miesiac z 3/4 podanych, nastepnie dzien, kolejno odpowiedni blok godzinowy z wybranym lekarzem, ktory nas interesuje. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_wlasiciela_zwierzecia_af580d4cdb26409ff4ba41c75ea07cd60}\label{class_menu_wlasiciela_zwierzecia_af580d4cdb26409ff4ba41c75ea07cd60} 
+void {\bfseries wyswietl\+Anulowanie\+Wizyty} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajaca wszytskie wizyty, ktore mozemy anulowac. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_wlasiciela_zwierzecia_aeac2c523e5e5607ac8aee88bcd20a090}\label{class_menu_wlasiciela_zwierzecia_aeac2c523e5e5607ac8aee88bcd20a090} 
+void {\bfseries wyswielt\+Wizyty} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajaca wizyty dla wlasciceila, dla wszytskich jego zwierzat. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_wlasiciela_zwierzecia_a1cb02ac426dad78a01e7f7bd0bb1b839}\label{class_menu_wlasiciela_zwierzecia_a1cb02ac426dad78a01e7f7bd0bb1b839} 
+void {\bfseries dodaj\+Zwierzaka} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajaca menu dodania zwierzaka Wybieramy imie, typ, kolor, umaszczenie, wiek, wage (w gramach), plec. \end{DoxyCompactList}\item 
+\Hypertarget{class_menu_wlasiciela_zwierzecia_a4bb1a5bf1e127f65636a58f542a7797e}\label{class_menu_wlasiciela_zwierzecia_a4bb1a5bf1e127f65636a58f542a7797e} 
+void {\bfseries edycja\+Zwierzat} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajaca menu edycji zwierzaka (jego imie lub wage) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa opisujaca cale menu wlascicela zwierzecia. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_menu_wlasiciela_zwierzecia_a849ddb1648ecc300b96fdb07f54c4399}\label{class_menu_wlasiciela_zwierzecia_a849ddb1648ecc300b96fdb07f54c4399} 
+\index{MenuWlasicielaZwierzecia@{MenuWlasicielaZwierzecia}!wswietlMenuUslug@{wswietlMenuUslug}}
+\index{wswietlMenuUslug@{wswietlMenuUslug}!MenuWlasicielaZwierzecia@{MenuWlasicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{wswietlMenuUslug()}{wswietlMenuUslug()}}
+{\footnotesize\ttfamily OPCJA\+\_\+\+USLUGI Menu\+Wlasiciela\+Zwierzecia\+::wswietl\+Menu\+Uslug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja wyswietlajaca wszytskie uslugi dla danego zwierzaka. 
+
+\begin{DoxyReturn}{Returns}
+zwraca wybrana opcje uslugi 
+\end{DoxyReturn}
+\Hypertarget{class_menu_wlasiciela_zwierzecia_a2e9bcfd5693433e0d6b6d8ff87631674}\label{class_menu_wlasiciela_zwierzecia_a2e9bcfd5693433e0d6b6d8ff87631674} 
+\index{MenuWlasicielaZwierzecia@{MenuWlasicielaZwierzecia}!wyswietlMenuDoPlanowaniaWizyty@{wyswietlMenuDoPlanowaniaWizyty}}
+\index{wyswietlMenuDoPlanowaniaWizyty@{wyswietlMenuDoPlanowaniaWizyty}!MenuWlasicielaZwierzecia@{MenuWlasicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{wyswietlMenuDoPlanowaniaWizyty()}{wyswietlMenuDoPlanowaniaWizyty()}}
+{\footnotesize\ttfamily OPCJA\+\_\+\+PLANOWANIA\+\_\+\+WIZYTY Menu\+Wlasiciela\+Zwierzecia\+::wyswietl\+Menu\+Do\+Planowania\+Wizyty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja wyswietla menu do planowania wizyty Wyswietlaja sie wszystkie zwierzeta jakie mozemy wybrac. 
+
+\begin{DoxyReturn}{Returns}
+zwraca wybrana opcje dla planowania wizyty 
+\end{DoxyReturn}
+\Hypertarget{class_menu_wlasiciela_zwierzecia_af6a890414669f439ca045317e7fc6a06}\label{class_menu_wlasiciela_zwierzecia_af6a890414669f439ca045317e7fc6a06} 
+\index{MenuWlasicielaZwierzecia@{MenuWlasicielaZwierzecia}!wyswietlMenuPoczatkowe@{wyswietlMenuPoczatkowe}}
+\index{wyswietlMenuPoczatkowe@{wyswietlMenuPoczatkowe}!MenuWlasicielaZwierzecia@{MenuWlasicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{wyswietlMenuPoczatkowe()}{wyswietlMenuPoczatkowe()}}
+{\footnotesize\ttfamily OPCJA\+\_\+\+POCZATKOWE\+\_\+\+WLASICIELA Menu\+Wlasiciela\+Zwierzecia\+::wyswietl\+Menu\+Poczatkowe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja wyswietlajaca menu poczatkowe dla wlasciciela zwierzecia. 
+
+\begin{DoxyReturn}{Returns}
+zwraca 6 dostepnych opcji menu 
+\end{DoxyReturn}
+\Hypertarget{class_menu_wlasiciela_zwierzecia_adfc303b08f0c0d55c44611794a810134}\label{class_menu_wlasiciela_zwierzecia_adfc303b08f0c0d55c44611794a810134} 
+\index{MenuWlasicielaZwierzecia@{MenuWlasicielaZwierzecia}!wyswietlMenuWyboruTerminu@{wyswietlMenuWyboruTerminu}}
+\index{wyswietlMenuWyboruTerminu@{wyswietlMenuWyboruTerminu}!MenuWlasicielaZwierzecia@{MenuWlasicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{wyswietlMenuWyboruTerminu()}{wyswietlMenuWyboruTerminu()}}
+{\footnotesize\ttfamily OPCJA\+\_\+\+TERMINU\+\_\+\+WIZYTY Menu\+Wlasiciela\+Zwierzecia\+::wyswietl\+Menu\+Wyboru\+Terminu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja wyswietlajaca menu wyboru terminu Najpierw wybieramy jeden miesiac z 3/4 podanych, nastepnie dzien, kolejno odpowiedni blok godzinowy z wybranym lekarzem, ktory nas interesuje. 
+
+\begin{DoxyReturn}{Returns}
+zwraca wybrany termin wizyty przez wlasciciela zwierzaka 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Menu\+Wlasiciela\+Zwierzecia.\+h\item 
+Menu\+Wlasiciela\+Zwierzecia.\+cpp\end{DoxyCompactItemize}

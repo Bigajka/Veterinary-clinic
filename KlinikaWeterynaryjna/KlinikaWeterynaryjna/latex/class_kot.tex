@@ -1,0 +1,104 @@
+\doxysection{Kot Class Reference}
+\hypertarget{class_kot}{}\label{class_kot}\index{Kot@{Kot}}
+
+
+Klasa opisujaca kota, klasa pochodna. Dziedziczy po klasie \doxylink{class_zwierze}{Zwierze}.  
+
+
+
+
+{\ttfamily \#include $<$Kot.\+h$>$}
+
+Inheritance diagram for Kot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_kot}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kot_a09bfc74cf33c506d055beb6c6c07c8f7}\label{class_kot_a09bfc74cf33c506d055beb6c6c07c8f7} 
+{\bfseries Kot} (int id, int wiek, \mbox{\hyperlink{_plec_8h_a668bb948163d8aae5c42a2912b9dfaad}{Plec}} plec, int liczba\+Nog, string imie, int id\+Wlasciciela, string umaszczenie, string kolor, int \mbox{\hyperlink{class_zwierze_ad83ee392ad293706de9912f012ba7bd1}{waga\+WGramach}})
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy pola ID zwierzecia, wiek, plec, liczbe nog, imie, ID wlasciciela, umaszczenie, kolor, wage w gramach. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_kot_aa8e10c16d969b4b8ee6fbbd43437bd5c}{dzwiek}} ()
+\begin{DoxyCompactList}\small\item\em Metoda, ktora zwroci typ string, w ktorym bedzie zawarty dzwiek, ktory wydaje odpoweidni typ zwierzaka. Np. Dla kota Miua miau. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_kot_a63df3f101954c2714b4d22ddde1c3465}{get\+Waga}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca sformatowana wage, w zaleznosci od wagi zwierzecia. Np. \doxylink{class_kot}{Kot} 4000g. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_zwierze}{Zwierze}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Zwierze} (int id, int wiek, \mbox{\hyperlink{_plec_8h_a668bb948163d8aae5c42a2912b9dfaad}{Plec}} plec, int liczba\+Nog, string imie, int id\+Wlasciciela, string umaszczenie, string kolor, int \mbox{\hyperlink{class_zwierze_ad83ee392ad293706de9912f012ba7bd1}{waga\+WGramach}})
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy id, wiek, plec, liczbe nog, imie, id wlasciciela, umaszczenie, kolor, wage w gramach. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_zwierze_a783ef9f948e5666658313d0903e6a462}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca id zwierzecia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_zwierze_a403a2c017afc7cf821741b4a0807fc19}{get\+Wiek}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wiek zwierzecia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_plec_8h_a668bb948163d8aae5c42a2912b9dfaad}{Plec}} \mbox{\hyperlink{class_zwierze_a31cae923e7725717dc9d803572575496}{get\+Plec}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca enum plec, okreslajacy czy jest to samiec czy samica. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_zwierze_a1e0d6a437541b0a4d1193777f481eb4c}{getlicza\+Nog}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca liczbe nog zwierzecia. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_zwierze_a7cb5c0afe66bc6682812e31fcf0a8ef4}{get\+Imie}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca imie zwierzecia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_zwierze_a159f31ed55a07f1851d34863916962d7}{get\+Id\+Wlasciciela}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca id wlasciciela zwierzaka. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_zwierze_a3110222657a6406310fe8ae6bd16a49d}{get\+Umaszczenie}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca umaszczenie zwierzaka. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_zwierze_a23a26c8fa447df912ba5acc606d1d106}{get\+Kolor}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca kolor zwierzaka. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_zwierze_a86a8c0df4a1235c165d222d6bcd00aaa}{dzwiek}} ()=0
+\begin{DoxyCompactList}\small\item\em Funkcja wirtualna, zwracajaca dzwiek jaki wydaje konkretne zwierze. Klasy dziedziczace po klasie zwierze musza zaimplementowac metode \doxylink{class_zwierze_a86a8c0df4a1235c165d222d6bcd00aaa}{dzwiek()}. Np. kot ma wydawac dzwiek miau. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_zwierze_a8d34fdda2b99ec3cf12655bce9ca02a8}{get\+Waga}} ()=0
+\begin{DoxyCompactList}\small\item\em Funkcja wirtualna, zwracajaca wage dla konkretnego zwierzecia. Klasy dziedziczace po klasie zwierze musza zaimplementowac metode \doxylink{class_zwierze_a8d34fdda2b99ec3cf12655bce9ca02a8}{get\+Waga()}. Np. kot ma miec wyswietlana wage w kg, a kanarek w gramch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zwierze_affffb65495431b963d1310dfde144ec1}{set\+Waga\+WGramach}} (int \mbox{\hyperlink{class_zwierze_ad83ee392ad293706de9912f012ba7bd1}{waga\+WGramach}})
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca wage, ktora ma byc w gramach. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zwierze_af3114a2539df566bf5b2d9c3508cb48e}{set\+Imie}} (string imie)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca imie. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_zwierze_a42d4e180e7307316184d23c8d19e134a}{zamien\+Na\+Tekst}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zamieniajaca obiekt zwierze na tekst, aby mozna bylo go zapisac do pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_zwierze}{Zwierze}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_zwierze_ad83ee392ad293706de9912f012ba7bd1}{waga\+WGramach}}
+\begin{DoxyCompactList}\small\item\em Pole klasy, przechowywujace wage zwierzeecia w gramach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa opisujaca kota, klasa pochodna. Dziedziczy po klasie \doxylink{class_zwierze}{Zwierze}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_kot_aa8e10c16d969b4b8ee6fbbd43437bd5c}\label{class_kot_aa8e10c16d969b4b8ee6fbbd43437bd5c} 
+\index{Kot@{Kot}!dzwiek@{dzwiek}}
+\index{dzwiek@{dzwiek}!Kot@{Kot}}
+\doxysubsubsection{\texorpdfstring{dzwiek()}{dzwiek()}}
+{\footnotesize\ttfamily string Kot\+::dzwiek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda, ktora zwroci typ string, w ktorym bedzie zawarty dzwiek, ktory wydaje odpoweidni typ zwierzaka. Np. Dla kota Miua miau. 
+
+
+
+Implements \mbox{\hyperlink{class_zwierze_a86a8c0df4a1235c165d222d6bcd00aaa}{Zwierze}}.
+
+\Hypertarget{class_kot_a63df3f101954c2714b4d22ddde1c3465}\label{class_kot_a63df3f101954c2714b4d22ddde1c3465} 
+\index{Kot@{Kot}!getWaga@{getWaga}}
+\index{getWaga@{getWaga}!Kot@{Kot}}
+\doxysubsubsection{\texorpdfstring{getWaga()}{getWaga()}}
+{\footnotesize\ttfamily string Kot\+::get\+Waga (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda zwracajaca sformatowana wage, w zaleznosci od wagi zwierzecia. Np. \doxylink{class_kot}{Kot} 4000g. 
+
+
+
+Implements \mbox{\hyperlink{class_zwierze_a8d34fdda2b99ec3cf12655bce9ca02a8}{Zwierze}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_kot_8h}{Kot.\+h}}\item 
+Kot.\+cpp\end{DoxyCompactItemize}

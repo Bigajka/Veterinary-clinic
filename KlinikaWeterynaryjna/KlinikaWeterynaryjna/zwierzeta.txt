@@ -1,0 +1,6 @@
+2|Diana|Samica|2017|4|2|Siersc|Trzykolorowa|KOT|3500
+1|Tosia|Samica|2015|4|2|Siersc|Rudy|PIES|4500
+3|Tadeusz|Samiec|2020|2|2|Piora|Czerwony|KANAREK|400
+5|Rysiek|Samiec|2015|0|2|Skora|Zolty|WAZ|500
+6|Fiona|Samica|2018|2|2|Piora|Zielony|KANAREK|300
+4|Krzysztof|Samiec|2013|0|2|Skora|Zielony|WAZ|300

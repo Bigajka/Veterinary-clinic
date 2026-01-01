@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4ad5c2ac-ea47-4a23-8d07-139f8ccad330}</ProjectGuid>
+    <RootNamespace>KlinikaWeterynaryjna</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CzytaczGrafikuPracy.cpp" />
+    <ClCompile Include="CzytaczLekarza.cpp" />
+    <ClCompile Include="CzytaczPlikow.cpp" />
+    <ClCompile Include="CzytaczUzytkownikow.cpp" />
+    <ClCompile Include="CzytaczWizyt.cpp" />
+    <ClCompile Include="CzytaczWlasicielaZwierzecia.cpp" />
+    <ClCompile Include="CzytaczZwierzat.cpp" />
+    <ClCompile Include="SerwisUslug.cpp" />
+    <ClCompile Include="GodzinyPracy.cpp" />
+    <ClCompile Include="Kanarek.cpp" />
+    <ClCompile Include="KlinikaWeterynaryjna.cpp" />
+    <ClCompile Include="Kot.cpp" />
+    <ClCompile Include="Lekarz.cpp" />
+    <ClCompile Include="MenuLogowania.cpp" />
+    <ClCompile Include="MenuLekarza.cpp" />
+    <ClCompile Include="MenuWlasicielaZwierzecia.cpp" />
+    <ClCompile Include="Pajak.cpp" />
+    <ClCompile Include="Pies.cpp" />
+    <ClCompile Include="PlanerWizyt.cpp" />
+    <ClCompile Include="SerwisGrafikuPracy.cpp" />
+    <ClCompile Include="SerwisLekarza.cpp" />
+    <ClCompile Include="SerwisLogowaniaUzytkownika.cpp" />
+    <ClCompile Include="SerwisWizyt.cpp" />
+    <ClCompile Include="SerwisWlasicielaZwierzecia.cpp" />
+    <ClCompile Include="SerwisZwierzat.cpp" />
+    <ClCompile Include="SesjaLekarza.cpp" />
+    <ClCompile Include="SesjaWlascicielaZwierzecia.cpp" />
+    <ClCompile Include="SprawdzaczLiczb.cpp" />
+    <ClCompile Include="Usluga.cpp" />
+    <ClCompile Include="Uzytkownik.cpp" />
+    <ClCompile Include="Waz.cpp" />
+    <ClCompile Include="Wizyta.cpp" />
+    <ClCompile Include="WlascicielZwierzecia.cpp" />
+    <ClCompile Include="Zwierze.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CzytaczGrafikuPracy.h" />
+    <ClInclude Include="CzytaczLekarza.h" />
+    <ClInclude Include="CzytaczPlikow.h" />
+    <ClInclude Include="CzytaczUzytkownikow.h" />
+    <ClInclude Include="CzytaczWizyt.h" />
+    <ClInclude Include="CzytaczWlasicielaZwierzecia.h" />
+    <ClInclude Include="CzytaczZwierzat.h" />
+    <ClInclude Include="DniTygodnia.h" />
+    <ClInclude Include="SerwisUslug.h" />
+    <ClInclude Include="GodzinyPracy.h" />
+    <ClInclude Include="Kanarek.h" />
+    <ClInclude Include="Kot.h" />
+    <ClInclude Include="Lekarz.h" />
+    <ClInclude Include="MenuLogowania.h" />
+    <ClInclude Include="MenuLekarza.h" />
+    <ClInclude Include="MenuLogowaniaStatusu.h" />
+    <ClInclude Include="MenuWlasicielaZwierzecia.h" />
+    <ClInclude Include="Pajak.h" />
+    <ClInclude Include="Pies.h" />
+    <ClInclude Include="PlanerWizyt.h" />
+    <ClInclude Include="Plec.h" />
+    <ClInclude Include="SerwisGrafikuPracy.h" />
+    <ClInclude Include="SerwisLekarza.h" />
+    <ClInclude Include="SerwisWlasicielaZwierzecia.h" />
+    <ClInclude Include="SerwisZwierzat.h" />
+    <ClInclude Include="SesjaLekarza.h" />
+    <ClInclude Include="SesjaWlascicielaZwierzecia.h" />
+    <ClInclude Include="SprawdzaczLiczb.h" />
+    <ClInclude Include="StatusWizyty.h" />
+    <ClInclude Include="TypUzytkownika.h" />
+    <ClInclude Include="Usluga.h" />
+    <ClInclude Include="Uzytkownik.h" />
+    <ClInclude Include="Waz.h" />
+    <ClInclude Include="Wizyta.h" />
+    <ClInclude Include="Zwierze.h" />
+    <ClInclude Include="SerwisLogowaniaUzytkownika.h" />
+    <ClInclude Include="SerwisWizyt.h" />
+    <ClInclude Include="WlascicielZwierzecia.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="grafikPracy.txt" />
+    <Text Include="lekarze.txt" />
+    <Text Include="uzytkownicy.txt" />
+    <Text Include="Wizyta.txt" />
+    <Text Include="wlasciciel_zwierzecia.txt" />
+    <Text Include="zwierzeta.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

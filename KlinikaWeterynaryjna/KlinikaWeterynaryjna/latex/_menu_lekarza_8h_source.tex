@@ -1,0 +1,29 @@
+\doxysection{Menu\+Lekarza.\+h}
+\hypertarget{_menu_lekarza_8h_source}{}\label{_menu_lekarza_8h_source}\mbox{\hyperlink{_menu_lekarza_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_sesja_lekarza_8h}{SesjaLekarza.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{_menu_lekarza_8h_a1043dd6d4e92b363972293d66ca61d4e}{OPCJA\_POCZATKOWA\_LEKARZA}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ PRZEGLAD\_WIZYT,\ ANULUJ\_WIZYTE,\ WYJDZ,\ NIE\_WYBRANO\_ZADNEJ\_OPCJI}
+\DoxyCodeLine{00017\ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_menu_lekarza}{MenuLekarza}}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ shared\_ptr<SesjaLekarza>\ sesjaLekarza;}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_menu_lekarza}{MenuLekarza}}(shared\_ptr<SesjaLekarza>\ sesjaLekarza);}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{_menu_lekarza_8h_a1043dd6d4e92b363972293d66ca61d4e}{OPCJA\_POCZATKOWA\_LEKARZA}}\ \mbox{\hyperlink{class_menu_lekarza_a0c1725d8fd94113de677f8156f0cb93c}{wyswietlMenuPoczatkowe}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_lekarza_af03e3939f27bde87f42faca85ffd7f27}{przegladWizyt}}();}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_menu_lekarza_a533d8f4da47db0df9b49ad8b56926bc9}{anulujWizyte}}();}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+
+\end{DoxyCode}

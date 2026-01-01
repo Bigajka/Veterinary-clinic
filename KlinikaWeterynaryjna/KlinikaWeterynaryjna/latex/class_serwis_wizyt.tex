@@ -1,0 +1,168 @@
+\doxysection{Serwis\+Wizyt Class Reference}
+\hypertarget{class_serwis_wizyt}{}\label{class_serwis_wizyt}\index{SerwisWizyt@{SerwisWizyt}}
+
+
+Klasa odpowiedzialna za serwis wizyt.  
+
+
+
+
+{\ttfamily \#include $<$Serwis\+Wizyt.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_serwis_wizyt_a1eccb46787df121941dcc1cfc51fb8a0}\label{class_serwis_wizyt_a1eccb46787df121941dcc1cfc51fb8a0} 
+{\bfseries Serwis\+Wizyt} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_czytacz_wizyt}{Czytacz\+Wizyt}} $>$ czytacz\+Wizyt)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy czytacz wizyt. \end{DoxyCompactList}\item 
+Status\+Wizyty \mbox{\hyperlink{class_serwis_wizyt_a9c34dc53238e3166507395a40804687b}{zarezeruj\+Wizyte}} (\mbox{\hyperlink{class_wizyta}{Wizyta}} wizyta)
+\begin{DoxyCompactList}\small\item\em Funkcja rezerwujaca wizyte. \end{DoxyCompactList}\item 
+Status\+Wizyty \mbox{\hyperlink{class_serwis_wizyt_aa3b407d6e4fd35e6b22902f077660e4b}{anuluj\+Wizyte}} (int id\+Wizyty)
+\begin{DoxyCompactList}\small\item\em Funkcja anulujacy wizyte. \end{DoxyCompactList}\item 
+Status\+Wizyty \mbox{\hyperlink{class_serwis_wizyt_af134868a1d98c1e649143f7839b93e79}{anuluj\+Wizyte\+Dla\+Zwierzaka}} (int id\+Zwierzaka)
+\begin{DoxyCompactList}\small\item\em Funkcja anulujacy wizyte dle zwierzaka. \end{DoxyCompactList}\item 
+list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wizyta}{Wizyta}} $>$ $>$ \mbox{\hyperlink{class_serwis_wizyt_afea33040c113ae26da2321110b59ecbb}{przeglad\+Wizyt\+Po\+Id\+Wlasiciela}} (int id\+Wlasiciel\+Zwierzecia)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wizyty dla danego wlasciciela po id. \end{DoxyCompactList}\item 
+list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wizyta}{Wizyta}} $>$ $>$ \mbox{\hyperlink{class_serwis_wizyt_a8084ddcd384b5e0b3237b48ecc2e7e8f}{zaladuj\+Wizyty\+Dla\+Daty}} (int rok, int miesiac, int dzien)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wizyty na podstawie przekazanego roku, miesiaca, dnia. \end{DoxyCompactList}\item 
+list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wizyta}{Wizyta}} $>$ $>$ \mbox{\hyperlink{class_serwis_wizyt_ae629ec52b27747aee1f3469e3aabb620}{przeglad\+Wizyt\+Po\+Id\+Lekarza}} (int id\+Lekarza)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wizyty dla danego lekarza po id. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_serwis_wizyt_ae598f1f4dc6ae421180b45690d3209e4}{get\+Nastepne\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja generujaca nastepnego id, ktore mozna uzyc do zapisu na kolejna wizyte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za serwis wizyt. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_serwis_wizyt_aa3b407d6e4fd35e6b22902f077660e4b}\label{class_serwis_wizyt_aa3b407d6e4fd35e6b22902f077660e4b} 
+\index{SerwisWizyt@{SerwisWizyt}!anulujWizyte@{anulujWizyte}}
+\index{anulujWizyte@{anulujWizyte}!SerwisWizyt@{SerwisWizyt}}
+\doxysubsubsection{\texorpdfstring{anulujWizyte()}{anulujWizyte()}}
+{\footnotesize\ttfamily Status\+Wizyty Serwis\+Wizyt\+::anuluj\+Wizyte (\begin{DoxyParamCaption}\item[{int}]{id\+Wizyty }\end{DoxyParamCaption})}
+
+
+
+Funkcja anulujacy wizyte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idwizyta} & -\/ wizyta, ktorya chcemy zarezerwowac, szukamy jej po id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca status czy operacaj jest powiodla 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_wizyt_af134868a1d98c1e649143f7839b93e79}\label{class_serwis_wizyt_af134868a1d98c1e649143f7839b93e79} 
+\index{SerwisWizyt@{SerwisWizyt}!anulujWizyteDlaZwierzaka@{anulujWizyteDlaZwierzaka}}
+\index{anulujWizyteDlaZwierzaka@{anulujWizyteDlaZwierzaka}!SerwisWizyt@{SerwisWizyt}}
+\doxysubsubsection{\texorpdfstring{anulujWizyteDlaZwierzaka()}{anulujWizyteDlaZwierzaka()}}
+{\footnotesize\ttfamily Status\+Wizyty Serwis\+Wizyt\+::anuluj\+Wizyte\+Dla\+Zwierzaka (\begin{DoxyParamCaption}\item[{int}]{id\+Zwierzaka }\end{DoxyParamCaption})}
+
+
+
+Funkcja anulujacy wizyte dle zwierzaka. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Zwierzaka} & -\/ wizyta, ktorya chcemy zarezerwowac, szukamy jej po id zwierzaka \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca status czy operacaj jest powiodla 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_wizyt_ae598f1f4dc6ae421180b45690d3209e4}\label{class_serwis_wizyt_ae598f1f4dc6ae421180b45690d3209e4} 
+\index{SerwisWizyt@{SerwisWizyt}!getNastepneId@{getNastepneId}}
+\index{getNastepneId@{getNastepneId}!SerwisWizyt@{SerwisWizyt}}
+\doxysubsubsection{\texorpdfstring{getNastepneId()}{getNastepneId()}}
+{\footnotesize\ttfamily int Serwis\+Wizyt\+::get\+Nastepne\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja generujaca nastepnego id, ktore mozna uzyc do zapisu na kolejna wizyte. 
+
+\begin{DoxyReturn}{Returns}
+zwraca nastepne id do zapisu wizyty 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_wizyt_ae629ec52b27747aee1f3469e3aabb620}\label{class_serwis_wizyt_ae629ec52b27747aee1f3469e3aabb620} 
+\index{SerwisWizyt@{SerwisWizyt}!przegladWizytPoIdLekarza@{przegladWizytPoIdLekarza}}
+\index{przegladWizytPoIdLekarza@{przegladWizytPoIdLekarza}!SerwisWizyt@{SerwisWizyt}}
+\doxysubsubsection{\texorpdfstring{przegladWizytPoIdLekarza()}{przegladWizytPoIdLekarza()}}
+{\footnotesize\ttfamily list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wizyta}{Wizyta}} $>$ $>$ Serwis\+Wizyt\+::przeglad\+Wizyt\+Po\+Id\+Lekarza (\begin{DoxyParamCaption}\item[{int}]{id\+Lekarza }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wizyty dla danego lekarza po id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Lekarza} & -\/ -\/ id lekarza, dla ktorego chcemy znalezc wizyty \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca liste wizyt dla konkretnego lekarza 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_wizyt_afea33040c113ae26da2321110b59ecbb}\label{class_serwis_wizyt_afea33040c113ae26da2321110b59ecbb} 
+\index{SerwisWizyt@{SerwisWizyt}!przegladWizytPoIdWlasiciela@{przegladWizytPoIdWlasiciela}}
+\index{przegladWizytPoIdWlasiciela@{przegladWizytPoIdWlasiciela}!SerwisWizyt@{SerwisWizyt}}
+\doxysubsubsection{\texorpdfstring{przegladWizytPoIdWlasiciela()}{przegladWizytPoIdWlasiciela()}}
+{\footnotesize\ttfamily list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wizyta}{Wizyta}} $>$ $>$ Serwis\+Wizyt\+::przeglad\+Wizyt\+Po\+Id\+Wlasiciela (\begin{DoxyParamCaption}\item[{int}]{id\+Wlasiciel\+Zwierzecia }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wizyty dla danego wlasciciela po id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Wlasiciel\+Zwierzecia} & -\/ id wlasciciela, dla ktorego chcemy znalezc wizyty \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca liste wizyt dla danego wlasciciela 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_wizyt_a8084ddcd384b5e0b3237b48ecc2e7e8f}\label{class_serwis_wizyt_a8084ddcd384b5e0b3237b48ecc2e7e8f} 
+\index{SerwisWizyt@{SerwisWizyt}!zaladujWizytyDlaDaty@{zaladujWizytyDlaDaty}}
+\index{zaladujWizytyDlaDaty@{zaladujWizytyDlaDaty}!SerwisWizyt@{SerwisWizyt}}
+\doxysubsubsection{\texorpdfstring{zaladujWizytyDlaDaty()}{zaladujWizytyDlaDaty()}}
+{\footnotesize\ttfamily list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wizyta}{Wizyta}} $>$ $>$ Serwis\+Wizyt\+::zaladuj\+Wizyty\+Dla\+Daty (\begin{DoxyParamCaption}\item[{int}]{rok,  }\item[{int}]{miesiac,  }\item[{int}]{dzien }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wizyty na podstawie przekazanego roku, miesiaca, dnia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rok} & -\/ rok dla przegladajacych wizyt \\
+\hline
+{\em miesiac} & -\/ miesiac dla przegladajacych wizyt \\
+\hline
+{\em dzien} & -\/ dzien dla przegladajacych wizyt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca liste wizyt dla konkretnej daty 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_wizyt_a9c34dc53238e3166507395a40804687b}\label{class_serwis_wizyt_a9c34dc53238e3166507395a40804687b} 
+\index{SerwisWizyt@{SerwisWizyt}!zarezerujWizyte@{zarezerujWizyte}}
+\index{zarezerujWizyte@{zarezerujWizyte}!SerwisWizyt@{SerwisWizyt}}
+\doxysubsubsection{\texorpdfstring{zarezerujWizyte()}{zarezerujWizyte()}}
+{\footnotesize\ttfamily Status\+Wizyty Serwis\+Wizyt\+::zarezeruj\+Wizyte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wizyta}{Wizyta}}}]{wizyta }\end{DoxyParamCaption})}
+
+
+
+Funkcja rezerwujaca wizyte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wizyta} & -\/ wizyta, ktorya chcemy zarezerwowac \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca status czy operacaj jest powiodla 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_serwis_wizyt_8h}{Serwis\+Wizyt.\+h}}\item 
+Serwis\+Wizyt.\+cpp\end{DoxyCompactItemize}

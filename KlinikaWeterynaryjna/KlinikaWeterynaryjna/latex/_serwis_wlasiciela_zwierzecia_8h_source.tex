@@ -1,0 +1,29 @@
+\doxysection{Serwis\+Wlasiciela\+Zwierzecia.\+h}
+\hypertarget{_serwis_wlasiciela_zwierzecia_8h_source}{}\label{_serwis_wlasiciela_zwierzecia_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include"{}CzytaczWlasicielaZwierzecia.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}SerwisLogowaniaUzytkownika.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_wlasciciel_zwierzecia_8h}{WlascicielZwierzecia.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_serwis_wlasiciela_zwierzecia}{SerwisWlasicielaZwierzecia}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ std::shared\_ptr<CzytaczWlasicielaZwierzecia>\ czytaczWlasicielaZwierzecia;}
+\DoxyCodeLine{00017\ \ \ \ \ std::shared\_ptr<SerwisLogowaniaUzytkownika>\ serwisLogowaniaUzytkownika;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksImienia\ =\ 0;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksId\ =\ 1;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indekMiasta\ =\ 2;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksKoduPocztowego\ =\ 3;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksUlicyINumeruDomu\ =\ 4;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksNumeruTelefonu\ =\ 5;}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_serwis_wlasiciela_zwierzecia}{SerwisWlasicielaZwierzecia}}(std::shared\_ptr<CzytaczWlasicielaZwierzecia>\ czytaczWlasicielaZwierzecia,\ std::shared\_ptr<SerwisLogowaniaUzytkownika>\ serwisLogowaniaUzytkownika);}
+\DoxyCodeLine{00035\ \ \ \ \ std::shared\_ptr<WlascicielZwierzecia>\ \mbox{\hyperlink{class_serwis_wlasiciela_zwierzecia_a258719df54f17f3572cfa2b328e19153}{zaladujWlascicielaZwierzecia}}(std::shared\_ptr<Uzytkownik>\ uzytkownik);}
+\DoxyCodeLine{00041\ \ \ \ \ std::shared\_ptr<WlascicielZwierzecia>\ \mbox{\hyperlink{class_serwis_wlasiciela_zwierzecia_ad4f054742325f51a8a0b5fd882da6781}{zaladujWlascicielaZwierzeciaPoId}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+
+\end{DoxyCode}

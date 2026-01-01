@@ -1,0 +1,104 @@
+\doxysection{Sesja\+Lekarza Class Reference}
+\hypertarget{class_sesja_lekarza}{}\label{class_sesja_lekarza}\index{SesjaLekarza@{SesjaLekarza}}
+
+
+Klasa odpowiedzialna za sesje lekarza (za jego wizyty)  
+
+
+
+
+{\ttfamily \#include $<$Sesja\+Lekarza.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sesja_lekarza_a61a69eaa9d2b3eee11b77c05dbc7750f}\label{class_sesja_lekarza_a61a69eaa9d2b3eee11b77c05dbc7750f} 
+{\bfseries Sesja\+Lekarza} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ lekarz, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_wizyt}{Serwis\+Wizyt}} $>$ serwis\+Wizyt, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_zwierzat}{Serwis\+Zwierzat}} $>$ serwis\+Zwierzat, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_uslug}{Serwis\+Uslug}} $>$ serwis\+Uslug, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_wlasiciela_zwierzecia}{Serwis\+Wlasiciela\+Zwierzecia}} $>$ serwis\+Wlasiciela\+Zwierzecia)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy lekarza, serwis wizyt, serwis zwierzat, serwis uslug oraz serwis wlascicela zwierzecia. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ \mbox{\hyperlink{class_sesja_lekarza_ac7dcf73c1e4f9220b7b10db19430cfae}{get\+Lekarz}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca lekarza Zwraca jego imie, nazwisko, specjalizacje, dostepnosc godzinowa. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_wizyt}{Serwis\+Wizyt}} $>$ \mbox{\hyperlink{class_sesja_lekarza_a082282f168f891fada0c020b912e1cae}{get\+Serwis\+Wizyt}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca serwis wizyt. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_zwierzat}{Serwis\+Zwierzat}} $>$ \mbox{\hyperlink{class_sesja_lekarza_aeb534433440bee86a2ba2b1ad14a72d8}{get\+Serwis\+Zwierzat}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca serwis zwierzat. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_uslug}{Serwis\+Uslug}} $>$ \mbox{\hyperlink{class_sesja_lekarza_ad64d069ba0f0d0a32cc4c424e33c6b71}{get\+Fabryka\+Uslug}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca fabryke uslug. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_wlasiciela_zwierzecia}{Serwis\+Wlasiciela\+Zwierzecia}} $>$ \mbox{\hyperlink{class_sesja_lekarza_a0a3d15276f8171b8f5221115255376b6}{get\+Serwis\+Wlasiciela\+Zwierzecia}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca serwis wlasciciela zwierzecia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za sesje lekarza (za jego wizyty) 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sesja_lekarza_ad64d069ba0f0d0a32cc4c424e33c6b71}\label{class_sesja_lekarza_ad64d069ba0f0d0a32cc4c424e33c6b71} 
+\index{SesjaLekarza@{SesjaLekarza}!getFabrykaUslug@{getFabrykaUslug}}
+\index{getFabrykaUslug@{getFabrykaUslug}!SesjaLekarza@{SesjaLekarza}}
+\doxysubsubsection{\texorpdfstring{getFabrykaUslug()}{getFabrykaUslug()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_uslug}{Serwis\+Uslug}} $>$ Sesja\+Lekarza\+::get\+Fabryka\+Uslug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca fabryke uslug. 
+
+\begin{DoxyReturn}{Returns}
+fabryka usug 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_lekarza_ac7dcf73c1e4f9220b7b10db19430cfae}\label{class_sesja_lekarza_ac7dcf73c1e4f9220b7b10db19430cfae} 
+\index{SesjaLekarza@{SesjaLekarza}!getLekarz@{getLekarz}}
+\index{getLekarz@{getLekarz}!SesjaLekarza@{SesjaLekarza}}
+\doxysubsubsection{\texorpdfstring{getLekarz()}{getLekarz()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ Sesja\+Lekarza\+::get\+Lekarz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca lekarza Zwraca jego imie, nazwisko, specjalizacje, dostepnosc godzinowa. 
+
+\begin{DoxyReturn}{Returns}
+lekarz 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_lekarza_a082282f168f891fada0c020b912e1cae}\label{class_sesja_lekarza_a082282f168f891fada0c020b912e1cae} 
+\index{SesjaLekarza@{SesjaLekarza}!getSerwisWizyt@{getSerwisWizyt}}
+\index{getSerwisWizyt@{getSerwisWizyt}!SesjaLekarza@{SesjaLekarza}}
+\doxysubsubsection{\texorpdfstring{getSerwisWizyt()}{getSerwisWizyt()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_wizyt}{Serwis\+Wizyt}} $>$ Sesja\+Lekarza\+::get\+Serwis\+Wizyt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca serwis wizyt. 
+
+\begin{DoxyReturn}{Returns}
+serwis wizyt 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_lekarza_a0a3d15276f8171b8f5221115255376b6}\label{class_sesja_lekarza_a0a3d15276f8171b8f5221115255376b6} 
+\index{SesjaLekarza@{SesjaLekarza}!getSerwisWlasicielaZwierzecia@{getSerwisWlasicielaZwierzecia}}
+\index{getSerwisWlasicielaZwierzecia@{getSerwisWlasicielaZwierzecia}!SesjaLekarza@{SesjaLekarza}}
+\doxysubsubsection{\texorpdfstring{getSerwisWlasicielaZwierzecia()}{getSerwisWlasicielaZwierzecia()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_wlasiciela_zwierzecia}{Serwis\+Wlasiciela\+Zwierzecia}} $>$ Sesja\+Lekarza\+::get\+Serwis\+Wlasiciela\+Zwierzecia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca serwis wlasciciela zwierzecia. 
+
+\begin{DoxyReturn}{Returns}
+serwis wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_lekarza_aeb534433440bee86a2ba2b1ad14a72d8}\label{class_sesja_lekarza_aeb534433440bee86a2ba2b1ad14a72d8} 
+\index{SesjaLekarza@{SesjaLekarza}!getSerwisZwierzat@{getSerwisZwierzat}}
+\index{getSerwisZwierzat@{getSerwisZwierzat}!SesjaLekarza@{SesjaLekarza}}
+\doxysubsubsection{\texorpdfstring{getSerwisZwierzat()}{getSerwisZwierzat()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_zwierzat}{Serwis\+Zwierzat}} $>$ Sesja\+Lekarza\+::get\+Serwis\+Zwierzat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca serwis zwierzat. 
+
+\begin{DoxyReturn}{Returns}
+serwis zwierzat 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sesja_lekarza_8h}{Sesja\+Lekarza.\+h}}\item 
+Sesja\+Lekarza.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,31 @@
+\doxysection{Serwis\+Lekarza.\+h}
+\hypertarget{_serwis_lekarza_8h_source}{}\label{_serwis_lekarza_8h_source}\mbox{\hyperlink{_serwis_lekarza_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_czytacz_lekarza_8h}{CzytaczLekarza.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lekarz_8h}{Lekarz.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}SerwisLogowaniaUzytkownika.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_serwis_lekarza}{SerwisLekarza}}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ shared\_ptr<CzytaczLekarza>\ czytaczLekarza;}
+\DoxyCodeLine{00021\ \ \ \ \ shared\_ptr<SerwisLogowaniaUzytkownika>\ serwisLogowaniaUzytkownika;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksId\ =\ 0;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksImienia\ =\ 1;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksNazwiska\ =\ 2;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksSpecjalizacji\ =\ 3;}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_serwis_lekarza}{SerwisLekarza}}(shared\_ptr<CzytaczLekarza>\ czytaczLekarza,\ shared\_ptr<SerwisLogowaniaUzytkownika>\ czytaczUzytkownikow);}
+\DoxyCodeLine{00037\ \ \ \ \ shared\_ptr<Lekarz>\ \mbox{\hyperlink{class_serwis_lekarza_a383ecba33b76ff8afad51ddd8301cee5}{zaladujLekarza}}(shared\_ptr<Uzytkownik>\ uzytkownik);}
+\DoxyCodeLine{00042\ \ \ \ \ list<shared\_ptr<Lekarz>>\ \mbox{\hyperlink{class_serwis_lekarza_a89d1a0ca25c4d0e07441eabbc83e0b58}{zaladujWszystkichLekarzy}}();}
+\DoxyCodeLine{00049\ \ \ \ \ shared\_ptr<Lekarz>\ \mbox{\hyperlink{class_serwis_lekarza_a9309724cefc75bf248048c3c55a0ca67}{znajdzLekarzaPoId}}(\textcolor{keywordtype}{int}\ idLekarza,\ list<shared\_ptr<Lekarz>>\ lekarze);}
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+
+\end{DoxyCode}

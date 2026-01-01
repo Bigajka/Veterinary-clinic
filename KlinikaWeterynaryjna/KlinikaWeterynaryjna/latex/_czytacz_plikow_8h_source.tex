@@ -1,0 +1,30 @@
+\doxysection{Czytacz\+Plikow.\+h}
+\hypertarget{_czytacz_plikow_8h_source}{}\label{_czytacz_plikow_8h_source}\mbox{\hyperlink{_czytacz_plikow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_czytacz_plikow}{CzytaczPlikow}}\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{string}\ zapiszZawartoscPlikuDoZmiennej(ifstream\&\ plik);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ znajdzIndeksOstatniejKolumny(\textcolor{keywordtype}{string}\&\ calyTekst);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ znajdzWystapienieSrodkowejKolumny(\textcolor{keywordtype}{string}\&\ calyTekst,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_czytacz_plikow_aab54e86fb062a075956d8d579cf717b2}{wczytajPlik}}();}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_czytacz_plikow_abfb7dfc1198238c402c5c0d2e4f9edd8}{dopiszDoPliku}}(\textcolor{keywordtype}{string}\&\ nowyWiersz);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_czytacz_plikow_ade89413d692e8a9bf6b5a65af6d583b8}{podajNazwePliku}}()\ =\ 0;}
+\DoxyCodeLine{00060\ \ \ \ \ vector<string>\ \mbox{\hyperlink{class_czytacz_plikow_a2695c6891ddd0d87f8395fcab70186f2}{zmaienNaWiersze}}(\textcolor{keywordtype}{string}\&\ trescPliku);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_czytacz_plikow_a3f8004d5cc8f99b6ce4ec8bb749baae6}{getPozycjaTextu}}(\textcolor{keywordtype}{string}\ calyTekst,\ \textcolor{keywordtype}{int}\ pozycja);}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_czytacz_plikow_a8ccf1fd2014387882be2300b408b078d}{usunWieszPoId}}(\textcolor{keywordtype}{int}\ indeksId,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{bool}\ czyJestUnikalny);}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_czytacz_plikow_a78004bd09dd706591c929f82add421fe}{getPozycjaWiersza}}(vector<string>\ wiersze,\ \textcolor{keywordtype}{string}\ wiersz);}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_czytacz_plikow_a572bd674c7ae5dc9eecb01f00da46021}{zapiszDoPliku}}(\textcolor{keyword}{const}\ vector<string>\&\ wektor,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ nazwaPliku);}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_czytacz_plikow_abe4b146156445bb49481eff9ac93d096}{getNastepneId}}(\textcolor{keywordtype}{int}\ indeksId);}
+\DoxyCodeLine{00105\ \};}
+\DoxyCodeLine{00106\ }
+
+\end{DoxyCode}

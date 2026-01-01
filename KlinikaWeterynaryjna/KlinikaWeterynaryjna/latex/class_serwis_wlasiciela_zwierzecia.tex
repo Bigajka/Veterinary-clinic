@@ -1,0 +1,69 @@
+\doxysection{Serwis\+Wlasiciela\+Zwierzecia Class Reference}
+\hypertarget{class_serwis_wlasiciela_zwierzecia}{}\label{class_serwis_wlasiciela_zwierzecia}\index{SerwisWlasicielaZwierzecia@{SerwisWlasicielaZwierzecia}}
+
+
+Klasa odpowiedzialna za serwis wlasciciela zwierzecia.  
+
+
+
+
+{\ttfamily \#include $<$Serwis\+Wlasiciela\+Zwierzecia.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_serwis_wlasiciela_zwierzecia_ae28344f85a265af1892fea0add1e016d}\label{class_serwis_wlasiciela_zwierzecia_ae28344f85a265af1892fea0add1e016d} 
+{\bfseries Serwis\+Wlasiciela\+Zwierzecia} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_czytacz_wlasiciela_zwierzecia}{Czytacz\+Wlasiciela\+Zwierzecia}} $>$ czytacz\+Wlasiciela\+Zwierzecia, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_logowania_uzytkownika}{Serwis\+Logowania\+Uzytkownika}} $>$ serwis\+Logowania\+Uzytkownika)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy czytacz wlasciciela zwierzecia, serwis logowania uzytkownika. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wlasciciel_zwierzecia}{Wlasciciel\+Zwierzecia}} $>$ \mbox{\hyperlink{class_serwis_wlasiciela_zwierzecia_a258719df54f17f3572cfa2b328e19153}{zaladuj\+Wlasciciela\+Zwierzecia}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}} $>$ uzytkownik)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wlasciciela zwierzecia, na podstawie przekazanego uzytkownika. Szukamy wlasciciela zwierzecia po id uzytkownika. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wlasciciel_zwierzecia}{Wlasciciel\+Zwierzecia}} $>$ \mbox{\hyperlink{class_serwis_wlasiciela_zwierzecia_ad4f054742325f51a8a0b5fd882da6781}{zaladuj\+Wlasciciela\+Zwierzecia\+Po\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Funkcja szukajaca wlasciciela zwierzecia po przekazanym id w podanej liccie wlascicieli. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za serwis wlasciciela zwierzecia. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_serwis_wlasiciela_zwierzecia_a258719df54f17f3572cfa2b328e19153}\label{class_serwis_wlasiciela_zwierzecia_a258719df54f17f3572cfa2b328e19153} 
+\index{SerwisWlasicielaZwierzecia@{SerwisWlasicielaZwierzecia}!zaladujWlascicielaZwierzecia@{zaladujWlascicielaZwierzecia}}
+\index{zaladujWlascicielaZwierzecia@{zaladujWlascicielaZwierzecia}!SerwisWlasicielaZwierzecia@{SerwisWlasicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{zaladujWlascicielaZwierzecia()}{zaladujWlascicielaZwierzecia()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wlasciciel_zwierzecia}{Wlasciciel\+Zwierzecia}} $>$ Serwis\+Wlasiciela\+Zwierzecia\+::zaladuj\+Wlasciciela\+Zwierzecia (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}} $>$}]{uzytkownik }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wlasciciela zwierzecia, na podstawie przekazanego uzytkownika. Szukamy wlasciciela zwierzecia po id uzytkownika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uzytkownik} & -\/ wskaznik na obiekt uzytkownik \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca wskaznik na wlasciciela zwierzecia, o ile zostal znaleziony 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_wlasiciela_zwierzecia_ad4f054742325f51a8a0b5fd882da6781}\label{class_serwis_wlasiciela_zwierzecia_ad4f054742325f51a8a0b5fd882da6781} 
+\index{SerwisWlasicielaZwierzecia@{SerwisWlasicielaZwierzecia}!zaladujWlascicielaZwierzeciaPoId@{zaladujWlascicielaZwierzeciaPoId}}
+\index{zaladujWlascicielaZwierzeciaPoId@{zaladujWlascicielaZwierzeciaPoId}!SerwisWlasicielaZwierzecia@{SerwisWlasicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{zaladujWlascicielaZwierzeciaPoId()}{zaladujWlascicielaZwierzeciaPoId()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wlasciciel_zwierzecia}{Wlasciciel\+Zwierzecia}} $>$ Serwis\+Wlasiciela\+Zwierzecia\+::zaladuj\+Wlasciciela\+Zwierzecia\+Po\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Funkcja szukajaca wlasciciela zwierzecia po przekazanym id w podanej liccie wlascicieli. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ id szukanego wlasciciela \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca szukanego wlasciciela, jezeli go nie znajdzie to zwraca NULL 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Serwis\+Wlasiciela\+Zwierzecia.\+h\item 
+Serwis\+Wlasiciela\+Zwierzecia.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,157 @@
+\doxysection{Serwis\+Zwierzat Class Reference}
+\hypertarget{class_serwis_zwierzat}{}\label{class_serwis_zwierzat}\index{SerwisZwierzat@{SerwisZwierzat}}
+
+
+Klasa odpowiedzialna za serwis zwierzat.  
+
+
+
+
+{\ttfamily \#include $<$Serwis\+Zwierzat.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_serwis_zwierzat_ab069e8a20ad1a1cc804bafffdddebfc5}\label{class_serwis_zwierzat_ab069e8a20ad1a1cc804bafffdddebfc5} 
+{\bfseries Serwis\+Zwierzat} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_czytacz_zwierzat}{Czytacz\+Zwierzat}} $>$ czytacz\+Zwierzat)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy czytacz zwierzat. \end{DoxyCompactList}\item 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ $>$ \mbox{\hyperlink{class_serwis_zwierzat_a925b7d72414e1f805b72b28a6df90aa7}{zaladuj\+Zwierzeta\+Dla\+Wlasciciela}} (int id\+Wlasciela)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wszystkich zwierzeta dla danego wlasciciela. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ \mbox{\hyperlink{class_serwis_zwierzat_ae7c04754086f7b005949ecac1c700e02}{znajdz\+Po\+Id}} (int id\+Zwierzecia, vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ $>$ zwierzeta)
+\begin{DoxyCompactList}\small\item\em Funkcja szukajaca zwierzecia po przekazanym id i zwierzetach wlasciciela. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ \mbox{\hyperlink{class_serwis_zwierzat_a4b5c85869bd9f6392fd0b03457a8edca}{zaladuj\+Zwierze\+Po\+Id}} (int id\+Zwierzecia)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca zwierze po jego id. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_serwis_zwierzat_a10826d4aeb002b553c66ff18307b295d}{get\+Nastepne\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja generujaca nastepnego id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_serwis_zwierzat_ac29dbe8f0fcaff144b3025172b56bbda}{dodaj}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ zwierze)
+\begin{DoxyCompactList}\small\item\em Funkcja dodajaca zwierze. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_serwis_zwierzat_a8bfb6130b2acefe9ea4d8d58346a0a70}{usun\+Zwierzaka}} (int id\+Zwierzaka)
+\begin{DoxyCompactList}\small\item\em Funkcja usuwajaca zwierze. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_serwis_zwierzat_ad17b3a38994c3116fbba6a4416924921}{zaktualizuj}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ zwierze)
+\begin{DoxyCompactList}\small\item\em Funkcja aktualizujaca zwierze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za serwis zwierzat. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_serwis_zwierzat_ac29dbe8f0fcaff144b3025172b56bbda}\label{class_serwis_zwierzat_ac29dbe8f0fcaff144b3025172b56bbda} 
+\index{SerwisZwierzat@{SerwisZwierzat}!dodaj@{dodaj}}
+\index{dodaj@{dodaj}!SerwisZwierzat@{SerwisZwierzat}}
+\doxysubsubsection{\texorpdfstring{dodaj()}{dodaj()}}
+{\footnotesize\ttfamily void Serwis\+Zwierzat\+::dodaj (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$}]{zwierze }\end{DoxyParamCaption})}
+
+
+
+Funkcja dodajaca zwierze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zwierze} & -\/ zwierze, ktore chcemy dodac \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_serwis_zwierzat_a10826d4aeb002b553c66ff18307b295d}\label{class_serwis_zwierzat_a10826d4aeb002b553c66ff18307b295d} 
+\index{SerwisZwierzat@{SerwisZwierzat}!getNastepneId@{getNastepneId}}
+\index{getNastepneId@{getNastepneId}!SerwisZwierzat@{SerwisZwierzat}}
+\doxysubsubsection{\texorpdfstring{getNastepneId()}{getNastepneId()}}
+{\footnotesize\ttfamily int Serwis\+Zwierzat\+::get\+Nastepne\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja generujaca nastepnego id. 
+
+\begin{DoxyReturn}{Returns}
+zwraca nastepne id 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_zwierzat_a8bfb6130b2acefe9ea4d8d58346a0a70}\label{class_serwis_zwierzat_a8bfb6130b2acefe9ea4d8d58346a0a70} 
+\index{SerwisZwierzat@{SerwisZwierzat}!usunZwierzaka@{usunZwierzaka}}
+\index{usunZwierzaka@{usunZwierzaka}!SerwisZwierzat@{SerwisZwierzat}}
+\doxysubsubsection{\texorpdfstring{usunZwierzaka()}{usunZwierzaka()}}
+{\footnotesize\ttfamily void Serwis\+Zwierzat\+::usun\+Zwierzaka (\begin{DoxyParamCaption}\item[{int}]{id\+Zwierzaka }\end{DoxyParamCaption})}
+
+
+
+Funkcja usuwajaca zwierze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Zwierzaka} & -\/ id usuwanego zwierzaka \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_serwis_zwierzat_ad17b3a38994c3116fbba6a4416924921}\label{class_serwis_zwierzat_ad17b3a38994c3116fbba6a4416924921} 
+\index{SerwisZwierzat@{SerwisZwierzat}!zaktualizuj@{zaktualizuj}}
+\index{zaktualizuj@{zaktualizuj}!SerwisZwierzat@{SerwisZwierzat}}
+\doxysubsubsection{\texorpdfstring{zaktualizuj()}{zaktualizuj()}}
+{\footnotesize\ttfamily void Serwis\+Zwierzat\+::zaktualizuj (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$}]{zwierze }\end{DoxyParamCaption})}
+
+
+
+Funkcja aktualizujaca zwierze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zwierze} & -\/ zwierze, ktore chcemy zaktualizowac (dodane badz usuniete) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_serwis_zwierzat_a4b5c85869bd9f6392fd0b03457a8edca}\label{class_serwis_zwierzat_a4b5c85869bd9f6392fd0b03457a8edca} 
+\index{SerwisZwierzat@{SerwisZwierzat}!zaladujZwierzePoId@{zaladujZwierzePoId}}
+\index{zaladujZwierzePoId@{zaladujZwierzePoId}!SerwisZwierzat@{SerwisZwierzat}}
+\doxysubsubsection{\texorpdfstring{zaladujZwierzePoId()}{zaladujZwierzePoId()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ Serwis\+Zwierzat\+::zaladuj\+Zwierze\+Po\+Id (\begin{DoxyParamCaption}\item[{int}]{id\+Zwierzecia }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca zwierze po jego id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Zwierzecia} & -\/ id zwierzecia szukanego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca zwierze, ktore szukalismy 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_zwierzat_a925b7d72414e1f805b72b28a6df90aa7}\label{class_serwis_zwierzat_a925b7d72414e1f805b72b28a6df90aa7} 
+\index{SerwisZwierzat@{SerwisZwierzat}!zaladujZwierzetaDlaWlasciciela@{zaladujZwierzetaDlaWlasciciela}}
+\index{zaladujZwierzetaDlaWlasciciela@{zaladujZwierzetaDlaWlasciciela}!SerwisZwierzat@{SerwisZwierzat}}
+\doxysubsubsection{\texorpdfstring{zaladujZwierzetaDlaWlasciciela()}{zaladujZwierzetaDlaWlasciciela()}}
+{\footnotesize\ttfamily vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ $>$ Serwis\+Zwierzat\+::zaladuj\+Zwierzeta\+Dla\+Wlasciciela (\begin{DoxyParamCaption}\item[{int}]{id\+Wlasciela }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wszystkich zwierzeta dla danego wlasciciela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Wlasciciela} & -\/ id wlasciciela, dla ktorego chcemy zaladowac zwierzeta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwracajacy typ jest wektorem, zwraca liste zwierzat dla wlasciciela o odpowiednim id 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_zwierzat_ae7c04754086f7b005949ecac1c700e02}\label{class_serwis_zwierzat_ae7c04754086f7b005949ecac1c700e02} 
+\index{SerwisZwierzat@{SerwisZwierzat}!znajdzPoId@{znajdzPoId}}
+\index{znajdzPoId@{znajdzPoId}!SerwisZwierzat@{SerwisZwierzat}}
+\doxysubsubsection{\texorpdfstring{znajdzPoId()}{znajdzPoId()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ Serwis\+Zwierzat\+::znajdz\+Po\+Id (\begin{DoxyParamCaption}\item[{int}]{id\+Zwierzecia,  }\item[{vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ $>$}]{zwierzeta }\end{DoxyParamCaption})}
+
+
+
+Funkcja szukajaca zwierzecia po przekazanym id i zwierzetach wlasciciela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Zwierzecia} & -\/ id zwierzecia \\
+\hline
+{\em zwierzeta} & -\/ wektor wszystkich zwierzat danego wlasciciela \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca szukane zwierze 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_serwis_zwierzat_8h}{Serwis\+Zwierzat.\+h}}\item 
+Serwis\+Zwierzat.\+cpp\end{DoxyCompactItemize}

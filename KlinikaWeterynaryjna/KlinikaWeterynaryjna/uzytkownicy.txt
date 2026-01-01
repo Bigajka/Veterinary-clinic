@@ -1,0 +1,4 @@
+dr.janusz@gmail.com|haslo123|4|L
+pacjent1@gmail.com|haslo1234|2|W
+pacjent2@gmail.com|haslo1234|3|W
+dr.tomek@gmail.com|haslo123|5|L

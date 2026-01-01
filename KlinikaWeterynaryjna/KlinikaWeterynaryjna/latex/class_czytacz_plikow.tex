@@ -1,0 +1,209 @@
+\doxysection{Czytacz\+Plikow Class Reference}
+\hypertarget{class_czytacz_plikow}{}\label{class_czytacz_plikow}\index{CzytaczPlikow@{CzytaczPlikow}}
+
+
+Klasa bazowa do czytania pliku, po ktorej dziedzicza inne klasy, ktore musza zaimplementowac funkcje podaj\+Nazwe\+Pliku.  
+
+
+
+
+{\ttfamily \#include $<$Czytacz\+Plikow.\+h$>$}
+
+Inheritance diagram for Czytacz\+Plikow\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.009009cm]{class_czytacz_plikow}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_czytacz_plikow_aab54e86fb062a075956d8d579cf717b2}{wczytaj\+Plik}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajajaca cala zawartosc pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_czytacz_plikow_abfb7dfc1198238c402c5c0d2e4f9edd8}{dopisz\+Do\+Pliku}} (string \&nowy\+Wiersz)
+\begin{DoxyCompactList}\small\item\em Funkcja dopisujaca do pliku nowy wiersz. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_czytacz_plikow_ade89413d692e8a9bf6b5a65af6d583b8}{podaj\+Nazwe\+Pliku}} ()=0
+\begin{DoxyCompactList}\small\item\em Funkcja wirtualna, ktora musza zaimplementowac klasy, ktore po niej dziedzicza Funkcja ta musi zwracac sciezke do pliku. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_czytacz_plikow_a2695c6891ddd0d87f8395fcab70186f2}{zmaien\+Na\+Wiersze}} (string \&tresc\+Pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja zamienijaca cala zawartosc pliku na wektor typu string. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_czytacz_plikow_a3f8004d5cc8f99b6ce4ec8bb749baae6}{get\+Pozycja\+Textu}} (string caly\+Tekst, int pozycja)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajajaca tekst z danej kolumny Np. string tekst = \"{}abc\texorpdfstring{$\vert$}{|}def\"{} get\+Pozycja\+Textu(tekst, 0) -\/\texorpdfstring{$>$}{>} zwroci abc get\+Pozycja\+Textu(tekst, 1) -\/\texorpdfstring{$>$}{>} zwroci def. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_czytacz_plikow_a8ccf1fd2014387882be2300b408b078d}{usun\+Wiesz\+Po\+Id}} (int indeks\+Id, int id, bool czy\+Jest\+Unikalny)
+\begin{DoxyCompactList}\small\item\em Funkcja, kora usuwa dany wiersz po danym id. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_czytacz_plikow_a78004bd09dd706591c929f82add421fe}{get\+Pozycja\+Wiersza}} (vector$<$ string $>$ wiersze, string wiersz)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca pozycje danego wiersza z podanego wektroa stringow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_czytacz_plikow_a572bd674c7ae5dc9eecb01f00da46021}{zapisz\+Do\+Pliku}} (const vector$<$ string $>$ \&wektor, const string \&nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja zapisujaca do pliku w dany wektor stringow. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_czytacz_plikow_abe4b146156445bb49481eff9ac93d096}{get\+Nastepne\+Id}} (int indeks\+Id)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca kolejne id, ktore mozemy uzyc przy zapisnie do pliku Np. przykladowy plik 1\texorpdfstring{$\vert$}{|}a 2\texorpdfstring{$\vert$}{|}b 3\texorpdfstring{$\vert$}{|}c. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa bazowa do czytania pliku, po ktorej dziedzicza inne klasy, ktore musza zaimplementowac funkcje podaj\+Nazwe\+Pliku. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_czytacz_plikow_abfb7dfc1198238c402c5c0d2e4f9edd8}\label{class_czytacz_plikow_abfb7dfc1198238c402c5c0d2e4f9edd8} 
+\index{CzytaczPlikow@{CzytaczPlikow}!dopiszDoPliku@{dopiszDoPliku}}
+\index{dopiszDoPliku@{dopiszDoPliku}!CzytaczPlikow@{CzytaczPlikow}}
+\doxysubsubsection{\texorpdfstring{dopiszDoPliku()}{dopiszDoPliku()}}
+{\footnotesize\ttfamily void Czytacz\+Plikow\+::dopisz\+Do\+Pliku (\begin{DoxyParamCaption}\item[{string \&}]{nowy\+Wiersz }\end{DoxyParamCaption})}
+
+
+
+Funkcja dopisujaca do pliku nowy wiersz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nowy} & wiersz, ktory zosatnie dopisany do istniejacego pliku \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_czytacz_plikow_abe4b146156445bb49481eff9ac93d096}\label{class_czytacz_plikow_abe4b146156445bb49481eff9ac93d096} 
+\index{CzytaczPlikow@{CzytaczPlikow}!getNastepneId@{getNastepneId}}
+\index{getNastepneId@{getNastepneId}!CzytaczPlikow@{CzytaczPlikow}}
+\doxysubsubsection{\texorpdfstring{getNastepneId()}{getNastepneId()}}
+{\footnotesize\ttfamily int Czytacz\+Plikow\+::get\+Nastepne\+Id (\begin{DoxyParamCaption}\item[{int}]{indeks\+Id }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca kolejne id, ktore mozemy uzyc przy zapisnie do pliku Np. przykladowy plik 1\texorpdfstring{$\vert$}{|}a 2\texorpdfstring{$\vert$}{|}b 3\texorpdfstring{$\vert$}{|}c. 
+
+int get\+Nastepne\+Id(0); -\/\texorpdfstring{$>$}{>} zwroci wartosc 4 -\/ bedzie to kolejne ID, ktore mozna uzyc przy zapisie kolejnego wiersza
+
+\begin{DoxyReturn}{Returns}
+Kolejne dostepne ID 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em indeks\+Id} & -\/ indeks kolumny, dal ktorego chcemy znalezc kolejne ID \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_czytacz_plikow_a3f8004d5cc8f99b6ce4ec8bb749baae6}\label{class_czytacz_plikow_a3f8004d5cc8f99b6ce4ec8bb749baae6} 
+\index{CzytaczPlikow@{CzytaczPlikow}!getPozycjaTextu@{getPozycjaTextu}}
+\index{getPozycjaTextu@{getPozycjaTextu}!CzytaczPlikow@{CzytaczPlikow}}
+\doxysubsubsection{\texorpdfstring{getPozycjaTextu()}{getPozycjaTextu()}}
+{\footnotesize\ttfamily string Czytacz\+Plikow\+::get\+Pozycja\+Textu (\begin{DoxyParamCaption}\item[{string}]{caly\+Tekst,  }\item[{int}]{pozycja }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajajaca tekst z danej kolumny Np. string tekst = \"{}abc\texorpdfstring{$\vert$}{|}def\"{} get\+Pozycja\+Textu(tekst, 0) -\/\texorpdfstring{$>$}{>} zwroci abc get\+Pozycja\+Textu(tekst, 1) -\/\texorpdfstring{$>$}{>} zwroci def. 
+
+\begin{DoxyReturn}{Returns}
+Tekst z danej kolumny 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em caly\+Tekst} & -\/ caly wiersz z pliku \\
+\hline
+{\em pozycja} & -\/ indeks pozycji, ktorej chcemy wyciagnac dany tekst \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_czytacz_plikow_a78004bd09dd706591c929f82add421fe}\label{class_czytacz_plikow_a78004bd09dd706591c929f82add421fe} 
+\index{CzytaczPlikow@{CzytaczPlikow}!getPozycjaWiersza@{getPozycjaWiersza}}
+\index{getPozycjaWiersza@{getPozycjaWiersza}!CzytaczPlikow@{CzytaczPlikow}}
+\doxysubsubsection{\texorpdfstring{getPozycjaWiersza()}{getPozycjaWiersza()}}
+{\footnotesize\ttfamily int Czytacz\+Plikow\+::get\+Pozycja\+Wiersza (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{wiersze,  }\item[{string}]{wiersz }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca pozycje danego wiersza z podanego wektroa stringow. 
+
+\begin{DoxyReturn}{Returns}
+Indeks wiersza 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em wiersze} & -\/ wektor wierszy \\
+\hline
+{\em wiersz} & -\/ tekst, ktorego pozycje chcemy znalezc w wektorze wierszy \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_czytacz_plikow_ade89413d692e8a9bf6b5a65af6d583b8}\label{class_czytacz_plikow_ade89413d692e8a9bf6b5a65af6d583b8} 
+\index{CzytaczPlikow@{CzytaczPlikow}!podajNazwePliku@{podajNazwePliku}}
+\index{podajNazwePliku@{podajNazwePliku}!CzytaczPlikow@{CzytaczPlikow}}
+\doxysubsubsection{\texorpdfstring{podajNazwePliku()}{podajNazwePliku()}}
+{\footnotesize\ttfamily virtual string Czytacz\+Plikow\+::podaj\+Nazwe\+Pliku (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Funkcja wirtualna, ktora musza zaimplementowac klasy, ktore po niej dziedzicza Funkcja ta musi zwracac sciezke do pliku. 
+
+\begin{DoxyReturn}{Returns}
+sciezka do pliku 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_czytacz_uzytkownikow_a3576b37235d7635005b7165131643473}{Czytacz\+Uzytkownikow}}, \mbox{\hyperlink{class_czytacz_wizyt_a07a3b6cbec6b46096bf746379de48693}{Czytacz\+Wizyt}}, and \mbox{\hyperlink{class_czytacz_zwierzat_a84b3d5a8ffeeb07421c5598b47048e12}{Czytacz\+Zwierzat}}.
+
+\Hypertarget{class_czytacz_plikow_a8ccf1fd2014387882be2300b408b078d}\label{class_czytacz_plikow_a8ccf1fd2014387882be2300b408b078d} 
+\index{CzytaczPlikow@{CzytaczPlikow}!usunWieszPoId@{usunWieszPoId}}
+\index{usunWieszPoId@{usunWieszPoId}!CzytaczPlikow@{CzytaczPlikow}}
+\doxysubsubsection{\texorpdfstring{usunWieszPoId()}{usunWieszPoId()}}
+{\footnotesize\ttfamily void Czytacz\+Plikow\+::usun\+Wiesz\+Po\+Id (\begin{DoxyParamCaption}\item[{int}]{indeks\+Id,  }\item[{int}]{id,  }\item[{bool}]{czy\+Jest\+Unikalny }\end{DoxyParamCaption})}
+
+
+
+Funkcja, kora usuwa dany wiersz po danym id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indeks\+ID} & -\/ indeks kolumy, z ktorej chcemy usunac dana wartosc \\
+\hline
+{\em id} & -\/ numer ktory ma zostac usuniety \\
+\hline
+{\em czy\+Jest\+Unikalny} & -\/ false jesli jest szansa, ze id o takiej samej wartosci wystpuje wiecej niz raz w pliku. True jesli to id jest unikalne w ramach jednego pliku \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_czytacz_plikow_aab54e86fb062a075956d8d579cf717b2}\label{class_czytacz_plikow_aab54e86fb062a075956d8d579cf717b2} 
+\index{CzytaczPlikow@{CzytaczPlikow}!wczytajPlik@{wczytajPlik}}
+\index{wczytajPlik@{wczytajPlik}!CzytaczPlikow@{CzytaczPlikow}}
+\doxysubsubsection{\texorpdfstring{wczytajPlik()}{wczytajPlik()}}
+{\footnotesize\ttfamily string Czytacz\+Plikow\+::wczytaj\+Plik (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajajaca cala zawartosc pliku. 
+
+\begin{DoxyReturn}{Returns}
+Zawartosc calego pliku 
+\end{DoxyReturn}
+\Hypertarget{class_czytacz_plikow_a572bd674c7ae5dc9eecb01f00da46021}\label{class_czytacz_plikow_a572bd674c7ae5dc9eecb01f00da46021} 
+\index{CzytaczPlikow@{CzytaczPlikow}!zapiszDoPliku@{zapiszDoPliku}}
+\index{zapiszDoPliku@{zapiszDoPliku}!CzytaczPlikow@{CzytaczPlikow}}
+\doxysubsubsection{\texorpdfstring{zapiszDoPliku()}{zapiszDoPliku()}}
+{\footnotesize\ttfamily void Czytacz\+Plikow\+::zapisz\+Do\+Pliku (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{wektor,  }\item[{const string \&}]{nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja zapisujaca do pliku w dany wektor stringow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wektor} & -\/ wektor stringow, w ktorym znajduje sie tresc do zapisania do pliku \\
+\hline
+{\em nazwa\+Pliku} & -\/ nazwa pliku, do kotrego chcemy zapisac caly tekst \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_czytacz_plikow_a2695c6891ddd0d87f8395fcab70186f2}\label{class_czytacz_plikow_a2695c6891ddd0d87f8395fcab70186f2} 
+\index{CzytaczPlikow@{CzytaczPlikow}!zmaienNaWiersze@{zmaienNaWiersze}}
+\index{zmaienNaWiersze@{zmaienNaWiersze}!CzytaczPlikow@{CzytaczPlikow}}
+\doxysubsubsection{\texorpdfstring{zmaienNaWiersze()}{zmaienNaWiersze()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Czytacz\+Plikow\+::zmaien\+Na\+Wiersze (\begin{DoxyParamCaption}\item[{string \&}]{tresc\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja zamienijaca cala zawartosc pliku na wektor typu string. 
+
+\begin{DoxyReturn}{Returns}
+Wektor typu string. Kazdy element kolekcji wektora reprezentuje dany wiersz. Np. pierwszy element bedzie pierwszym wierszem w pliku. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em tresc} & calego pliku \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_czytacz_plikow_8h}{Czytacz\+Plikow.\+h}}\item 
+Czytacz\+Plikow.\+cpp\end{DoxyCompactItemize}

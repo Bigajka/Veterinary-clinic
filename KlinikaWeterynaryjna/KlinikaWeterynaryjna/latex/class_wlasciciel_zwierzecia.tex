@@ -1,0 +1,210 @@
+\doxysection{Wlasciciel\+Zwierzecia Class Reference}
+\hypertarget{class_wlasciciel_zwierzecia}{}\label{class_wlasciciel_zwierzecia}\index{WlascicielZwierzecia@{WlascicielZwierzecia}}
+
+
+Klasa odpowiedzialna za wlasciciela zwierzecia.  
+
+
+
+
+{\ttfamily \#include $<$Wlasciciel\+Zwierzecia.\+h$>$}
+
+Inheritance diagram for Wlasciciel\+Zwierzecia\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_wlasciciel_zwierzecia}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_wlasciciel_zwierzecia_ae969ae03361ab2ba48be542830076536}\label{class_wlasciciel_zwierzecia_ae969ae03361ab2ba48be542830076536} 
+{\bfseries Wlasciciel\+Zwierzecia} (string imie, int id, string miasto, string kod\+Pocztowy, string ulica\+INumer\+Domu, string numer\+Telefonu, \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}} \&uzytkownik)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy imie, id, miasto, kod pocztowy, ulice i numer domu, numer telefonu, uzytkownika. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_wlasciciel_zwierzecia_a506c6c57d308ad1b133c84ab4d07d5aa}{get\+Imie}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca imie. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_wlasciciel_zwierzecia_ae671dad444c135ed667d6d7216f4665f}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca id wlasciceila zwierzecia. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_wlasciciel_zwierzecia_a6e1f0cdfeaa37853d82952ec1063b5ed}{get\+Miasto}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca miasto. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_wlasciciel_zwierzecia_a2f692f7253fadd2ee0588ae82bb6f13f}{get\+Kod\+Poczowy}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca kod pocztowy. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_wlasciciel_zwierzecia_af69b42783d89a7da7723a37a1e028396}{get\+Ulica\+INumer\+Domu}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca ulice i numer domu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_wlasciciel_zwierzecia_a2f6de45de685952dc7a0f99d8c3ce309}{get\+Numer\+Telefonu}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca numer telefonu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_wlasciciel_zwierzecia_a9684d544ee1027c113cadafb1724a64c}{set\+Miasto}} (string miasto)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca miasto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_wlasciciel_zwierzecia_a75d4658aba74548c14c63c64c188c4b0}{set\+Kod\+Pocztowy}} (string kod\+Pocztowy)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca kod pocztowy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_wlasciciel_zwierzecia_ab7b660c15809c1be0831fefd80bb4d6c}{set\+Ulica\+INumer\+Domu}} (string ulica\+INumer\+Domu)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca ulice i numer domu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_wlasciciel_zwierzecia_a618c1b399483f848f17de0408de5f681}{set\+Numer\+Telefonu}} (string numer\+Telefonu)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca numer telefonu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Uzytkownik} (string login, string haslo, int id, \mbox{\hyperlink{_typ_uzytkownika_8h_a1d74c5f1ea44ea3c51d59470e3ab7817}{Typ\+Uzytkownika}} typ\+Uzytkownika)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy login, haslo, typ uzytkownika. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_uzytkownik_a92326d68b5aee89f671b0662cd0d6df2}{zamien\+Na\+Tekst}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zamieniajaca obiekt uzytkownika na tekst, aby mozna bylo go zapisac do pliku. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_uzytkownik_a0ec0a1e3da6fbdd5b51c525dd4639eae}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca id uzytkownika. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_typ_uzytkownika_8h_a1d74c5f1ea44ea3c51d59470e3ab7817}{Typ\+Uzytkownika}} \mbox{\hyperlink{class_uzytkownik_a79d1a4ac068a2215312bd119aea6b10b}{get\+Typ\+Uzytkownika}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca typ uzytkownika (lekarz, wlasciciela zwierzecia) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}}}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries ID\+\_\+\+DLA\+\_\+\+NIEZNANEGO\+\_\+\+UZYTKOWNIKA} = -\/1
+\begin{DoxyCompactList}\small\item\em Stala okreslajaca id nieznanego uzytkownika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za wlasciciela zwierzecia. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_wlasciciel_zwierzecia_ae671dad444c135ed667d6d7216f4665f}\label{class_wlasciciel_zwierzecia_ae671dad444c135ed667d6d7216f4665f} 
+\index{WlascicielZwierzecia@{WlascicielZwierzecia}!getId@{getId}}
+\index{getId@{getId}!WlascicielZwierzecia@{WlascicielZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Wlasciciel\+Zwierzecia\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca id wlasciceila zwierzecia. 
+
+\begin{DoxyReturn}{Returns}
+id wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_wlasciciel_zwierzecia_a506c6c57d308ad1b133c84ab4d07d5aa}\label{class_wlasciciel_zwierzecia_a506c6c57d308ad1b133c84ab4d07d5aa} 
+\index{WlascicielZwierzecia@{WlascicielZwierzecia}!getImie@{getImie}}
+\index{getImie@{getImie}!WlascicielZwierzecia@{WlascicielZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getImie()}{getImie()}}
+{\footnotesize\ttfamily string Wlasciciel\+Zwierzecia\+::get\+Imie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca imie. 
+
+\begin{DoxyReturn}{Returns}
+imie wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_wlasciciel_zwierzecia_a2f692f7253fadd2ee0588ae82bb6f13f}\label{class_wlasciciel_zwierzecia_a2f692f7253fadd2ee0588ae82bb6f13f} 
+\index{WlascicielZwierzecia@{WlascicielZwierzecia}!getKodPoczowy@{getKodPoczowy}}
+\index{getKodPoczowy@{getKodPoczowy}!WlascicielZwierzecia@{WlascicielZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getKodPoczowy()}{getKodPoczowy()}}
+{\footnotesize\ttfamily string Wlasciciel\+Zwierzecia\+::get\+Kod\+Poczowy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca kod pocztowy. 
+
+\begin{DoxyReturn}{Returns}
+kod pocztowy wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_wlasciciel_zwierzecia_a6e1f0cdfeaa37853d82952ec1063b5ed}\label{class_wlasciciel_zwierzecia_a6e1f0cdfeaa37853d82952ec1063b5ed} 
+\index{WlascicielZwierzecia@{WlascicielZwierzecia}!getMiasto@{getMiasto}}
+\index{getMiasto@{getMiasto}!WlascicielZwierzecia@{WlascicielZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getMiasto()}{getMiasto()}}
+{\footnotesize\ttfamily string Wlasciciel\+Zwierzecia\+::get\+Miasto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca miasto. 
+
+\begin{DoxyReturn}{Returns}
+miasto wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_wlasciciel_zwierzecia_a2f6de45de685952dc7a0f99d8c3ce309}\label{class_wlasciciel_zwierzecia_a2f6de45de685952dc7a0f99d8c3ce309} 
+\index{WlascicielZwierzecia@{WlascicielZwierzecia}!getNumerTelefonu@{getNumerTelefonu}}
+\index{getNumerTelefonu@{getNumerTelefonu}!WlascicielZwierzecia@{WlascicielZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getNumerTelefonu()}{getNumerTelefonu()}}
+{\footnotesize\ttfamily string Wlasciciel\+Zwierzecia\+::get\+Numer\+Telefonu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca numer telefonu. 
+
+\begin{DoxyReturn}{Returns}
+numer telefonu wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_wlasciciel_zwierzecia_af69b42783d89a7da7723a37a1e028396}\label{class_wlasciciel_zwierzecia_af69b42783d89a7da7723a37a1e028396} 
+\index{WlascicielZwierzecia@{WlascicielZwierzecia}!getUlicaINumerDomu@{getUlicaINumerDomu}}
+\index{getUlicaINumerDomu@{getUlicaINumerDomu}!WlascicielZwierzecia@{WlascicielZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getUlicaINumerDomu()}{getUlicaINumerDomu()}}
+{\footnotesize\ttfamily string Wlasciciel\+Zwierzecia\+::get\+Ulica\+INumer\+Domu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca ulice i numer domu. 
+
+\begin{DoxyReturn}{Returns}
+ulice i numer domu wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_wlasciciel_zwierzecia_a75d4658aba74548c14c63c64c188c4b0}\label{class_wlasciciel_zwierzecia_a75d4658aba74548c14c63c64c188c4b0} 
+\index{WlascicielZwierzecia@{WlascicielZwierzecia}!setKodPocztowy@{setKodPocztowy}}
+\index{setKodPocztowy@{setKodPocztowy}!WlascicielZwierzecia@{WlascicielZwierzecia}}
+\doxysubsubsection{\texorpdfstring{setKodPocztowy()}{setKodPocztowy()}}
+{\footnotesize\ttfamily void Wlasciciel\+Zwierzecia\+::set\+Kod\+Pocztowy (\begin{DoxyParamCaption}\item[{string}]{kod\+Pocztowy }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca kod pocztowy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kod\+Pocztowy} & -\/ kod\+Pocztowy \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_wlasciciel_zwierzecia_a9684d544ee1027c113cadafb1724a64c}\label{class_wlasciciel_zwierzecia_a9684d544ee1027c113cadafb1724a64c} 
+\index{WlascicielZwierzecia@{WlascicielZwierzecia}!setMiasto@{setMiasto}}
+\index{setMiasto@{setMiasto}!WlascicielZwierzecia@{WlascicielZwierzecia}}
+\doxysubsubsection{\texorpdfstring{setMiasto()}{setMiasto()}}
+{\footnotesize\ttfamily void Wlasciciel\+Zwierzecia\+::set\+Miasto (\begin{DoxyParamCaption}\item[{string}]{miasto }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca miasto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em miasto} & -\/ miasto \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_wlasciciel_zwierzecia_a618c1b399483f848f17de0408de5f681}\label{class_wlasciciel_zwierzecia_a618c1b399483f848f17de0408de5f681} 
+\index{WlascicielZwierzecia@{WlascicielZwierzecia}!setNumerTelefonu@{setNumerTelefonu}}
+\index{setNumerTelefonu@{setNumerTelefonu}!WlascicielZwierzecia@{WlascicielZwierzecia}}
+\doxysubsubsection{\texorpdfstring{setNumerTelefonu()}{setNumerTelefonu()}}
+{\footnotesize\ttfamily void Wlasciciel\+Zwierzecia\+::set\+Numer\+Telefonu (\begin{DoxyParamCaption}\item[{string}]{numer\+Telefonu }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca numer telefonu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numer\+Telefonu} & -\/ numer telefonu \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_wlasciciel_zwierzecia_ab7b660c15809c1be0831fefd80bb4d6c}\label{class_wlasciciel_zwierzecia_ab7b660c15809c1be0831fefd80bb4d6c} 
+\index{WlascicielZwierzecia@{WlascicielZwierzecia}!setUlicaINumerDomu@{setUlicaINumerDomu}}
+\index{setUlicaINumerDomu@{setUlicaINumerDomu}!WlascicielZwierzecia@{WlascicielZwierzecia}}
+\doxysubsubsection{\texorpdfstring{setUlicaINumerDomu()}{setUlicaINumerDomu()}}
+{\footnotesize\ttfamily void Wlasciciel\+Zwierzecia\+::set\+Ulica\+INumer\+Domu (\begin{DoxyParamCaption}\item[{string}]{ulica\+INumer\+Domu }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca ulice i numer domu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ulica\+INumer\+Domu} & -\/ ulica i numer domu \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_wlasciciel_zwierzecia_8h}{Wlasciciel\+Zwierzecia.\+h}}\item 
+Wlasciciel\+Zwierzecia.\+cpp\end{DoxyCompactItemize}

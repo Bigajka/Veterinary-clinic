@@ -1,0 +1,49 @@
+\doxysection{Serwis\+Grafiku\+Pracy Class Reference}
+\hypertarget{class_serwis_grafiku_pracy}{}\label{class_serwis_grafiku_pracy}\index{SerwisGrafikuPracy@{SerwisGrafikuPracy}}
+
+
+Klasa odpowiedzialna za serwis grafiku pracy.  
+
+
+
+
+{\ttfamily \#include $<$Serwis\+Grafiku\+Pracy.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_serwis_grafiku_pracy_ace75d6e401cdebfd0df3c5894221c78a}\label{class_serwis_grafiku_pracy_ace75d6e401cdebfd0df3c5894221c78a} 
+{\bfseries Serwis\+Grafiku\+Pracy} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_czytacz_grafiku_pracy}{Czytacz\+Grafiku\+Pracy}} $>$ czytacz\+Grafiku\+Pracy)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy czytacz grafiku pracy. \end{DoxyCompactList}\item 
+unordered\+\_\+map$<$ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}, \mbox{\hyperlink{class_godziny_pracy}{Godziny\+Pracy}} $>$ \mbox{\hyperlink{class_serwis_grafiku_pracy_a1f53def3476e96bccf6e3ee1258dda01}{zaladuj\+Grafik}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ lekarz)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca grafik pracy dla podanego w argumencie lekarza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za serwis grafiku pracy. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_serwis_grafiku_pracy_a1f53def3476e96bccf6e3ee1258dda01}\label{class_serwis_grafiku_pracy_a1f53def3476e96bccf6e3ee1258dda01} 
+\index{SerwisGrafikuPracy@{SerwisGrafikuPracy}!zaladujGrafik@{zaladujGrafik}}
+\index{zaladujGrafik@{zaladujGrafik}!SerwisGrafikuPracy@{SerwisGrafikuPracy}}
+\doxysubsubsection{\texorpdfstring{zaladujGrafik()}{zaladujGrafik()}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}, \mbox{\hyperlink{class_godziny_pracy}{Godziny\+Pracy}} $>$ Serwis\+Grafiku\+Pracy\+::zaladuj\+Grafik (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$}]{lekarz }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca grafik pracy dla podanego w argumencie lekarza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lekarz} & -\/ lekarz, dla ktorego chcemy znalezc grafik pracy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca mape zawierajaca dni tygodnia wraz z godzinami dostenosci lekarza 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_serwis_grafiku_pracy_8h}{Serwis\+Grafiku\+Pracy.\+h}}\item 
+Serwis\+Grafiku\+Pracy.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\doxysection{Serwis\+Zwierzat.\+h}
+\hypertarget{_serwis_zwierzat_8h_source}{}\label{_serwis_zwierzat_8h_source}\mbox{\hyperlink{_serwis_zwierzat_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_czytacz_zwierzat_8h}{CzytaczZwierzat.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_zwierze_8h}{Zwierze.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_serwis_zwierzat}{SerwisZwierzat}}}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ std::shared\_ptr<CzytaczZwierzat>\ czytaczZwierzat;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksId\ =\ 0;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksImienia\ =\ 1;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksPlci\ =\ 2;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksWieku\ =\ 3;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksIlosciNog\ =\ 4;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksIdWlasiciela\ =\ 5;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksUmaszczenia\ =\ 6;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksKoloru\ =\ 7;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksTypu\ =\ 8;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ indeksWagi\ =\ 9;}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_serwis_zwierzat}{SerwisZwierzat}}(shared\_ptr<CzytaczZwierzat>\ czytaczZwierzat);}
+\DoxyCodeLine{00040\ \ \ \ \ vector<shared\_ptr<Zwierze>>\ \mbox{\hyperlink{class_serwis_zwierzat_a925b7d72414e1f805b72b28a6df90aa7}{zaladujZwierzetaDlaWlasciciela}}(\textcolor{keywordtype}{int}\ idWlasciela);}
+\DoxyCodeLine{00047\ \ \ \ \ shared\_ptr<Zwierze>\ \mbox{\hyperlink{class_serwis_zwierzat_ae7c04754086f7b005949ecac1c700e02}{znajdzPoId}}(\textcolor{keywordtype}{int}\ idZwierzecia,\ vector<shared\_ptr<Zwierze>>\ zwierzeta);}
+\DoxyCodeLine{00053\ \ \ \ \ shared\_ptr<Zwierze>\ \mbox{\hyperlink{class_serwis_zwierzat_a4b5c85869bd9f6392fd0b03457a8edca}{zaladujZwierzePoId}}(\textcolor{keywordtype}{int}\ idZwierzecia);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_serwis_zwierzat_a10826d4aeb002b553c66ff18307b295d}{getNastepneId}}();}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_serwis_zwierzat_ac29dbe8f0fcaff144b3025172b56bbda}{dodaj}}(shared\_ptr<Zwierze>\ zwierze);}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_serwis_zwierzat_a8bfb6130b2acefe9ea4d8d58346a0a70}{usunZwierzaka}}(\textcolor{keywordtype}{int}\ idZwierzaka);}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_serwis_zwierzat_ad17b3a38994c3116fbba6a4416924921}{zaktualizuj}}(shared\_ptr<Zwierze>\ zwierze);}
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ }
+
+\end{DoxyCode}

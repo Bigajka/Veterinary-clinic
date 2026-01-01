@@ -1,0 +1,33 @@
+\doxysection{Sesja\+Lekarza.\+h}
+\hypertarget{_sesja_lekarza_8h_source}{}\label{_sesja_lekarza_8h_source}\mbox{\hyperlink{_sesja_lekarza_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_serwis_wizyt_8h}{SerwisWizyt.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lekarz_8h}{Lekarz.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_serwis_zwierzat_8h}{SerwisZwierzat.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_serwis_uslug_8h}{SerwisUslug.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}SerwisWlasicielaZwierzecia.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sesja_lekarza}{SesjaLekarza}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ shared\_ptr<Lekarz>\ lekarz;}
+\DoxyCodeLine{00022\ \ \ \ \ shared\_ptr<SerwisWizyt>\ serwisWizyt;}
+\DoxyCodeLine{00023\ \ \ \ \ shared\_ptr<SerwisZwierzat>\ serwisZwierzat;}
+\DoxyCodeLine{00024\ \ \ \ \ shared\_ptr<SerwisUslug>\ serwisUslug;}
+\DoxyCodeLine{00025\ \ \ \ \ shared\_ptr<SerwisWlasicielaZwierzecia>\ serwisWlasicielaZwierzecia;}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_sesja_lekarza}{SesjaLekarza}}(shared\_ptr<Lekarz>\ lekarz,\ shared\_ptr<SerwisWizyt>\ serwisWizyt,\ shared\_ptr<SerwisZwierzat>\ serwisZwierzat,\ shared\_ptr<SerwisUslug>\ serwisUslug,\ shared\_ptr<SerwisWlasicielaZwierzecia>\ serwisWlasicielaZwierzecia);}
+\DoxyCodeLine{00036\ \ \ \ \ shared\_ptr<Lekarz>\ \mbox{\hyperlink{class_sesja_lekarza_ac7dcf73c1e4f9220b7b10db19430cfae}{getLekarz}}();}
+\DoxyCodeLine{00041\ \ \ \ \ shared\_ptr<SerwisWizyt>\ \mbox{\hyperlink{class_sesja_lekarza_a082282f168f891fada0c020b912e1cae}{getSerwisWizyt}}();}
+\DoxyCodeLine{00046\ \ \ \ \ shared\_ptr<SerwisZwierzat>\ \mbox{\hyperlink{class_sesja_lekarza_aeb534433440bee86a2ba2b1ad14a72d8}{getSerwisZwierzat}}();}
+\DoxyCodeLine{00051\ \ \ \ \ shared\_ptr<SerwisUslug>\ \mbox{\hyperlink{class_sesja_lekarza_ad64d069ba0f0d0a32cc4c424e33c6b71}{getFabrykaUslug}}();}
+\DoxyCodeLine{00056\ \ \ \ \ shared\_ptr<SerwisWlasicielaZwierzecia>\ \mbox{\hyperlink{class_sesja_lekarza_a0a3d15276f8171b8f5221115255376b6}{getSerwisWlasicielaZwierzecia}}();}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+
+\end{DoxyCode}

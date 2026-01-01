@@ -1,0 +1,33 @@
+\doxysection{Lekarz.\+h}
+\hypertarget{_lekarz_8h_source}{}\label{_lekarz_8h_source}\mbox{\hyperlink{_lekarz_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_uzytkownik_8h}{Uzytkownik.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ \ "{}\mbox{\hyperlink{_godziny_pracy_8h}{GodzinyPracy.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dni_tygodnia_8h}{DniTygodnia.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lekarz}{Lekarz}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}}\{}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ private\ :}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{string}\ imie;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{string}\ nazwisko;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{string}\ specjalizacja;}
+\DoxyCodeLine{00023\ \ \ \ \ unordered\_map<DniTygodnia,\ GodzinyPracy>\ dostepnosc;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ public\ :}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_lekarz}{Lekarz}}(\textcolor{keywordtype}{string}\ imie,\ \textcolor{keywordtype}{string}\ nazwisko,\ \textcolor{keywordtype}{string}\ specjalizacja,\ \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}}\&\ uzytkownik);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_lekarz_a9cec3164df34a0f78b3ce98ed16255a1}{getImie}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_lekarz_a9b16defd71c6ecae5db5329183e99643}{getNazwisko}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_lekarz_a9da72d7f153ffc361abef386d40f8aef}{getSpecjalizacja}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_godziny_pracy}{GodzinyPracy}}\ \mbox{\hyperlink{class_lekarz_a9dce65b26b45a8a8bdebec4bd2f9be8b}{zwrocGodzinyPracyDlaDnia}}(\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{DniTygodnia}}\ dzien)\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ dostepnosc[dzien];}
+\DoxyCodeLine{00052\ \ \ \ \ \}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_lekarz_aba6a649619c113735ca9913035a9944d}{czyDostepnyWGodzinach}}(\textcolor{keywordtype}{int}\ godzina,\ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{DniTygodnia}}\ dzienTygodnia);}
+\DoxyCodeLine{00059\ \};}
+
+\end{DoxyCode}

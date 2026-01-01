@@ -1,0 +1,263 @@
+\doxysection{Zwierze Class Reference}
+\hypertarget{class_zwierze}{}\label{class_zwierze}\index{Zwierze@{Zwierze}}
+
+
+Klasa odpowiedzialna za zwierzeta.  
+
+
+
+
+{\ttfamily \#include $<$Zwierze.\+h$>$}
+
+Inheritance diagram for Zwierze\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_zwierze}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_zwierze_a344dd2895cf9805b29b5eb7a69e3979b}\label{class_zwierze_a344dd2895cf9805b29b5eb7a69e3979b} 
+{\bfseries Zwierze} (int id, int wiek, \mbox{\hyperlink{_plec_8h_a668bb948163d8aae5c42a2912b9dfaad}{Plec}} plec, int liczba\+Nog, string imie, int id\+Wlasciciela, string umaszczenie, string kolor, int \mbox{\hyperlink{class_zwierze_ad83ee392ad293706de9912f012ba7bd1}{waga\+WGramach}})
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy id, wiek, plec, liczbe nog, imie, id wlasciciela, umaszczenie, kolor, wage w gramach. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_zwierze_a783ef9f948e5666658313d0903e6a462}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca id zwierzecia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_zwierze_a403a2c017afc7cf821741b4a0807fc19}{get\+Wiek}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wiek zwierzecia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_plec_8h_a668bb948163d8aae5c42a2912b9dfaad}{Plec}} \mbox{\hyperlink{class_zwierze_a31cae923e7725717dc9d803572575496}{get\+Plec}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca enum plec, okreslajacy czy jest to samiec czy samica. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_zwierze_a1e0d6a437541b0a4d1193777f481eb4c}{getlicza\+Nog}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca liczbe nog zwierzecia. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_zwierze_a7cb5c0afe66bc6682812e31fcf0a8ef4}{get\+Imie}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca imie zwierzecia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_zwierze_a159f31ed55a07f1851d34863916962d7}{get\+Id\+Wlasciciela}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca id wlasciciela zwierzaka. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_zwierze_a3110222657a6406310fe8ae6bd16a49d}{get\+Umaszczenie}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca umaszczenie zwierzaka. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_zwierze_a23a26c8fa447df912ba5acc606d1d106}{get\+Kolor}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca kolor zwierzaka. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_zwierze_a86a8c0df4a1235c165d222d6bcd00aaa}{dzwiek}} ()=0
+\begin{DoxyCompactList}\small\item\em Funkcja wirtualna, zwracajaca dzwiek jaki wydaje konkretne zwierze. Klasy dziedziczace po klasie zwierze musza zaimplementowac metode \doxylink{class_zwierze_a86a8c0df4a1235c165d222d6bcd00aaa}{dzwiek()}. Np. kot ma wydawac dzwiek miau. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_zwierze_a8d34fdda2b99ec3cf12655bce9ca02a8}{get\+Waga}} ()=0
+\begin{DoxyCompactList}\small\item\em Funkcja wirtualna, zwracajaca wage dla konkretnego zwierzecia. Klasy dziedziczace po klasie zwierze musza zaimplementowac metode \doxylink{class_zwierze_a8d34fdda2b99ec3cf12655bce9ca02a8}{get\+Waga()}. Np. kot ma miec wyswietlana wage w kg, a kanarek w gramch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zwierze_affffb65495431b963d1310dfde144ec1}{set\+Waga\+WGramach}} (int \mbox{\hyperlink{class_zwierze_ad83ee392ad293706de9912f012ba7bd1}{waga\+WGramach}})
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca wage, ktora ma byc w gramach. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zwierze_af3114a2539df566bf5b2d9c3508cb48e}{set\+Imie}} (string imie)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca imie. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_zwierze_a42d4e180e7307316184d23c8d19e134a}{zamien\+Na\+Tekst}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zamieniajaca obiekt zwierze na tekst, aby mozna bylo go zapisac do pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_zwierze_ad83ee392ad293706de9912f012ba7bd1}{waga\+WGramach}}
+\begin{DoxyCompactList}\small\item\em Pole klasy, przechowywujace wage zwierzeecia w gramach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za zwierzeta. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_zwierze_a86a8c0df4a1235c165d222d6bcd00aaa}\label{class_zwierze_a86a8c0df4a1235c165d222d6bcd00aaa} 
+\index{Zwierze@{Zwierze}!dzwiek@{dzwiek}}
+\index{dzwiek@{dzwiek}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{dzwiek()}{dzwiek()}}
+{\footnotesize\ttfamily virtual string Zwierze\+::dzwiek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Funkcja wirtualna, zwracajaca dzwiek jaki wydaje konkretne zwierze. Klasy dziedziczace po klasie zwierze musza zaimplementowac metode \doxylink{class_zwierze_a86a8c0df4a1235c165d222d6bcd00aaa}{dzwiek()}. Np. kot ma wydawac dzwiek miau. 
+
+\begin{DoxyReturn}{Returns}
+dzwiek jaki wydaje dane zwierze 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_kanarek_a05660c052bd68e91615aab21ddff5c5f}{Kanarek}}, \mbox{\hyperlink{class_kot_aa8e10c16d969b4b8ee6fbbd43437bd5c}{Kot}}, \mbox{\hyperlink{class_pajak_ad93356cdf5ab4f6a8fa4bbaa7b5ed074}{Pajak}}, \mbox{\hyperlink{class_pies_a640092534d545a98120348a0f9c24eff}{Pies}}, and \mbox{\hyperlink{class_waz_ac7f42f096640919bed156018979c5ab9}{Waz}}.
+
+\Hypertarget{class_zwierze_a783ef9f948e5666658313d0903e6a462}\label{class_zwierze_a783ef9f948e5666658313d0903e6a462} 
+\index{Zwierze@{Zwierze}!getId@{getId}}
+\index{getId@{getId}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Zwierze\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca id zwierzecia. 
+
+\begin{DoxyReturn}{Returns}
+id zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_zwierze_a159f31ed55a07f1851d34863916962d7}\label{class_zwierze_a159f31ed55a07f1851d34863916962d7} 
+\index{Zwierze@{Zwierze}!getIdWlasciciela@{getIdWlasciciela}}
+\index{getIdWlasciciela@{getIdWlasciciela}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{getIdWlasciciela()}{getIdWlasciciela()}}
+{\footnotesize\ttfamily int Zwierze\+::get\+Id\+Wlasciciela (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca id wlasciciela zwierzaka. 
+
+\begin{DoxyReturn}{Returns}
+id wlasciciela zwierzaka 
+\end{DoxyReturn}
+\Hypertarget{class_zwierze_a7cb5c0afe66bc6682812e31fcf0a8ef4}\label{class_zwierze_a7cb5c0afe66bc6682812e31fcf0a8ef4} 
+\index{Zwierze@{Zwierze}!getImie@{getImie}}
+\index{getImie@{getImie}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{getImie()}{getImie()}}
+{\footnotesize\ttfamily std\+::string Zwierze\+::get\+Imie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca imie zwierzecia. 
+
+\begin{DoxyReturn}{Returns}
+imie zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_zwierze_a23a26c8fa447df912ba5acc606d1d106}\label{class_zwierze_a23a26c8fa447df912ba5acc606d1d106} 
+\index{Zwierze@{Zwierze}!getKolor@{getKolor}}
+\index{getKolor@{getKolor}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{getKolor()}{getKolor()}}
+{\footnotesize\ttfamily std\+::string Zwierze\+::get\+Kolor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca kolor zwierzaka. 
+
+\begin{DoxyReturn}{Returns}
+kolor 
+\end{DoxyReturn}
+\Hypertarget{class_zwierze_a1e0d6a437541b0a4d1193777f481eb4c}\label{class_zwierze_a1e0d6a437541b0a4d1193777f481eb4c} 
+\index{Zwierze@{Zwierze}!getliczaNog@{getliczaNog}}
+\index{getliczaNog@{getliczaNog}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{getliczaNog()}{getliczaNog()}}
+{\footnotesize\ttfamily int Zwierze\+::getlicza\+Nog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca liczbe nog zwierzecia. 
+
+\begin{DoxyReturn}{Returns}
+liczba nog zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_zwierze_a31cae923e7725717dc9d803572575496}\label{class_zwierze_a31cae923e7725717dc9d803572575496} 
+\index{Zwierze@{Zwierze}!getPlec@{getPlec}}
+\index{getPlec@{getPlec}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{getPlec()}{getPlec()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_plec_8h_a668bb948163d8aae5c42a2912b9dfaad}{Plec}} Zwierze\+::get\+Plec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca enum plec, okreslajacy czy jest to samiec czy samica. 
+
+\begin{DoxyReturn}{Returns}
+plec 
+\end{DoxyReturn}
+\Hypertarget{class_zwierze_a3110222657a6406310fe8ae6bd16a49d}\label{class_zwierze_a3110222657a6406310fe8ae6bd16a49d} 
+\index{Zwierze@{Zwierze}!getUmaszczenie@{getUmaszczenie}}
+\index{getUmaszczenie@{getUmaszczenie}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{getUmaszczenie()}{getUmaszczenie()}}
+{\footnotesize\ttfamily std\+::string Zwierze\+::get\+Umaszczenie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca umaszczenie zwierzaka. 
+
+\begin{DoxyReturn}{Returns}
+umaszczenie 
+\end{DoxyReturn}
+\Hypertarget{class_zwierze_a8d34fdda2b99ec3cf12655bce9ca02a8}\label{class_zwierze_a8d34fdda2b99ec3cf12655bce9ca02a8} 
+\index{Zwierze@{Zwierze}!getWaga@{getWaga}}
+\index{getWaga@{getWaga}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{getWaga()}{getWaga()}}
+{\footnotesize\ttfamily virtual string Zwierze\+::get\+Waga (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Funkcja wirtualna, zwracajaca wage dla konkretnego zwierzecia. Klasy dziedziczace po klasie zwierze musza zaimplementowac metode \doxylink{class_zwierze_a8d34fdda2b99ec3cf12655bce9ca02a8}{get\+Waga()}. Np. kot ma miec wyswietlana wage w kg, a kanarek w gramch. 
+
+\begin{DoxyReturn}{Returns}
+dzwiek jaki wydaje dane zwierze 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_kanarek_a7bfe8f747ee0446dc333e7c46defb7ea}{Kanarek}}, \mbox{\hyperlink{class_kot_a63df3f101954c2714b4d22ddde1c3465}{Kot}}, \mbox{\hyperlink{class_pajak_a149c34976d53e20558190f50531ed126}{Pajak}}, \mbox{\hyperlink{class_pies_a230a3371b887500944cff2932d1b3c9f}{Pies}}, and \mbox{\hyperlink{class_waz_aa40f7fadb3b5a2795270014f919eacba}{Waz}}.
+
+\Hypertarget{class_zwierze_a403a2c017afc7cf821741b4a0807fc19}\label{class_zwierze_a403a2c017afc7cf821741b4a0807fc19} 
+\index{Zwierze@{Zwierze}!getWiek@{getWiek}}
+\index{getWiek@{getWiek}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{getWiek()}{getWiek()}}
+{\footnotesize\ttfamily int Zwierze\+::get\+Wiek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wiek zwierzecia. 
+
+\begin{DoxyReturn}{Returns}
+wiek zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_zwierze_af3114a2539df566bf5b2d9c3508cb48e}\label{class_zwierze_af3114a2539df566bf5b2d9c3508cb48e} 
+\index{Zwierze@{Zwierze}!setImie@{setImie}}
+\index{setImie@{setImie}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{setImie()}{setImie()}}
+{\footnotesize\ttfamily void Zwierze\+::set\+Imie (\begin{DoxyParamCaption}\item[{string}]{imie }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca imie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em imie} & -\/ imie zwierzaka \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_zwierze_affffb65495431b963d1310dfde144ec1}\label{class_zwierze_affffb65495431b963d1310dfde144ec1} 
+\index{Zwierze@{Zwierze}!setWagaWGramach@{setWagaWGramach}}
+\index{setWagaWGramach@{setWagaWGramach}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{setWagaWGramach()}{setWagaWGramach()}}
+{\footnotesize\ttfamily void Zwierze\+::set\+Waga\+WGramach (\begin{DoxyParamCaption}\item[{int}]{waga\+WGramach }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca wage, ktora ma byc w gramach. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em waga\+WGramach} & -\/ waga w gramach \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_zwierze_a42d4e180e7307316184d23c8d19e134a}\label{class_zwierze_a42d4e180e7307316184d23c8d19e134a} 
+\index{Zwierze@{Zwierze}!zamienNaTekst@{zamienNaTekst}}
+\index{zamienNaTekst@{zamienNaTekst}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{zamienNaTekst()}{zamienNaTekst()}}
+{\footnotesize\ttfamily string Zwierze\+::zamien\+Na\+Tekst (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zamieniajaca obiekt zwierze na tekst, aby mozna bylo go zapisac do pliku. 
+
+\begin{DoxyReturn}{Returns}
+tekst, ktory zosatnie zapisany do pliku 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_zwierze_ad83ee392ad293706de9912f012ba7bd1}\label{class_zwierze_ad83ee392ad293706de9912f012ba7bd1} 
+\index{Zwierze@{Zwierze}!wagaWGramach@{wagaWGramach}}
+\index{wagaWGramach@{wagaWGramach}!Zwierze@{Zwierze}}
+\doxysubsubsection{\texorpdfstring{wagaWGramach}{wagaWGramach}}
+{\footnotesize\ttfamily int Zwierze\+::waga\+WGramach\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pole klasy, przechowywujace wage zwierzeecia w gramach. 
+
+\begin{DoxyReturn}{Returns}
+waga w gramach 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_zwierze_8h}{Zwierze.\+h}}\item 
+Zwierze.\+cpp\end{DoxyCompactItemize}

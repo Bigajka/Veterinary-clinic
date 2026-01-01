@@ -1,0 +1,695 @@
+\doxysection{Planer\+Wizyt Class Reference}
+\hypertarget{class_planer_wizyt}{}\label{class_planer_wizyt}\index{PlanerWizyt@{PlanerWizyt}}
+
+
+Klasa odpowiedzialna za planowanie wizyt oraz wszelkie manipulacje data i czasem.  
+
+
+
+
+{\ttfamily \#include $<$Planer\+Wizyt.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_planer_wizyt_a819d9c477696e818075ef4020b237135}\label{class_planer_wizyt_a819d9c477696e818075ef4020b237135} 
+{\bfseries Planer\+Wizyt} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_grafiku_pracy}{Serwis\+Grafiku\+Pracy}} $>$ serwis\+Grafiku\+Pracy, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_wizyt}{Serwis\+Wizyt}} $>$ serwis\+Wizty)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy serwis grafiku pracy i serwis wizyt. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_planer_wizyt_a854a44dcce495bb08f513fdd3cf19319}{zaladuj\+Aktualny\+Dzien\+Tygodnia}} (time\+\_\+t current\+Time)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca aktualny dzien tygodnia z przekazanego czasu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_planer_wizyt_a0be16b29829df7fb04c7c0644947563f}{zaladuj\+Miesiac}} (time\+\_\+t current\+Time)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca miesiac z przekazanego czasu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_planer_wizyt_a02ae7a75d3b5cdb795b5c5d5179ccdd7}{zaladuj\+Dzien\+Miesiaca}} (time\+\_\+t current\+Time)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca dzien miesiaca z przekazanego czasu. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_planer_wizyt_abc7df21fd0e8062d44a8c751afa3baae}{zaladuj\+Rok}} (time\+\_\+t czas)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca rok z przekazanego czasu. \end{DoxyCompactList}\item 
+pair$<$ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}, int $>$ \mbox{\hyperlink{class_planer_wizyt_a8c4f35b603585e8d1bda5d9b634b0ab5}{zaladuj\+Dostepna\+Godzine\+Na\+Dzien\+Tygodnia}} (\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} aktualny\+Dzien\+Tygodnia, \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} termin\+Na\+Nastepny\+Dzien, int aktualna\+Godzina, int pierwsza\+Dostepna\+Godzina\+Wizty)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca pierwsza dostepna godzine na aktualny dzien tygodnia i za dana godzine. Jest to funkcja pomocnicza uzywana w metodzie \doxylink{class_planer_wizyt_a3fc1010fc43db405285f132069f9416a}{znajdz\+Pierwszy\+Dostepny\+Termin()} \end{DoxyCompactList}\item 
+pair$<$ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}, int $>$ \mbox{\hyperlink{class_planer_wizyt_a3fc1010fc43db405285f132069f9416a}{znajdz\+Pierwszy\+Dostepny\+Termin}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca pierwszy dostepny termin. Uzywa ona roznych warjacji metod \doxylink{class_planer_wizyt_a8c4f35b603585e8d1bda5d9b634b0ab5}{zaladuj\+Dostepna\+Godzine\+Na\+Dzien\+Tygodnia()} \end{DoxyCompactList}\item 
+pair$<$ string, time\+\_\+t $>$ \mbox{\hyperlink{class_planer_wizyt_a7c108151a2cafc9492a52f50dcabd1d1}{zaladuj\+Piersza\+Dostepna\+Date}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca pierwszy dostepna date bazujac na aktualnym czasie. \end{DoxyCompactList}\item 
+pair$<$ string, time\+\_\+t $>$ \mbox{\hyperlink{class_planer_wizyt_acac9bcc6bab92426b73b5c890d7923b7}{zaladuj\+Ostatnia\+Dostepna\+Date}} (time\+\_\+t poczaktowy\+Czas, string format)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca ostatnia mozliwa date do rezerwacji wizyty. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{class_planer_wizyt_acd45e3bcc91a5e06e17bd6eb357428cf}{dodaj\+Dzien}} (time\+\_\+t poczaktowy\+Czas, int liczba\+Dni)
+\begin{DoxyCompactList}\small\item\em Funkcja dodajaca do zadanego czasu dana liczne dni. Np. time\+\_\+t czas = 01-\/01-\/2000 int liczba\+\_\+dni = 10 dodaj\+Dzien(czas, liczba\+\_\+dni) -\/\texorpdfstring{$>$}{>} 11-\/01-\/2000. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{class_planer_wizyt_a928fdbae6f403ff06db9c47804fe3b7b}{dodaj\+Godzine}} (time\+\_\+t poczaktowy\+Czas, int liczba\+Godzin)
+\begin{DoxyCompactList}\small\item\em Funkcja dodajaca do zadanego czasu dana liczne godzin. Np. time\+\_\+t czas = 01-\/01-\/2000 10\+:00 int liczba\+\_\+godzin = 10 dodaj\+Godzine(czas, liczba\+\_\+godzin) -\/\texorpdfstring{$>$}{>} 01-\/01-\/2000 20\+:00. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{class_planer_wizyt_a9ba64f33536abb2d048cd38fea11f22b}{ustaw\+Czas}} (time\+\_\+t poczaktowy\+Czas, int godzina, int minuta)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca godzine dla danego czasu Np. time\+\_\+t poczaktowy\+Czas = 01-\/01-\/2000 10\+:00 int godzina = 8 int minuta = 30 dodaj\+Godzine(poczaktowy\+Czas, liczba\+\_\+godzin) -\/\texorpdfstring{$>$}{>} 01-\/01-\/2000 8\+:30. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{class_planer_wizyt_a9d97cce2a1cc60fdc234bc9e812dc24c}{dodaj\+Godzine\+Plus\+Zaokraglenie}} (time\+\_\+t poczaktowy\+Czas, int liczba\+Godzin)
+\begin{DoxyCompactList}\small\item\em Funkcja zaokraglajaca godzine Np. time\+\_\+t poczaktowy\+Czas = 01-\/01-\/2000 10\+:00 int liczba\+Godzin = 1 dodaj\+Godzine\+Plus\+Zaokraglenie(poczaktowy\+Czas, liczba\+Godzin) -\/\texorpdfstring{$>$}{>} 01-\/01-\/2000 11\+:00. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} \mbox{\hyperlink{class_planer_wizyt_adb876f823d86daa02bfee2640d96b123}{zamien\+Na\+Dni\+Tygonida}} (string dni\+Tygodnia\+Tekst)
+\begin{DoxyCompactList}\small\item\em Funkcja zamieniaca angielski dzien tygodnia na tym enum zawiarajacy polskie dnia tygodnia Np. string dni\+Tygodnia\+Tekst = \"{}\+Monday\"{} zamien\+Na\+Dni\+Tygonida(dni\+Tygodnia\+Tekst) -\/\texorpdfstring{$>$}{>} Dni\+Tygodnia\+::\+PONIEDZIALEK. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} \mbox{\hyperlink{class_planer_wizyt_a668f91bd5beba6214fdb4385477def25}{zaladuj\+Nastepny\+Dzien\+Tygodnia}} (\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} aktualny\+Dzien\+Tygodnia)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca nastepny dostepny dzien tygodnia Np. zaladuj\+Nastepny\+Dzien\+Tygodnia(\+Dni\+Tygodnia\+::\+PONIEDZIALEK) -\/\texorpdfstring{$>$}{>} Dni\+Tygodnia\+::\+WTOREK zaladuj\+Nastepny\+Dzien\+Tygodnia(\+Dni\+Tygodnia\+::\+NIEDZIELA) -\/\texorpdfstring{$>$}{>} Dni\+Tygodnia\+::\+PONIEDZIALEK zaladuj\+Nastepny\+Dzien\+Tygodnia(\+Dni\+Tygodnia\+::\+SOBOTA) -\/\texorpdfstring{$>$}{>} Dni\+Tygodnia\+::\+PONIEDZIALEK -\/ w niedziele jest zamkniete. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}, time\+\_\+t $>$ \mbox{\hyperlink{class_planer_wizyt_a049898922cfb8acac5bcbc3ff53bd4dd}{zaladuj\+Dostepy\+Czas}} (time\+\_\+t aktualny\+Czas)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca pierwszy dostepny czas -\/ zwraca ona pare, w ktorej jest zawarty dzien tygodnia i czas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_planer_wizyt_a34da07ccd458d4bc8ad880ef65e65ab2}{wyswietl}} (time\+\_\+t current\+Time, string format)
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajaca dany czas o zadanym formacie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} \mbox{\hyperlink{class_planer_wizyt_a2354a6cc0bbef335108a8ae64458e8fb}{zamien\+Na\+Dni\+Tygonida}} (time\+\_\+t czas)
+\begin{DoxyCompactList}\small\item\em Funkcja zamieniaca dany czas na tym enum Dni\+Tygodnia. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{class_planer_wizyt_a15dd484bb1758432e3aa234d9ca0f5bc}{get\+Godzina\+Zamkniecia\+WDniu}} (\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} ostatni\+Dostepny\+Dzien\+Tygodnia, time\+\_\+t czas)
+\begin{DoxyCompactList}\small\item\em Funkcja godzine zamkniecia w danym dniu. \end{DoxyCompactList}\item 
+unordered\+\_\+map$<$ int, time\+\_\+t $>$ \mbox{\hyperlink{class_planer_wizyt_a1cec8154c82de641ee369dd6083702a5}{wygeneruj\+Miesiace}} (time\+\_\+t czas\+Rozpoczecia, time\+\_\+t czas\+Zakonczenia)
+\begin{DoxyCompactList}\small\item\em Funkcja generujaca wszystkie dostepne miesiace, w ktorych mozna zarezerwowac wizyte. \end{DoxyCompactList}\item 
+time\+\_\+t \mbox{\hyperlink{class_planer_wizyt_ab0ad19a3a66300e23f9d27ca2a0a2ffc}{dodaj\+Miesiac}} (time\+\_\+t poczaktowy\+Czas, int liczba\+Miesiecy)
+\begin{DoxyCompactList}\small\item\em Funkcja dodajaca do zadanego czasu dana liczne miesiecy. Np. time\+\_\+t czas = 01-\/01-\/2000 int liczba\+Miesiecy = 3 dodaj\+Miesiac(czas, liczba\+Miesiecy) -\/\texorpdfstring{$>$}{>} 01-\/04-\/2000. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_planer_wizyt_ac143ec9e7e2994bd306d8fd9189dbd8e}{get\+Miesiac}} (time\+\_\+t czas)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca liczbe okreslajaca indeks miesiaca dla danego czasu Np. time\+\_\+t czas = 01-\/04-\/2000. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_planer_wizyt_ae0c96a60a6babf24502bddb18c0d38d6}{zamien\+Na\+Miesiac}} (time\+\_\+t czas)
+\begin{DoxyCompactList}\small\item\em Funkcja zamieniaca czas na dany miesiac po polsku Np. time\+\_\+t czas = 01-\/01-\/2000 zamien\+Na\+Miesiac(czas) -\/\texorpdfstring{$>$}{>} \"{}\+Styczen\"{}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_planer_wizyt_ab340757be0df4bc5129d656f8db4d1cf}{zamien\+ZAngielskiego\+Na\+Polski}} (const string \&miesiac\+Po\+Angielsku)
+\begin{DoxyCompactList}\small\item\em Funkcja zamieniaca miesiac z anigelskiego na miesiac po polsku Np. string miesiac\+Po\+Angielsku = \"{}\+January\"{} zamien\+ZAngielskiego\+Na\+Polski(miesiac\+Po\+Angielsku) -\/\texorpdfstring{$>$}{>} \"{}\+Styczen\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_planer_wizyt_a2acc098620098f071058c18bf8edd391}{wypisz\+Kalendarz}} (int rok, int miesiac, int dzien\+Poczatkowy, int dzien\+Koncowy)
+\begin{DoxyCompactList}\small\item\em Funkcja wyswietlajaca kalenarz dla danego miesiaca. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_planer_wizyt_a2e49bed9208d4df76e28151b5c5cedbd}{czy\+Pierwsz\+Dostepny\+Miesiac}} (unordered\+\_\+map$<$ int, time\+\_\+t $>$ miesiace, time\+\_\+t miesiac)
+\begin{DoxyCompactList}\small\item\em Funkcja zwaracajaca czy zadany miesiac jest pierwszym dostepny miesiacem. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_planer_wizyt_a0238d9a7af9006f47c696301265d755d}{czy\+Ostatni\+Dostepny\+Miesiac}} (unordered\+\_\+map$<$ int, time\+\_\+t $>$ miesiace, time\+\_\+t miesiac)
+\begin{DoxyCompactList}\small\item\em Funkcja zwaracajaca czy zadany miesiac jest ostatnim dostepny miesiacem. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_planer_wizyt_a0747fce1eb7f80c269f9002e2f22bdd2}{ostatni\+Dzien\+Miesiaca}} (time\+\_\+t czas\+WMillisekundach)
+\begin{DoxyCompactList}\small\item\em Funkcja ostatni dzien miesiaca. \end{DoxyCompactList}\item 
+unordered\+\_\+map$<$ int, time\+\_\+t $>$ \mbox{\hyperlink{class_planer_wizyt_a58a49c7fbed6af82e04bb9c6c300985c}{wygeneruj\+Dni}} (int rok, int miesiac, int dzien\+Poczatkowy, int dzien\+Koncowy)
+\begin{DoxyCompactList}\small\item\em Funkcja generujaca dni na zadany miesiac uwzgledniajac rok oraz dzien poczatkowy i koncowy. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_planer_wizyt_a4665c489dcbf3c5dd1cbd4cbb7d57539}{czy\+Jest\+Dniem}} (\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} wybrany\+Dzien, time\+\_\+t wybrany\+Czas)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdzjaca czy podany dzien tygodnia jest dniem tygodnia z czasu. \end{DoxyCompactList}\item 
+unordered\+\_\+map$<$ int, unordered\+\_\+map$<$ int, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ $>$ $>$ \mbox{\hyperlink{class_planer_wizyt_a29f5b0414d99908af2914b34cf209455}{wygeneruj\+Bloki\+Godzinowe}} (time\+\_\+t wybrany\+Dzien, list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ $>$ lekarze)
+\begin{DoxyCompactList}\small\item\em Funkcja generujaca bloki godzinowe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_planer_wizyt_a0a6ee6025bd459810698ff39281684c9}{utworz\+Wizyte}} (\mbox{\hyperlink{class_wizyta}{Wizyta}} wizyta)
+\begin{DoxyCompactList}\small\item\em Funkcja towrzaca wizyte i zapusjaca ja do bazy,. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_planer_wizyt_a8e15c1ea5ddc339c35b868ca37848161}{wygeneruj\+Id\+Wizyty}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja generujaca kolejne Id dla wizty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za planowanie wizyt oraz wszelkie manipulacje data i czasem. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_planer_wizyt_a4665c489dcbf3c5dd1cbd4cbb7d57539}\label{class_planer_wizyt_a4665c489dcbf3c5dd1cbd4cbb7d57539} 
+\index{PlanerWizyt@{PlanerWizyt}!czyJestDniem@{czyJestDniem}}
+\index{czyJestDniem@{czyJestDniem}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{czyJestDniem()}{czyJestDniem()}}
+{\footnotesize\ttfamily bool Planer\+Wizyt\+::czy\+Jest\+Dniem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}}]{wybrany\+Dzien,  }\item[{time\+\_\+t}]{wybrany\+Czas }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdzjaca czy podany dzien tygodnia jest dniem tygodnia z czasu. 
+
+time\+\_\+t czas = 01-\/01-\/2023 // ten czas to niedziela czy\+Jest\+Dniem(\+Dni\+Tygodnia\+::\+PONIEDZIALEK, czas) -\/\texorpdfstring{$>$}{>} false czy\+Jest\+Dniem(\+Dni\+Tygodnia\+::\+NIEDZIELA, czas) -\/\texorpdfstring{$>$}{>} true
+
+
+\begin{DoxyParams}{Parameters}
+{\em wybrany\+Dzien} & -\/ wybrany dzien tygodnia np. Dni\+Tygodnia\+::\+PONIEDZIALEK \\
+\hline
+{\em wybrany\+Czas} & -\/ wybrany czas, ktory chcemy sprawdzic czy jest podanym dniem tygodnia (pierwszy paramter) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jest wybrany dzien tygodnia jest dniem tygodnia z podaego czasu 
+\end{DoxyReturn}
+\Hypertarget{class_planer_wizyt_a0238d9a7af9006f47c696301265d755d}\label{class_planer_wizyt_a0238d9a7af9006f47c696301265d755d} 
+\index{PlanerWizyt@{PlanerWizyt}!czyOstatniDostepnyMiesiac@{czyOstatniDostepnyMiesiac}}
+\index{czyOstatniDostepnyMiesiac@{czyOstatniDostepnyMiesiac}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{czyOstatniDostepnyMiesiac()}{czyOstatniDostepnyMiesiac()}}
+{\footnotesize\ttfamily bool Planer\+Wizyt\+::czy\+Ostatni\+Dostepny\+Miesiac (\begin{DoxyParamCaption}\item[{unordered\+\_\+map$<$ int, time\+\_\+t $>$}]{miesiace,  }\item[{time\+\_\+t}]{miesiac }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwaracajaca czy zadany miesiac jest ostatnim dostepny miesiacem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em miesiace} & -\/ wygenerowana mapa wszystkich dostepnych miesiecy \\
+\hline
+{\em miesiac} & -\/ miesac ktory chcemy sprawdzic czy jest ostatnim dostem \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true jesli zadany miesiac jest ostatnim dostepnym miesiacem, false jesli nim nie jest 
+\end{DoxyReturn}
+\Hypertarget{class_planer_wizyt_a2e49bed9208d4df76e28151b5c5cedbd}\label{class_planer_wizyt_a2e49bed9208d4df76e28151b5c5cedbd} 
+\index{PlanerWizyt@{PlanerWizyt}!czyPierwszDostepnyMiesiac@{czyPierwszDostepnyMiesiac}}
+\index{czyPierwszDostepnyMiesiac@{czyPierwszDostepnyMiesiac}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{czyPierwszDostepnyMiesiac()}{czyPierwszDostepnyMiesiac()}}
+{\footnotesize\ttfamily bool Planer\+Wizyt\+::czy\+Pierwsz\+Dostepny\+Miesiac (\begin{DoxyParamCaption}\item[{unordered\+\_\+map$<$ int, time\+\_\+t $>$}]{miesiace,  }\item[{time\+\_\+t}]{miesiac }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwaracajaca czy zadany miesiac jest pierwszym dostepny miesiacem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em miesiace} & -\/ wygenerowana mapa wszystkich dostepnych miesiecy \\
+\hline
+{\em miesiac} & -\/ miesac ktory chcemy sprawdzic czy jest pierwsztm dostem \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ true jesli zadany miesiac jest pierwszym dostepnym miesiacem, false jesli nim nie jest 
+\end{DoxyReturn}
+\Hypertarget{class_planer_wizyt_acd45e3bcc91a5e06e17bd6eb357428cf}\label{class_planer_wizyt_acd45e3bcc91a5e06e17bd6eb357428cf} 
+\index{PlanerWizyt@{PlanerWizyt}!dodajDzien@{dodajDzien}}
+\index{dodajDzien@{dodajDzien}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{dodajDzien()}{dodajDzien()}}
+{\footnotesize\ttfamily time\+\_\+t Planer\+Wizyt\+::dodaj\+Dzien (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{poczaktowy\+Czas,  }\item[{int}]{liczba\+Dni }\end{DoxyParamCaption})}
+
+
+
+Funkcja dodajaca do zadanego czasu dana liczne dni. Np. time\+\_\+t czas = 01-\/01-\/2000 int liczba\+\_\+dni = 10 dodaj\+Dzien(czas, liczba\+\_\+dni) -\/\texorpdfstring{$>$}{>} 11-\/01-\/2000. 
+
+\begin{DoxyReturn}{Returns}
+zmieniony czas o dodanej liczbnie dni 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em poczaktowy\+Czas} & -\/ czas do ktorego chcemy dodac zadana liczbe dni \\
+\hline
+{\em liczba\+Dni} & -\/ liczba dni, ktora zostanie dodana do istniejacego czasu \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a928fdbae6f403ff06db9c47804fe3b7b}\label{class_planer_wizyt_a928fdbae6f403ff06db9c47804fe3b7b} 
+\index{PlanerWizyt@{PlanerWizyt}!dodajGodzine@{dodajGodzine}}
+\index{dodajGodzine@{dodajGodzine}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{dodajGodzine()}{dodajGodzine()}}
+{\footnotesize\ttfamily time\+\_\+t Planer\+Wizyt\+::dodaj\+Godzine (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{poczaktowy\+Czas,  }\item[{int}]{liczba\+Godzin }\end{DoxyParamCaption})}
+
+
+
+Funkcja dodajaca do zadanego czasu dana liczne godzin. Np. time\+\_\+t czas = 01-\/01-\/2000 10\+:00 int liczba\+\_\+godzin = 10 dodaj\+Godzine(czas, liczba\+\_\+godzin) -\/\texorpdfstring{$>$}{>} 01-\/01-\/2000 20\+:00. 
+
+\begin{DoxyReturn}{Returns}
+zmieniony czas o dodanej liczbnie godzin 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em poczaktowy\+Czas} & -\/ czas do ktorego chcemy dodac zadana liczbe godzin \\
+\hline
+{\em liczba\+Godzin} & -\/ liczba godzin, ktora zostanie dodana do istniejacego czasu \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a9d97cce2a1cc60fdc234bc9e812dc24c}\label{class_planer_wizyt_a9d97cce2a1cc60fdc234bc9e812dc24c} 
+\index{PlanerWizyt@{PlanerWizyt}!dodajGodzinePlusZaokraglenie@{dodajGodzinePlusZaokraglenie}}
+\index{dodajGodzinePlusZaokraglenie@{dodajGodzinePlusZaokraglenie}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{dodajGodzinePlusZaokraglenie()}{dodajGodzinePlusZaokraglenie()}}
+{\footnotesize\ttfamily time\+\_\+t Planer\+Wizyt\+::dodaj\+Godzine\+Plus\+Zaokraglenie (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{poczaktowy\+Czas,  }\item[{int}]{liczba\+Godzin }\end{DoxyParamCaption})}
+
+
+
+Funkcja zaokraglajaca godzine Np. time\+\_\+t poczaktowy\+Czas = 01-\/01-\/2000 10\+:00 int liczba\+Godzin = 1 dodaj\+Godzine\+Plus\+Zaokraglenie(poczaktowy\+Czas, liczba\+Godzin) -\/\texorpdfstring{$>$}{>} 01-\/01-\/2000 11\+:00. 
+
+Np. time\+\_\+t poczaktowy\+Czas = 01-\/01-\/2000 10\+:01 int liczba\+Godzin = 1 dodaj\+Godzine\+Plus\+Zaokraglenie(poczaktowy\+Czas, liczba\+Godzin) -\/\texorpdfstring{$>$}{>} 01-\/01-\/2000 12\+:00
+
+\begin{DoxyReturn}{Returns}
+zmieniony czas z zaokraglona godzina 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em poczaktowy\+Czas} & -\/ czas dla ktorego chcemy zaokraglic godzine \\
+\hline
+{\em liczba\+Godzin} & -\/ liczba godzin dla ktorej chcemy zaokraglic w gore \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_ab0ad19a3a66300e23f9d27ca2a0a2ffc}\label{class_planer_wizyt_ab0ad19a3a66300e23f9d27ca2a0a2ffc} 
+\index{PlanerWizyt@{PlanerWizyt}!dodajMiesiac@{dodajMiesiac}}
+\index{dodajMiesiac@{dodajMiesiac}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{dodajMiesiac()}{dodajMiesiac()}}
+{\footnotesize\ttfamily time\+\_\+t Planer\+Wizyt\+::dodaj\+Miesiac (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{poczaktowy\+Czas,  }\item[{int}]{liczba\+Miesiecy }\end{DoxyParamCaption})}
+
+
+
+Funkcja dodajaca do zadanego czasu dana liczne miesiecy. Np. time\+\_\+t czas = 01-\/01-\/2000 int liczba\+Miesiecy = 3 dodaj\+Miesiac(czas, liczba\+Miesiecy) -\/\texorpdfstring{$>$}{>} 01-\/04-\/2000. 
+
+\begin{DoxyReturn}{Returns}
+zmieniony czas o dodanej liczbnie miesiecy 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em poczaktowy\+Czas} & -\/ czas do ktorego chcemy dodac zadana liczbe miesiecy \\
+\hline
+{\em liczba\+Miesiecy} & -\/ liczba miesiecy, ktora zostanie dodana do istniejacego czasu \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a15dd484bb1758432e3aa234d9ca0f5bc}\label{class_planer_wizyt_a15dd484bb1758432e3aa234d9ca0f5bc} 
+\index{PlanerWizyt@{PlanerWizyt}!getGodzinaZamknieciaWDniu@{getGodzinaZamknieciaWDniu}}
+\index{getGodzinaZamknieciaWDniu@{getGodzinaZamknieciaWDniu}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{getGodzinaZamknieciaWDniu()}{getGodzinaZamknieciaWDniu()}}
+{\footnotesize\ttfamily time\+\_\+t Planer\+Wizyt\+::get\+Godzina\+Zamkniecia\+WDniu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}}]{ostatni\+Dostepny\+Dzien\+Tygodnia,  }\item[{time\+\_\+t}]{czas }\end{DoxyParamCaption})}
+
+
+
+Funkcja godzine zamkniecia w danym dniu. 
+
+\begin{DoxyReturn}{Returns}
+czas w ktorym jest zamkniecie w danym dniu 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em czas} & -\/ parametr czasu, dla ktorego sprawdzic jaka jest godzina zamkniecia \\
+\hline
+{\em ostatni\+Dostepny\+Dzien\+Tygodnia} & -\/ parametr dnia tygodnia, dla ktorego chcemy sprawdzic godzine zamkniecia \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_ac143ec9e7e2994bd306d8fd9189dbd8e}\label{class_planer_wizyt_ac143ec9e7e2994bd306d8fd9189dbd8e} 
+\index{PlanerWizyt@{PlanerWizyt}!getMiesiac@{getMiesiac}}
+\index{getMiesiac@{getMiesiac}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{getMiesiac()}{getMiesiac()}}
+{\footnotesize\ttfamily int Planer\+Wizyt\+::get\+Miesiac (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{czas }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca liczbe okreslajaca indeks miesiaca dla danego czasu Np. time\+\_\+t czas = 01-\/04-\/2000. 
+
+get\+Miesiac(czas) -\/\texorpdfstring{$>$}{>} 3 -\/ indeskacja jest z przedzialu \mbox{[}0..11\mbox{]} \begin{DoxyReturn}{Returns}
+indeks miesiaca -\/ przedzial 0-\/11 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em czas} & -\/ czas, z ktorego chcemy wycjagnac miesiac \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a0747fce1eb7f80c269f9002e2f22bdd2}\label{class_planer_wizyt_a0747fce1eb7f80c269f9002e2f22bdd2} 
+\index{PlanerWizyt@{PlanerWizyt}!ostatniDzienMiesiaca@{ostatniDzienMiesiaca}}
+\index{ostatniDzienMiesiaca@{ostatniDzienMiesiaca}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{ostatniDzienMiesiaca()}{ostatniDzienMiesiaca()}}
+{\footnotesize\ttfamily int Planer\+Wizyt\+::ostatni\+Dzien\+Miesiaca (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{czas\+WMillisekundach }\end{DoxyParamCaption})}
+
+
+
+Funkcja ostatni dzien miesiaca. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em czas\+WMillisekundach} & -\/ czas dla ktorego chcemy sprawdzic jaki jest ostatni dzien miesiaca np. 31,30,29,28 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ostatni dzien miesiaca. Mozliwe liczby to\+: 31,30,29,28 
+\end{DoxyReturn}
+\Hypertarget{class_planer_wizyt_a9ba64f33536abb2d048cd38fea11f22b}\label{class_planer_wizyt_a9ba64f33536abb2d048cd38fea11f22b} 
+\index{PlanerWizyt@{PlanerWizyt}!ustawCzas@{ustawCzas}}
+\index{ustawCzas@{ustawCzas}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{ustawCzas()}{ustawCzas()}}
+{\footnotesize\ttfamily time\+\_\+t Planer\+Wizyt\+::ustaw\+Czas (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{poczaktowy\+Czas,  }\item[{int}]{godzina,  }\item[{int}]{minuta }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca godzine dla danego czasu Np. time\+\_\+t poczaktowy\+Czas = 01-\/01-\/2000 10\+:00 int godzina = 8 int minuta = 30 dodaj\+Godzine(poczaktowy\+Czas, liczba\+\_\+godzin) -\/\texorpdfstring{$>$}{>} 01-\/01-\/2000 8\+:30. 
+
+\begin{DoxyReturn}{Returns}
+ustaw\+Czas zwraca zmieniony czas z ustawiona zadana godzina 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em poczaktowy\+Czas} & -\/ czas dla ktorego chcemy ustawic zadana godzine i minute \\
+\hline
+{\em godzina} & -\/ godzina, ktoa chcemy ustawic \\
+\hline
+{\em minuta} & -\/ minuta, ktora chcemy ustawic \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a0a6ee6025bd459810698ff39281684c9}\label{class_planer_wizyt_a0a6ee6025bd459810698ff39281684c9} 
+\index{PlanerWizyt@{PlanerWizyt}!utworzWizyte@{utworzWizyte}}
+\index{utworzWizyte@{utworzWizyte}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{utworzWizyte()}{utworzWizyte()}}
+{\footnotesize\ttfamily void Planer\+Wizyt\+::utworz\+Wizyte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wizyta}{Wizyta}}}]{wizyta }\end{DoxyParamCaption})}
+
+
+
+Funkcja towrzaca wizyte i zapusjaca ja do bazy,. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wizyta} & -\/ obiekt wiyzty, ktory chcemy zapisac do bazy \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a29f5b0414d99908af2914b34cf209455}\label{class_planer_wizyt_a29f5b0414d99908af2914b34cf209455} 
+\index{PlanerWizyt@{PlanerWizyt}!wygenerujBlokiGodzinowe@{wygenerujBlokiGodzinowe}}
+\index{wygenerujBlokiGodzinowe@{wygenerujBlokiGodzinowe}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{wygenerujBlokiGodzinowe()}{wygenerujBlokiGodzinowe()}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$ int, unordered\+\_\+map$<$ int, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ $>$ $>$ Planer\+Wizyt\+::wygeneruj\+Bloki\+Godzinowe (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{wybrany\+Dzien,  }\item[{list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ $>$}]{lekarze }\end{DoxyParamCaption})}
+
+
+
+Funkcja generujaca bloki godzinowe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wybrany\+Dzien} & -\/ dzien dla ktorego chcemy wygenerowac dostepne bloki godzinowe \\
+\hline
+{\em lekarze} & -\/ dosepni lekarze w danym dniu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mapa zawieraca bloki godzinowe bedace kluczem ten mapy. Watoscia tej mapy jest mapa zawierjaca int bedacy id lekarza a waroscia jest obiekt lekarza 
+\end{DoxyReturn}
+\Hypertarget{class_planer_wizyt_a58a49c7fbed6af82e04bb9c6c300985c}\label{class_planer_wizyt_a58a49c7fbed6af82e04bb9c6c300985c} 
+\index{PlanerWizyt@{PlanerWizyt}!wygenerujDni@{wygenerujDni}}
+\index{wygenerujDni@{wygenerujDni}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{wygenerujDni()}{wygenerujDni()}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$ int, time\+\_\+t $>$ Planer\+Wizyt\+::wygeneruj\+Dni (\begin{DoxyParamCaption}\item[{int}]{rok,  }\item[{int}]{miesiac,  }\item[{int}]{dzien\+Poczatkowy,  }\item[{int}]{dzien\+Koncowy }\end{DoxyParamCaption})}
+
+
+
+Funkcja generujaca dni na zadany miesiac uwzgledniajac rok oraz dzien poczatkowy i koncowy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rok} & -\/ rok potrzebny to wygenerowania dni na caly miesiac \\
+\hline
+{\em miesiac} & -\/ miesiac dla ktorego chcemy wygnerowac dni \\
+\hline
+{\em dzien\+Poczatkowy} & -\/ pierwszy dzien miesiaca, od ktorego chcemy zaczac generowac mape z dniami \\
+\hline
+{\em dzien\+Koncowy} & -\/ ostatni dzien miesiaca, do ktorego chcemy zaczac generowac mape z dniami \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mapa z wygenerowanymi dniami miesiaca, kluczem tej mapy jest dzien miesiaca np. 1 jest pierwszym dniem, a wartoscia jest czas dla danego dnia 
+\end{DoxyReturn}
+\Hypertarget{class_planer_wizyt_a8e15c1ea5ddc339c35b868ca37848161}\label{class_planer_wizyt_a8e15c1ea5ddc339c35b868ca37848161} 
+\index{PlanerWizyt@{PlanerWizyt}!wygenerujIdWizyty@{wygenerujIdWizyty}}
+\index{wygenerujIdWizyty@{wygenerujIdWizyty}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{wygenerujIdWizyty()}{wygenerujIdWizyty()}}
+{\footnotesize\ttfamily int Planer\+Wizyt\+::wygeneruj\+Id\+Wizyty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja generujaca kolejne Id dla wizty. 
+
+\begin{DoxyReturn}{Returns}
+id kolejnej wiyzty, ktora mozemy zapisac w bazie 
+\end{DoxyReturn}
+\Hypertarget{class_planer_wizyt_a1cec8154c82de641ee369dd6083702a5}\label{class_planer_wizyt_a1cec8154c82de641ee369dd6083702a5} 
+\index{PlanerWizyt@{PlanerWizyt}!wygenerujMiesiace@{wygenerujMiesiace}}
+\index{wygenerujMiesiace@{wygenerujMiesiace}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{wygenerujMiesiace()}{wygenerujMiesiace()}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$ int, time\+\_\+t $>$ Planer\+Wizyt\+::wygeneruj\+Miesiace (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{czas\+Rozpoczecia,  }\item[{time\+\_\+t}]{czas\+Zakonczenia }\end{DoxyParamCaption})}
+
+
+
+Funkcja generujaca wszystkie dostepne miesiace, w ktorych mozna zarezerwowac wizyte. 
+
+\begin{DoxyReturn}{Returns}
+mapa, ktora zawmiera miesac i czas -\/ oznaczaja one dostepne miesiace do rezerwacji wizty 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em czas\+Rozpoczecia} & -\/ parametr czasu, od ktorego bedziemy generowac pierwszy dostepny miesiac \\
+\hline
+{\em czas\+Zakonczenia} & -\/ parametr czasu, do ktorego bedziemy generowac ostatni dostepny miesiac \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a2acc098620098f071058c18bf8edd391}\label{class_planer_wizyt_a2acc098620098f071058c18bf8edd391} 
+\index{PlanerWizyt@{PlanerWizyt}!wypiszKalendarz@{wypiszKalendarz}}
+\index{wypiszKalendarz@{wypiszKalendarz}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{wypiszKalendarz()}{wypiszKalendarz()}}
+{\footnotesize\ttfamily void Planer\+Wizyt\+::wypisz\+Kalendarz (\begin{DoxyParamCaption}\item[{int}]{rok,  }\item[{int}]{miesiac,  }\item[{int}]{dzien\+Poczatkowy,  }\item[{int}]{dzien\+Koncowy }\end{DoxyParamCaption})}
+
+
+
+Funkcja wyswietlajaca kalenarz dla danego miesiaca. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rok} & -\/ rok, ktory ma byc uwzgledniony przy wyswietlaniu kalenarza \\
+\hline
+{\em miesiac} & -\/ miesac dla ktorgo rysujemy kalenarz \\
+\hline
+{\em dzien\+Poczatkowy} & -\/ dzien poczatkowy -\/ dni przed tym dniem w ramach tego samego miesiaca nie beda wswietlane \\
+\hline
+{\em dzien\+Koncowy} & -\/ dzien koncowy -\/ dni po tym dniu w ramach tego samego miesiaca nie beda wswietlane \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a34da07ccd458d4bc8ad880ef65e65ab2}\label{class_planer_wizyt_a34da07ccd458d4bc8ad880ef65e65ab2} 
+\index{PlanerWizyt@{PlanerWizyt}!wyswietl@{wyswietl}}
+\index{wyswietl@{wyswietl}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{wyswietl()}{wyswietl()}}
+{\footnotesize\ttfamily void Planer\+Wizyt\+::wyswietl (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{current\+Time,  }\item[{string}]{format }\end{DoxyParamCaption})}
+
+
+
+Funkcja wyswietlajaca dany czas o zadanym formacie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & -\/ czas, ktory chcemy odpowiednio sformatowac \\
+\hline
+{\em format} & -\/ zadany format czasu \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a854a44dcce495bb08f513fdd3cf19319}\label{class_planer_wizyt_a854a44dcce495bb08f513fdd3cf19319} 
+\index{PlanerWizyt@{PlanerWizyt}!zaladujAktualnyDzienTygodnia@{zaladujAktualnyDzienTygodnia}}
+\index{zaladujAktualnyDzienTygodnia@{zaladujAktualnyDzienTygodnia}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zaladujAktualnyDzienTygodnia()}{zaladujAktualnyDzienTygodnia()}}
+{\footnotesize\ttfamily std\+::string Planer\+Wizyt\+::zaladuj\+Aktualny\+Dzien\+Tygodnia (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{current\+Time }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca aktualny dzien tygodnia z przekazanego czasu. 
+
+\begin{DoxyReturn}{Returns}
+Aktualny dzien tygodnia (Poniedzialek -\/ Niedziela) po angelsku 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & -\/ zmienna opisujaca czas, dla ktorego ma byc wyciagniety dzien tygodnia \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a8c4f35b603585e8d1bda5d9b634b0ab5}\label{class_planer_wizyt_a8c4f35b603585e8d1bda5d9b634b0ab5} 
+\index{PlanerWizyt@{PlanerWizyt}!zaladujDostepnaGodzineNaDzienTygodnia@{zaladujDostepnaGodzineNaDzienTygodnia}}
+\index{zaladujDostepnaGodzineNaDzienTygodnia@{zaladujDostepnaGodzineNaDzienTygodnia}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zaladujDostepnaGodzineNaDzienTygodnia()}{zaladujDostepnaGodzineNaDzienTygodnia()}}
+{\footnotesize\ttfamily std\+::pair$<$ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}, int $>$ Planer\+Wizyt\+::zaladuj\+Dostepna\+Godzine\+Na\+Dzien\+Tygodnia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}}]{aktualny\+Dzien\+Tygodnia,  }\item[{\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}}]{termin\+Na\+Nastepny\+Dzien,  }\item[{int}]{aktualna\+Godzina,  }\item[{int}]{pierwsza\+Dostepna\+Godzina\+Wizty }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca pierwsza dostepna godzine na aktualny dzien tygodnia i za dana godzine. Jest to funkcja pomocnicza uzywana w metodzie \doxylink{class_planer_wizyt_a3fc1010fc43db405285f132069f9416a}{znajdz\+Pierwszy\+Dostepny\+Termin()} 
+
+\begin{DoxyReturn}{Returns}
+Zwraca pare, ktorej pierwszym elementem jest dzien tygodnia, a drugim godzina -\/ reprezentuja one pierwszy mozliwy termin 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em aktualny\+Dzien\+Tygodnia} & -\/ parametr opisujacy aktualny dzien tygodnia, dla ktorego chcemy sprawdzic dostepnosc \\
+\hline
+{\em termin\+Na\+Nastepny\+Dzien} & -\/ parametr opisujacy nastepny dzien tygodnia z dostepna wizyta po aktualnym dniu tygodnia \\
+\hline
+{\em aktualna\+Godzina} & -\/ parametr opisujacy aktualnie rozwazana godzine wizyty \\
+\hline
+{\em pierwsza\+Dostepna\+Godzina\+Wizty} & -\/ parametr opisujacy pierwsza dostepna godzine \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a049898922cfb8acac5bcbc3ff53bd4dd}\label{class_planer_wizyt_a049898922cfb8acac5bcbc3ff53bd4dd} 
+\index{PlanerWizyt@{PlanerWizyt}!zaladujDostepyCzas@{zaladujDostepyCzas}}
+\index{zaladujDostepyCzas@{zaladujDostepyCzas}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zaladujDostepyCzas()}{zaladujDostepyCzas()}}
+{\footnotesize\ttfamily std\+::pair$<$ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}, time\+\_\+t $>$ Planer\+Wizyt\+::zaladuj\+Dostepy\+Czas (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{aktualny\+Czas }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca pierwszy dostepny czas -\/ zwraca ona pare, w ktorej jest zawarty dzien tygodnia i czas. 
+
+\begin{DoxyReturn}{Returns}
+zwraca pierwszy dostepny czas dla wizyty -\/ typem zwracanym jest para, gdzie pierwszym elementem jest pierwszy dosteny dzien tygodnia oraz czas 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em aktualny\+Czas} & -\/ zadany czas dla ktorego chcemy znalezc pierwszy dostepny dzien tygodnia z czasem (typ time\+\_\+t) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a02ae7a75d3b5cdb795b5c5d5179ccdd7}\label{class_planer_wizyt_a02ae7a75d3b5cdb795b5c5d5179ccdd7} 
+\index{PlanerWizyt@{PlanerWizyt}!zaladujDzienMiesiaca@{zaladujDzienMiesiaca}}
+\index{zaladujDzienMiesiaca@{zaladujDzienMiesiaca}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zaladujDzienMiesiaca()}{zaladujDzienMiesiaca()}}
+{\footnotesize\ttfamily std\+::string Planer\+Wizyt\+::zaladuj\+Dzien\+Miesiaca (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{current\+Time }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca dzien miesiaca z przekazanego czasu. 
+
+\begin{DoxyReturn}{Returns}
+Dzien miesiaca (1 -\/ 31)/(1-\/30)/(1-\/28/29) 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & -\/ zmienna opisujaca czas, dla ktorego ma byc wyciagniety dzien miesiaca \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a0be16b29829df7fb04c7c0644947563f}\label{class_planer_wizyt_a0be16b29829df7fb04c7c0644947563f} 
+\index{PlanerWizyt@{PlanerWizyt}!zaladujMiesiac@{zaladujMiesiac}}
+\index{zaladujMiesiac@{zaladujMiesiac}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zaladujMiesiac()}{zaladujMiesiac()}}
+{\footnotesize\ttfamily std\+::string Planer\+Wizyt\+::zaladuj\+Miesiac (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{current\+Time }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca miesiac z przekazanego czasu. 
+
+\begin{DoxyReturn}{Returns}
+Miesiac (Styczen -\/ Grudzien) po angelsku 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & -\/ zmienna opisujaca czas, dla ktorego ma byc wyciagniety miesiac \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a668f91bd5beba6214fdb4385477def25}\label{class_planer_wizyt_a668f91bd5beba6214fdb4385477def25} 
+\index{PlanerWizyt@{PlanerWizyt}!zaladujNastepnyDzienTygodnia@{zaladujNastepnyDzienTygodnia}}
+\index{zaladujNastepnyDzienTygodnia@{zaladujNastepnyDzienTygodnia}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zaladujNastepnyDzienTygodnia()}{zaladujNastepnyDzienTygodnia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} Planer\+Wizyt\+::zaladuj\+Nastepny\+Dzien\+Tygodnia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}}]{aktualny\+Dzien\+Tygodnia }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca nastepny dostepny dzien tygodnia Np. zaladuj\+Nastepny\+Dzien\+Tygodnia(\+Dni\+Tygodnia\+::\+PONIEDZIALEK) -\/\texorpdfstring{$>$}{>} Dni\+Tygodnia\+::\+WTOREK zaladuj\+Nastepny\+Dzien\+Tygodnia(\+Dni\+Tygodnia\+::\+NIEDZIELA) -\/\texorpdfstring{$>$}{>} Dni\+Tygodnia\+::\+PONIEDZIALEK zaladuj\+Nastepny\+Dzien\+Tygodnia(\+Dni\+Tygodnia\+::\+SOBOTA) -\/\texorpdfstring{$>$}{>} Dni\+Tygodnia\+::\+PONIEDZIALEK -\/ w niedziele jest zamkniete. 
+
+\begin{DoxyReturn}{Returns}
+nastepny dostepny dzien tygodnia, na ktory mozna zarezerwowac wizyte 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em aktualny\+Dzien\+Tygodnia} & -\/ zadany dzien tygodnia, dla ktorego szukamy nastepnego dnia ktory bedzie dostepny \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_acac9bcc6bab92426b73b5c890d7923b7}\label{class_planer_wizyt_acac9bcc6bab92426b73b5c890d7923b7} 
+\index{PlanerWizyt@{PlanerWizyt}!zaladujOstatniaDostepnaDate@{zaladujOstatniaDostepnaDate}}
+\index{zaladujOstatniaDostepnaDate@{zaladujOstatniaDostepnaDate}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zaladujOstatniaDostepnaDate()}{zaladujOstatniaDostepnaDate()}}
+{\footnotesize\ttfamily std\+::pair$<$ string, time\+\_\+t $>$ Planer\+Wizyt\+::zaladuj\+Ostatnia\+Dostepna\+Date (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{poczaktowy\+Czas,  }\item[{string}]{format }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca ostatnia mozliwa date do rezerwacji wizyty. 
+
+\begin{DoxyReturn}{Returns}
+Zwraca pare, ktorej pierwszym elementem jest sformatowana data, a drugim czas (typ time\+\_\+t) -\/ reprezentuja one ostatni mozliwy termin 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em poczaktowy\+Czas} & -\/ parametr typu time\+\_\+t, w ktorym jest zapisany czas poczatkowy \\
+\hline
+{\em format} & -\/ format wyjsciowy ostatniej dostepnej daty \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a7c108151a2cafc9492a52f50dcabd1d1}\label{class_planer_wizyt_a7c108151a2cafc9492a52f50dcabd1d1} 
+\index{PlanerWizyt@{PlanerWizyt}!zaladujPierszaDostepnaDate@{zaladujPierszaDostepnaDate}}
+\index{zaladujPierszaDostepnaDate@{zaladujPierszaDostepnaDate}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zaladujPierszaDostepnaDate()}{zaladujPierszaDostepnaDate()}}
+{\footnotesize\ttfamily pair$<$ string, time\+\_\+t $>$ Planer\+Wizyt\+::zaladuj\+Piersza\+Dostepna\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca pierwszy dostepna date bazujac na aktualnym czasie. 
+
+\begin{DoxyReturn}{Returns}
+Zwraca pare, ktorej pierwszym elementem jest dzien tygodnia, a drugim godzina -\/ reprezentuja one pierwszy mozliwy termin 
+\end{DoxyReturn}
+\Hypertarget{class_planer_wizyt_abc7df21fd0e8062d44a8c751afa3baae}\label{class_planer_wizyt_abc7df21fd0e8062d44a8c751afa3baae} 
+\index{PlanerWizyt@{PlanerWizyt}!zaladujRok@{zaladujRok}}
+\index{zaladujRok@{zaladujRok}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zaladujRok()}{zaladujRok()}}
+{\footnotesize\ttfamily std\+::string Planer\+Wizyt\+::zaladuj\+Rok (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{czas }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca rok z przekazanego czasu. 
+
+\begin{DoxyReturn}{Returns}
+Rok 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em czas} & -\/ zmienna opisujaca czas, dla ktorego ma byc wyciagniety rok \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_adb876f823d86daa02bfee2640d96b123}\label{class_planer_wizyt_adb876f823d86daa02bfee2640d96b123} 
+\index{PlanerWizyt@{PlanerWizyt}!zamienNaDniTygonida@{zamienNaDniTygonida}}
+\index{zamienNaDniTygonida@{zamienNaDniTygonida}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zamienNaDniTygonida()}{zamienNaDniTygonida()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} Planer\+Wizyt\+::zamien\+Na\+Dni\+Tygonida (\begin{DoxyParamCaption}\item[{string}]{dni\+Tygodnia\+Tekst }\end{DoxyParamCaption})}
+
+
+
+Funkcja zamieniaca angielski dzien tygodnia na tym enum zawiarajacy polskie dnia tygodnia Np. string dni\+Tygodnia\+Tekst = \"{}\+Monday\"{} zamien\+Na\+Dni\+Tygonida(dni\+Tygodnia\+Tekst) -\/\texorpdfstring{$>$}{>} Dni\+Tygodnia\+::\+PONIEDZIALEK. 
+
+\begin{DoxyReturn}{Returns}
+dzien tygodnia, bedacy polskim odpowiednikiem 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em dni\+Tygodnia\+Tekst} & -\/ dzien tygodnia po angielski \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a2354a6cc0bbef335108a8ae64458e8fb}\label{class_planer_wizyt_a2354a6cc0bbef335108a8ae64458e8fb} 
+\index{PlanerWizyt@{PlanerWizyt}!zamienNaDniTygonida@{zamienNaDniTygonida}}
+\index{zamienNaDniTygonida@{zamienNaDniTygonida}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zamienNaDniTygonida()}{zamienNaDniTygonida()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} Planer\+Wizyt\+::zamien\+Na\+Dni\+Tygonida (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{czas }\end{DoxyParamCaption})}
+
+
+
+Funkcja zamieniaca dany czas na tym enum Dni\+Tygodnia. 
+
+\begin{DoxyReturn}{Returns}
+dzien tygodnia odpowiadajacy zadanemu czasowi 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em czas} & -\/ parametr czasu, dla ktorego sprawdzic jakim jest dniem tygodnia \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_ae0c96a60a6babf24502bddb18c0d38d6}\label{class_planer_wizyt_ae0c96a60a6babf24502bddb18c0d38d6} 
+\index{PlanerWizyt@{PlanerWizyt}!zamienNaMiesiac@{zamienNaMiesiac}}
+\index{zamienNaMiesiac@{zamienNaMiesiac}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zamienNaMiesiac()}{zamienNaMiesiac()}}
+{\footnotesize\ttfamily string Planer\+Wizyt\+::zamien\+Na\+Miesiac (\begin{DoxyParamCaption}\item[{time\+\_\+t}]{czas }\end{DoxyParamCaption})}
+
+
+
+Funkcja zamieniaca czas na dany miesiac po polsku Np. time\+\_\+t czas = 01-\/01-\/2000 zamien\+Na\+Miesiac(czas) -\/\texorpdfstring{$>$}{>} \"{}\+Styczen\"{}. 
+
+\begin{DoxyReturn}{Returns}
+miesiac po polsku 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em czas} & -\/ czas, dla ktorego chcemy zwrocic miesiac po polsku \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_ab340757be0df4bc5129d656f8db4d1cf}\label{class_planer_wizyt_ab340757be0df4bc5129d656f8db4d1cf} 
+\index{PlanerWizyt@{PlanerWizyt}!zamienZAngielskiegoNaPolski@{zamienZAngielskiegoNaPolski}}
+\index{zamienZAngielskiegoNaPolski@{zamienZAngielskiegoNaPolski}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{zamienZAngielskiegoNaPolski()}{zamienZAngielskiegoNaPolski()}}
+{\footnotesize\ttfamily std\+::string Planer\+Wizyt\+::zamien\+ZAngielskiego\+Na\+Polski (\begin{DoxyParamCaption}\item[{const string \&}]{miesiac\+Po\+Angielsku }\end{DoxyParamCaption})}
+
+
+
+Funkcja zamieniaca miesiac z anigelskiego na miesiac po polsku Np. string miesiac\+Po\+Angielsku = \"{}\+January\"{} zamien\+ZAngielskiego\+Na\+Polski(miesiac\+Po\+Angielsku) -\/\texorpdfstring{$>$}{>} \"{}\+Styczen\"{}. 
+
+\begin{DoxyReturn}{Returns}
+miesiac po polsku 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em miesiac\+Po\+Angielsku} & -\/ miesiac w jezyku angielskim \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_planer_wizyt_a3fc1010fc43db405285f132069f9416a}\label{class_planer_wizyt_a3fc1010fc43db405285f132069f9416a} 
+\index{PlanerWizyt@{PlanerWizyt}!znajdzPierwszyDostepnyTermin@{znajdzPierwszyDostepnyTermin}}
+\index{znajdzPierwszyDostepnyTermin@{znajdzPierwszyDostepnyTermin}!PlanerWizyt@{PlanerWizyt}}
+\doxysubsubsection{\texorpdfstring{znajdzPierwszyDostepnyTermin()}{znajdzPierwszyDostepnyTermin()}}
+{\footnotesize\ttfamily std\+::pair$<$ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}, int $>$ Planer\+Wizyt\+::znajdz\+Pierwszy\+Dostepny\+Termin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca pierwszy dostepny termin. Uzywa ona roznych warjacji metod \doxylink{class_planer_wizyt_a8c4f35b603585e8d1bda5d9b634b0ab5}{zaladuj\+Dostepna\+Godzine\+Na\+Dzien\+Tygodnia()} 
+
+\begin{DoxyReturn}{Returns}
+Zwraca pare, ktorej pierwszym elementem jest dzien tygodnia, a drugim godzina -\/ reprezentuja one pierwszy mozliwy termin 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_planer_wizyt_8h}{Planer\+Wizyt.\+h}}\item 
+Planer\+Wizyt.\+cpp\end{DoxyCompactItemize}

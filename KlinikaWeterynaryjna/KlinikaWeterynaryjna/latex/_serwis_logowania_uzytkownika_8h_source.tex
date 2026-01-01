@@ -1,0 +1,23 @@
+\doxysection{Serwis\+Logowania\+Uzytkownika.\+h}
+\hypertarget{_serwis_logowania_uzytkownika_8h_source}{}\label{_serwis_logowania_uzytkownika_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_uzytkownik_8h}{Uzytkownik.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_czytacz_uzytkownikow_8h}{CzytaczUzytkownikow.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_serwis_logowania_uzytkownika}{SerwisLogowaniaUzytkownika}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ shared\_ptr<CzytaczUzytkownikow>\ czytaczUzytkownikow;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_serwis_logowania_uzytkownika}{SerwisLogowaniaUzytkownika}}(shared\_ptr<CzytaczUzytkownikow>\ czytaczUzytkownikow);}
+\DoxyCodeLine{00031\ \ \ \ \ shared\_ptr<Uzytkownik>\ \mbox{\hyperlink{class_serwis_logowania_uzytkownika_a766344c9d8eafbe098dfe94d4009b738}{zaloguj}}(\textcolor{keywordtype}{string}\ login,\ \textcolor{keywordtype}{string}\ haslo);}
+\DoxyCodeLine{00037\ \ \ \ \ shared\_ptr<Uzytkownik>\ \mbox{\hyperlink{class_serwis_logowania_uzytkownika_a8c59b1bed4a09f019e44c7ca2eb28bc3}{znajdz}}(\textcolor{keywordtype}{string}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00038\ \};}
+
+\end{DoxyCode}

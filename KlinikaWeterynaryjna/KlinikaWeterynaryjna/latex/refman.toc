@@ -1,0 +1,342 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grafiku\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pracy Class Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{8}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lekarza Class Reference}{8}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{9}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Plikow Class Reference}{9}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{9}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Member Function Documentation}{10}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}dopiszDoPliku()}{10}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}getNastepneId()}{10}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}getPozycjaTextu()}{10}{subsubsection.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.2.4}getPozycjaWiersza()}{11}{subsubsection.4.3.2.4}%
+\contentsline {subsubsection}{\numberline {4.3.2.5}podajNazwePliku()}{11}{subsubsection.4.3.2.5}%
+\contentsline {subsubsection}{\numberline {4.3.2.6}usunWieszPoId()}{11}{subsubsection.4.3.2.6}%
+\contentsline {subsubsection}{\numberline {4.3.2.7}wczytajPlik()}{12}{subsubsection.4.3.2.7}%
+\contentsline {subsubsection}{\numberline {4.3.2.8}zapiszDoPliku()}{12}{subsubsection.4.3.2.8}%
+\contentsline {subsubsection}{\numberline {4.3.2.9}zmaienNaWiersze()}{12}{subsubsection.4.3.2.9}%
+\contentsline {section}{\numberline {4.4}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Uzytkownikow Class Reference}{12}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{13}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Member Function Documentation}{13}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}podajNazwePliku()}{13}{subsubsection.4.4.2.1}%
+\contentsline {section}{\numberline {4.5}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wizyt Class Reference}{14}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{15}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Member Function Documentation}{15}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}podajNazwePliku()}{15}{subsubsection.4.5.2.1}%
+\contentsline {section}{\numberline {4.6}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wlasiciela\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzecia Class Reference}{15}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{16}{subsection.4.6.1}%
+\contentsline {section}{\numberline {4.7}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzat Class Reference}{16}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{17}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Member Function Documentation}{17}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}podajNazwePliku()}{17}{subsubsection.4.7.2.1}%
+\contentsline {section}{\numberline {4.8}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Godzina\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wizyty Class Reference}{18}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{18}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Member Function Documentation}{18}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}getDzien()}{18}{subsubsection.4.8.2.1}%
+\contentsline {subsubsection}{\numberline {4.8.2.2}getGodzina()}{19}{subsubsection.4.8.2.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.3}getMiesiac()}{19}{subsubsection.4.8.2.3}%
+\contentsline {subsubsection}{\numberline {4.8.2.4}getRok()}{19}{subsubsection.4.8.2.4}%
+\contentsline {section}{\numberline {4.9}Godziny\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pracy Class Reference}{19}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{20}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Member Function Documentation}{20}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}getGodzinaRozpoczecia()}{20}{subsubsection.4.9.2.1}%
+\contentsline {subsubsection}{\numberline {4.9.2.2}getGodzinaZakonczenia()}{20}{subsubsection.4.9.2.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.3}getMinutaRozpoczecia()}{20}{subsubsection.4.9.2.3}%
+\contentsline {subsubsection}{\numberline {4.9.2.4}getMinutaZakonczenia()}{21}{subsubsection.4.9.2.4}%
+\contentsline {section}{\numberline {4.10}Kanarek Class Reference}{21}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{22}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}Member Function Documentation}{23}{subsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.1}dzwiek()}{23}{subsubsection.4.10.2.1}%
+\contentsline {subsubsection}{\numberline {4.10.2.2}getWaga()}{23}{subsubsection.4.10.2.2}%
+\contentsline {section}{\numberline {4.11}Kot Class Reference}{23}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{24}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Member Function Documentation}{25}{subsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.1}dzwiek()}{25}{subsubsection.4.11.2.1}%
+\contentsline {subsubsection}{\numberline {4.11.2.2}getWaga()}{25}{subsubsection.4.11.2.2}%
+\contentsline {section}{\numberline {4.12}Lekarz Class Reference}{25}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{26}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Member Function Documentation}{26}{subsection.4.12.2}%
+\contentsline {subsubsection}{\numberline {4.12.2.1}czyDostepnyWGodzinach()}{26}{subsubsection.4.12.2.1}%
+\contentsline {subsubsection}{\numberline {4.12.2.2}getImie()}{26}{subsubsection.4.12.2.2}%
+\contentsline {subsubsection}{\numberline {4.12.2.3}getNazwisko()}{27}{subsubsection.4.12.2.3}%
+\contentsline {subsubsection}{\numberline {4.12.2.4}getSpecjalizacja()}{27}{subsubsection.4.12.2.4}%
+\contentsline {subsubsection}{\numberline {4.12.2.5}zwrocGodzinyPracyDlaDnia()}{27}{subsubsection.4.12.2.5}%
+\contentsline {section}{\numberline {4.13}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lekarza Class Reference}{27}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{28}{subsection.4.13.1}%
+\contentsline {subsection}{\numberline {4.13.2}Member Function Documentation}{28}{subsection.4.13.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.1}wyswietlMenuPoczatkowe()}{28}{subsubsection.4.13.2.1}%
+\contentsline {section}{\numberline {4.14}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Logowania Class Reference}{28}{section.4.14}%
+\contentsline {subsection}{\numberline {4.14.1}Detailed Description}{29}{subsection.4.14.1}%
+\contentsline {subsection}{\numberline {4.14.2}Member Function Documentation}{29}{subsection.4.14.2}%
+\contentsline {subsubsection}{\numberline {4.14.2.1}getHaslo()}{29}{subsubsection.4.14.2.1}%
+\contentsline {subsubsection}{\numberline {4.14.2.2}getLogin()}{29}{subsubsection.4.14.2.2}%
+\contentsline {subsubsection}{\numberline {4.14.2.3}wyswietlMenuPoczatkowe()}{29}{subsubsection.4.14.2.3}%
+\contentsline {section}{\numberline {4.15}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wlasiciela\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzecia Class Reference}{29}{section.4.15}%
+\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{30}{subsection.4.15.1}%
+\contentsline {subsection}{\numberline {4.15.2}Member Function Documentation}{30}{subsection.4.15.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.1}wswietlMenuUslug()}{30}{subsubsection.4.15.2.1}%
+\contentsline {subsubsection}{\numberline {4.15.2.2}wyswietlMenuDoPlanowaniaWizyty()}{30}{subsubsection.4.15.2.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.3}wyswietlMenuPoczatkowe()}{31}{subsubsection.4.15.2.3}%
+\contentsline {subsubsection}{\numberline {4.15.2.4}wyswietlMenuWyboruTerminu()}{31}{subsubsection.4.15.2.4}%
+\contentsline {section}{\numberline {4.16}Pajak Class Reference}{31}{section.4.16}%
+\contentsline {subsection}{\numberline {4.16.1}Detailed Description}{32}{subsection.4.16.1}%
+\contentsline {subsection}{\numberline {4.16.2}Member Function Documentation}{33}{subsection.4.16.2}%
+\contentsline {subsubsection}{\numberline {4.16.2.1}dzwiek()}{33}{subsubsection.4.16.2.1}%
+\contentsline {subsubsection}{\numberline {4.16.2.2}getWaga()}{33}{subsubsection.4.16.2.2}%
+\contentsline {section}{\numberline {4.17}Pies Class Reference}{33}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Detailed Description}{34}{subsection.4.17.1}%
+\contentsline {subsection}{\numberline {4.17.2}Member Function Documentation}{35}{subsection.4.17.2}%
+\contentsline {subsubsection}{\numberline {4.17.2.1}dzwiek()}{35}{subsubsection.4.17.2.1}%
+\contentsline {subsubsection}{\numberline {4.17.2.2}getWaga()}{35}{subsubsection.4.17.2.2}%
+\contentsline {section}{\numberline {4.18}Planer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wizyt Class Reference}{35}{section.4.18}%
+\contentsline {subsection}{\numberline {4.18.1}Detailed Description}{37}{subsection.4.18.1}%
+\contentsline {subsection}{\numberline {4.18.2}Member Function Documentation}{37}{subsection.4.18.2}%
+\contentsline {subsubsection}{\numberline {4.18.2.1}czyJestDniem()}{37}{subsubsection.4.18.2.1}%
+\contentsline {subsubsection}{\numberline {4.18.2.2}czyOstatniDostepnyMiesiac()}{37}{subsubsection.4.18.2.2}%
+\contentsline {subsubsection}{\numberline {4.18.2.3}czyPierwszDostepnyMiesiac()}{38}{subsubsection.4.18.2.3}%
+\contentsline {subsubsection}{\numberline {4.18.2.4}dodajDzien()}{38}{subsubsection.4.18.2.4}%
+\contentsline {subsubsection}{\numberline {4.18.2.5}dodajGodzine()}{39}{subsubsection.4.18.2.5}%
+\contentsline {subsubsection}{\numberline {4.18.2.6}dodajGodzinePlusZaokraglenie()}{39}{subsubsection.4.18.2.6}%
+\contentsline {subsubsection}{\numberline {4.18.2.7}dodajMiesiac()}{39}{subsubsection.4.18.2.7}%
+\contentsline {subsubsection}{\numberline {4.18.2.8}getGodzinaZamknieciaWDniu()}{40}{subsubsection.4.18.2.8}%
+\contentsline {subsubsection}{\numberline {4.18.2.9}getMiesiac()}{40}{subsubsection.4.18.2.9}%
+\contentsline {subsubsection}{\numberline {4.18.2.10}ostatniDzienMiesiaca()}{40}{subsubsection.4.18.2.10}%
+\contentsline {subsubsection}{\numberline {4.18.2.11}ustawCzas()}{41}{subsubsection.4.18.2.11}%
+\contentsline {subsubsection}{\numberline {4.18.2.12}utworzWizyte()}{41}{subsubsection.4.18.2.12}%
+\contentsline {subsubsection}{\numberline {4.18.2.13}wygenerujBlokiGodzinowe()}{41}{subsubsection.4.18.2.13}%
+\contentsline {subsubsection}{\numberline {4.18.2.14}wygenerujDni()}{42}{subsubsection.4.18.2.14}%
+\contentsline {subsubsection}{\numberline {4.18.2.15}wygenerujIdWizyty()}{42}{subsubsection.4.18.2.15}%
+\contentsline {subsubsection}{\numberline {4.18.2.16}wygenerujMiesiace()}{43}{subsubsection.4.18.2.16}%
+\contentsline {subsubsection}{\numberline {4.18.2.17}wypiszKalendarz()}{43}{subsubsection.4.18.2.17}%
+\contentsline {subsubsection}{\numberline {4.18.2.18}wyswietl()}{43}{subsubsection.4.18.2.18}%
+\contentsline {subsubsection}{\numberline {4.18.2.19}zaladujAktualnyDzienTygodnia()}{44}{subsubsection.4.18.2.19}%
+\contentsline {subsubsection}{\numberline {4.18.2.20}zaladujDostepnaGodzineNaDzienTygodnia()}{44}{subsubsection.4.18.2.20}%
+\contentsline {subsubsection}{\numberline {4.18.2.21}zaladujDostepyCzas()}{44}{subsubsection.4.18.2.21}%
+\contentsline {subsubsection}{\numberline {4.18.2.22}zaladujDzienMiesiaca()}{46}{subsubsection.4.18.2.22}%
+\contentsline {subsubsection}{\numberline {4.18.2.23}zaladujMiesiac()}{46}{subsubsection.4.18.2.23}%
+\contentsline {subsubsection}{\numberline {4.18.2.24}zaladujNastepnyDzienTygodnia()}{46}{subsubsection.4.18.2.24}%
+\contentsline {subsubsection}{\numberline {4.18.2.25}zaladujOstatniaDostepnaDate()}{47}{subsubsection.4.18.2.25}%
+\contentsline {subsubsection}{\numberline {4.18.2.26}zaladujPierszaDostepnaDate()}{47}{subsubsection.4.18.2.26}%
+\contentsline {subsubsection}{\numberline {4.18.2.27}zaladujRok()}{47}{subsubsection.4.18.2.27}%
+\contentsline {subsubsection}{\numberline {4.18.2.28}zamienNaDniTygonida()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{48}{subsubsection.4.18.2.28}%
+\contentsline {subsubsection}{\numberline {4.18.2.29}zamienNaDniTygonida()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{48}{subsubsection.4.18.2.29}%
+\contentsline {subsubsection}{\numberline {4.18.2.30}zamienNaMiesiac()}{48}{subsubsection.4.18.2.30}%
+\contentsline {subsubsection}{\numberline {4.18.2.31}zamienZAngielskiegoNaPolski()}{49}{subsubsection.4.18.2.31}%
+\contentsline {subsubsection}{\numberline {4.18.2.32}znajdzPierwszyDostepnyTermin()}{49}{subsubsection.4.18.2.32}%
+\contentsline {section}{\numberline {4.19}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grafiku\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pracy Class Reference}{49}{section.4.19}%
+\contentsline {subsection}{\numberline {4.19.1}Detailed Description}{50}{subsection.4.19.1}%
+\contentsline {subsection}{\numberline {4.19.2}Member Function Documentation}{50}{subsection.4.19.2}%
+\contentsline {subsubsection}{\numberline {4.19.2.1}zaladujGrafik()}{50}{subsubsection.4.19.2.1}%
+\contentsline {section}{\numberline {4.20}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lekarza Class Reference}{50}{section.4.20}%
+\contentsline {subsection}{\numberline {4.20.1}Detailed Description}{50}{subsection.4.20.1}%
+\contentsline {subsection}{\numberline {4.20.2}Member Function Documentation}{51}{subsection.4.20.2}%
+\contentsline {subsubsection}{\numberline {4.20.2.1}zaladujLekarza()}{51}{subsubsection.4.20.2.1}%
+\contentsline {subsubsection}{\numberline {4.20.2.2}zaladujWszystkichLekarzy()}{51}{subsubsection.4.20.2.2}%
+\contentsline {subsubsection}{\numberline {4.20.2.3}znajdzLekarzaPoId()}{51}{subsubsection.4.20.2.3}%
+\contentsline {section}{\numberline {4.21}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Logowania\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Uzytkownika Class Reference}{52}{section.4.21}%
+\contentsline {subsection}{\numberline {4.21.1}Detailed Description}{52}{subsection.4.21.1}%
+\contentsline {subsection}{\numberline {4.21.2}Member Function Documentation}{52}{subsection.4.21.2}%
+\contentsline {subsubsection}{\numberline {4.21.2.1}zaloguj()}{52}{subsubsection.4.21.2.1}%
+\contentsline {subsubsection}{\numberline {4.21.2.2}znajdz()}{52}{subsubsection.4.21.2.2}%
+\contentsline {section}{\numberline {4.22}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Uslug Class Reference}{53}{section.4.22}%
+\contentsline {subsection}{\numberline {4.22.1}Detailed Description}{53}{subsection.4.22.1}%
+\contentsline {subsection}{\numberline {4.22.2}Member Function Documentation}{53}{subsection.4.22.2}%
+\contentsline {subsubsection}{\numberline {4.22.2.1}stworzUslugeDlaZwierzaka()}{53}{subsubsection.4.22.2.1}%
+\contentsline {subsubsection}{\numberline {4.22.2.2}znajdzPoTypie()}{54}{subsubsection.4.22.2.2}%
+\contentsline {section}{\numberline {4.23}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wizyt Class Reference}{54}{section.4.23}%
+\contentsline {subsection}{\numberline {4.23.1}Detailed Description}{55}{subsection.4.23.1}%
+\contentsline {subsection}{\numberline {4.23.2}Member Function Documentation}{55}{subsection.4.23.2}%
+\contentsline {subsubsection}{\numberline {4.23.2.1}anulujWizyte()}{55}{subsubsection.4.23.2.1}%
+\contentsline {subsubsection}{\numberline {4.23.2.2}anulujWizyteDlaZwierzaka()}{55}{subsubsection.4.23.2.2}%
+\contentsline {subsubsection}{\numberline {4.23.2.3}getNastepneId()}{55}{subsubsection.4.23.2.3}%
+\contentsline {subsubsection}{\numberline {4.23.2.4}przegladWizytPoIdLekarza()}{56}{subsubsection.4.23.2.4}%
+\contentsline {subsubsection}{\numberline {4.23.2.5}przegladWizytPoIdWlasiciela()}{56}{subsubsection.4.23.2.5}%
+\contentsline {subsubsection}{\numberline {4.23.2.6}zaladujWizytyDlaDaty()}{56}{subsubsection.4.23.2.6}%
+\contentsline {subsubsection}{\numberline {4.23.2.7}zarezerujWizyte()}{57}{subsubsection.4.23.2.7}%
+\contentsline {section}{\numberline {4.24}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wlasiciela\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzecia Class Reference}{57}{section.4.24}%
+\contentsline {subsection}{\numberline {4.24.1}Detailed Description}{57}{subsection.4.24.1}%
+\contentsline {subsection}{\numberline {4.24.2}Member Function Documentation}{58}{subsection.4.24.2}%
+\contentsline {subsubsection}{\numberline {4.24.2.1}zaladujWlascicielaZwierzecia()}{58}{subsubsection.4.24.2.1}%
+\contentsline {subsubsection}{\numberline {4.24.2.2}zaladujWlascicielaZwierzeciaPoId()}{58}{subsubsection.4.24.2.2}%
+\contentsline {section}{\numberline {4.25}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzat Class Reference}{58}{section.4.25}%
+\contentsline {subsection}{\numberline {4.25.1}Detailed Description}{59}{subsection.4.25.1}%
+\contentsline {subsection}{\numberline {4.25.2}Member Function Documentation}{59}{subsection.4.25.2}%
+\contentsline {subsubsection}{\numberline {4.25.2.1}dodaj()}{59}{subsubsection.4.25.2.1}%
+\contentsline {subsubsection}{\numberline {4.25.2.2}getNastepneId()}{59}{subsubsection.4.25.2.2}%
+\contentsline {subsubsection}{\numberline {4.25.2.3}usunZwierzaka()}{60}{subsubsection.4.25.2.3}%
+\contentsline {subsubsection}{\numberline {4.25.2.4}zaktualizuj()}{60}{subsubsection.4.25.2.4}%
+\contentsline {subsubsection}{\numberline {4.25.2.5}zaladujZwierzePoId()}{60}{subsubsection.4.25.2.5}%
+\contentsline {subsubsection}{\numberline {4.25.2.6}zaladujZwierzetaDlaWlasciciela()}{60}{subsubsection.4.25.2.6}%
+\contentsline {subsubsection}{\numberline {4.25.2.7}znajdzPoId()}{61}{subsubsection.4.25.2.7}%
+\contentsline {section}{\numberline {4.26}Sesja\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lekarza Class Reference}{61}{section.4.26}%
+\contentsline {subsection}{\numberline {4.26.1}Detailed Description}{62}{subsection.4.26.1}%
+\contentsline {subsection}{\numberline {4.26.2}Member Function Documentation}{62}{subsection.4.26.2}%
+\contentsline {subsubsection}{\numberline {4.26.2.1}getFabrykaUslug()}{62}{subsubsection.4.26.2.1}%
+\contentsline {subsubsection}{\numberline {4.26.2.2}getLekarz()}{62}{subsubsection.4.26.2.2}%
+\contentsline {subsubsection}{\numberline {4.26.2.3}getSerwisWizyt()}{62}{subsubsection.4.26.2.3}%
+\contentsline {subsubsection}{\numberline {4.26.2.4}getSerwisWlasicielaZwierzecia()}{62}{subsubsection.4.26.2.4}%
+\contentsline {subsubsection}{\numberline {4.26.2.5}getSerwisZwierzat()}{63}{subsubsection.4.26.2.5}%
+\contentsline {section}{\numberline {4.27}Sesja\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wlasciciela\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzecia Class Reference}{63}{section.4.27}%
+\contentsline {subsection}{\numberline {4.27.1}Detailed Description}{64}{subsection.4.27.1}%
+\contentsline {subsection}{\numberline {4.27.2}Member Function Documentation}{64}{subsection.4.27.2}%
+\contentsline {subsubsection}{\numberline {4.27.2.1}czyMoznaUtworzycWizyte()}{64}{subsubsection.4.27.2.1}%
+\contentsline {subsubsection}{\numberline {4.27.2.2}getIdWybranegoLekarza()}{64}{subsubsection.4.27.2.2}%
+\contentsline {subsubsection}{\numberline {4.27.2.3}getWlasicielZwierzecia()}{64}{subsubsection.4.27.2.3}%
+\contentsline {subsubsection}{\numberline {4.27.2.4}getWybarneZwierze()}{65}{subsubsection.4.27.2.4}%
+\contentsline {subsubsection}{\numberline {4.27.2.5}getWybranaGodzina()}{65}{subsubsection.4.27.2.5}%
+\contentsline {subsubsection}{\numberline {4.27.2.6}getWybranaUsluga()}{65}{subsubsection.4.27.2.6}%
+\contentsline {subsubsection}{\numberline {4.27.2.7}getWybranyDzien()}{65}{subsubsection.4.27.2.7}%
+\contentsline {subsubsection}{\numberline {4.27.2.8}getWybranyMiesiac()}{65}{subsubsection.4.27.2.8}%
+\contentsline {subsubsection}{\numberline {4.27.2.9}getWybranyRok()}{66}{subsubsection.4.27.2.9}%
+\contentsline {subsubsection}{\numberline {4.27.2.10}getZwierzeta()}{66}{subsubsection.4.27.2.10}%
+\contentsline {subsubsection}{\numberline {4.27.2.11}setIdWybranegoLekarza()}{66}{subsubsection.4.27.2.11}%
+\contentsline {subsubsection}{\numberline {4.27.2.12}setWybranaGodzina()}{66}{subsubsection.4.27.2.12}%
+\contentsline {subsubsection}{\numberline {4.27.2.13}setWybranaUsluga()}{66}{subsubsection.4.27.2.13}%
+\contentsline {subsubsection}{\numberline {4.27.2.14}setWybraneZwierze()}{67}{subsubsection.4.27.2.14}%
+\contentsline {subsubsection}{\numberline {4.27.2.15}setWybranyDzien()}{67}{subsubsection.4.27.2.15}%
+\contentsline {subsubsection}{\numberline {4.27.2.16}setWybranyMiesiac()}{67}{subsubsection.4.27.2.16}%
+\contentsline {subsubsection}{\numberline {4.27.2.17}setWybranyRok()}{67}{subsubsection.4.27.2.17}%
+\contentsline {section}{\numberline {4.28}Sprawdzacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Liczb Class Reference}{68}{section.4.28}%
+\contentsline {subsection}{\numberline {4.28.1}Detailed Description}{68}{subsection.4.28.1}%
+\contentsline {subsection}{\numberline {4.28.2}Member Function Documentation}{68}{subsection.4.28.2}%
+\contentsline {subsubsection}{\numberline {4.28.2.1}jestLiczba()}{68}{subsubsection.4.28.2.1}%
+\contentsline {section}{\numberline {4.29}Usluga Class Reference}{69}{section.4.29}%
+\contentsline {subsection}{\numberline {4.29.1}Detailed Description}{69}{subsection.4.29.1}%
+\contentsline {subsection}{\numberline {4.29.2}Member Function Documentation}{69}{subsection.4.29.2}%
+\contentsline {subsubsection}{\numberline {4.29.2.1}getCena()}{69}{subsubsection.4.29.2.1}%
+\contentsline {subsubsection}{\numberline {4.29.2.2}getNazwaUslugi()}{69}{subsubsection.4.29.2.2}%
+\contentsline {subsubsection}{\numberline {4.29.2.3}getTypUslugi()}{70}{subsubsection.4.29.2.3}%
+\contentsline {section}{\numberline {4.30}Uzytkownik Class Reference}{70}{section.4.30}%
+\contentsline {subsection}{\numberline {4.30.1}Detailed Description}{70}{subsection.4.30.1}%
+\contentsline {subsection}{\numberline {4.30.2}Member Function Documentation}{71}{subsection.4.30.2}%
+\contentsline {subsubsection}{\numberline {4.30.2.1}getId()}{71}{subsubsection.4.30.2.1}%
+\contentsline {subsubsection}{\numberline {4.30.2.2}getTypUzytkownika()}{71}{subsubsection.4.30.2.2}%
+\contentsline {subsubsection}{\numberline {4.30.2.3}zamienNaTekst()}{71}{subsubsection.4.30.2.3}%
+\contentsline {section}{\numberline {4.31}Waz Class Reference}{71}{section.4.31}%
+\contentsline {subsection}{\numberline {4.31.1}Detailed Description}{73}{subsection.4.31.1}%
+\contentsline {subsection}{\numberline {4.31.2}Member Function Documentation}{73}{subsection.4.31.2}%
+\contentsline {subsubsection}{\numberline {4.31.2.1}dzwiek()}{73}{subsubsection.4.31.2.1}%
+\contentsline {subsubsection}{\numberline {4.31.2.2}getWaga()}{73}{subsubsection.4.31.2.2}%
+\contentsline {section}{\numberline {4.32}Wizyta Class Reference}{73}{section.4.32}%
+\contentsline {subsection}{\numberline {4.32.1}Detailed Description}{74}{subsection.4.32.1}%
+\contentsline {subsection}{\numberline {4.32.2}Member Function Documentation}{74}{subsection.4.32.2}%
+\contentsline {subsubsection}{\numberline {4.32.2.1}getData()}{74}{subsubsection.4.32.2.1}%
+\contentsline {subsubsection}{\numberline {4.32.2.2}getDataGodzina()}{74}{subsubsection.4.32.2.2}%
+\contentsline {subsubsection}{\numberline {4.32.2.3}getGodzina()}{74}{subsubsection.4.32.2.3}%
+\contentsline {subsubsection}{\numberline {4.32.2.4}getIdLekarza()}{74}{subsubsection.4.32.2.4}%
+\contentsline {subsubsection}{\numberline {4.32.2.5}getIdWizyty()}{75}{subsubsection.4.32.2.5}%
+\contentsline {subsubsection}{\numberline {4.32.2.6}getIdWlasciciela()}{75}{subsubsection.4.32.2.6}%
+\contentsline {subsubsection}{\numberline {4.32.2.7}getIdZwierzecia()}{75}{subsubsection.4.32.2.7}%
+\contentsline {subsubsection}{\numberline {4.32.2.8}getTypUslugi()}{75}{subsubsection.4.32.2.8}%
+\contentsline {subsubsection}{\numberline {4.32.2.9}zamieNaTekst()}{75}{subsubsection.4.32.2.9}%
+\contentsline {section}{\numberline {4.33}Wlasciciel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzecia Class Reference}{76}{section.4.33}%
+\contentsline {subsection}{\numberline {4.33.1}Detailed Description}{77}{subsection.4.33.1}%
+\contentsline {subsection}{\numberline {4.33.2}Member Function Documentation}{77}{subsection.4.33.2}%
+\contentsline {subsubsection}{\numberline {4.33.2.1}getId()}{77}{subsubsection.4.33.2.1}%
+\contentsline {subsubsection}{\numberline {4.33.2.2}getImie()}{77}{subsubsection.4.33.2.2}%
+\contentsline {subsubsection}{\numberline {4.33.2.3}getKodPoczowy()}{77}{subsubsection.4.33.2.3}%
+\contentsline {subsubsection}{\numberline {4.33.2.4}getMiasto()}{78}{subsubsection.4.33.2.4}%
+\contentsline {subsubsection}{\numberline {4.33.2.5}getNumerTelefonu()}{78}{subsubsection.4.33.2.5}%
+\contentsline {subsubsection}{\numberline {4.33.2.6}getUlicaINumerDomu()}{78}{subsubsection.4.33.2.6}%
+\contentsline {subsubsection}{\numberline {4.33.2.7}setKodPocztowy()}{78}{subsubsection.4.33.2.7}%
+\contentsline {subsubsection}{\numberline {4.33.2.8}setMiasto()}{78}{subsubsection.4.33.2.8}%
+\contentsline {subsubsection}{\numberline {4.33.2.9}setNumerTelefonu()}{80}{subsubsection.4.33.2.9}%
+\contentsline {subsubsection}{\numberline {4.33.2.10}setUlicaINumerDomu()}{80}{subsubsection.4.33.2.10}%
+\contentsline {section}{\numberline {4.34}Zwierze Class Reference}{80}{section.4.34}%
+\contentsline {subsection}{\numberline {4.34.1}Detailed Description}{81}{subsection.4.34.1}%
+\contentsline {subsection}{\numberline {4.34.2}Member Function Documentation}{82}{subsection.4.34.2}%
+\contentsline {subsubsection}{\numberline {4.34.2.1}dzwiek()}{82}{subsubsection.4.34.2.1}%
+\contentsline {subsubsection}{\numberline {4.34.2.2}getId()}{82}{subsubsection.4.34.2.2}%
+\contentsline {subsubsection}{\numberline {4.34.2.3}getIdWlasciciela()}{82}{subsubsection.4.34.2.3}%
+\contentsline {subsubsection}{\numberline {4.34.2.4}getImie()}{82}{subsubsection.4.34.2.4}%
+\contentsline {subsubsection}{\numberline {4.34.2.5}getKolor()}{83}{subsubsection.4.34.2.5}%
+\contentsline {subsubsection}{\numberline {4.34.2.6}getliczaNog()}{83}{subsubsection.4.34.2.6}%
+\contentsline {subsubsection}{\numberline {4.34.2.7}getPlec()}{83}{subsubsection.4.34.2.7}%
+\contentsline {subsubsection}{\numberline {4.34.2.8}getUmaszczenie()}{83}{subsubsection.4.34.2.8}%
+\contentsline {subsubsection}{\numberline {4.34.2.9}getWaga()}{83}{subsubsection.4.34.2.9}%
+\contentsline {subsubsection}{\numberline {4.34.2.10}getWiek()}{84}{subsubsection.4.34.2.10}%
+\contentsline {subsubsection}{\numberline {4.34.2.11}setImie()}{84}{subsubsection.4.34.2.11}%
+\contentsline {subsubsection}{\numberline {4.34.2.12}setWagaWGramach()}{84}{subsubsection.4.34.2.12}%
+\contentsline {subsubsection}{\numberline {4.34.2.13}zamienNaTekst()}{84}{subsubsection.4.34.2.13}%
+\contentsline {subsection}{\numberline {4.34.3}Member Data Documentation}{84}{subsection.4.34.3}%
+\contentsline {subsubsection}{\numberline {4.34.3.1}wagaWGramach}{84}{subsubsection.4.34.3.1}%
+\contentsline {chapter}{\numberline {5}File Documentation}{87}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grafiku\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pracy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{87}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grafiku\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pracy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{87}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lekarza.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{87}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lekarza.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{88}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Plikow.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{88}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Plikow.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{88}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Uzytkownikow.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{89}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Uzytkownikow.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{89}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wizyt.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{89}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wizyt.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{89}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wlasiciela\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzecia.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{90}{section.5.11}%
+\contentsline {section}{\numberline {5.12}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{90}{section.5.12}%
+\contentsline {section}{\numberline {5.13}Czytacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{90}{section.5.13}%
+\contentsline {section}{\numberline {5.14}Dni\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tygodnia.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{90}{section.5.14}%
+\contentsline {section}{\numberline {5.15}Dni\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tygodnia.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{90}{section.5.15}%
+\contentsline {section}{\numberline {5.16}Godziny\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pracy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{91}{section.5.16}%
+\contentsline {section}{\numberline {5.17}Godziny\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pracy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{91}{section.5.17}%
+\contentsline {section}{\numberline {5.18}Kanarek.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{91}{section.5.18}%
+\contentsline {section}{\numberline {5.19}Kanarek.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{91}{section.5.19}%
+\contentsline {section}{\numberline {5.20}Kot.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{92}{section.5.20}%
+\contentsline {section}{\numberline {5.21}Kot.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{92}{section.5.21}%
+\contentsline {section}{\numberline {5.22}Lekarz.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{92}{section.5.22}%
+\contentsline {section}{\numberline {5.23}Lekarz.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{93}{section.5.23}%
+\contentsline {section}{\numberline {5.24}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lekarza.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{93}{section.5.24}%
+\contentsline {section}{\numberline {5.25}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lekarza.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{93}{section.5.25}%
+\contentsline {section}{\numberline {5.26}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Logowania.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{94}{section.5.26}%
+\contentsline {section}{\numberline {5.27}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Logowania.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{94}{section.5.27}%
+\contentsline {section}{\numberline {5.28}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Logowania\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Statusu.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{94}{section.5.28}%
+\contentsline {section}{\numberline {5.29}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Logowania\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Statusu.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{95}{section.5.29}%
+\contentsline {section}{\numberline {5.30}Menu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wlasiciela\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzecia.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{95}{section.5.30}%
+\contentsline {section}{\numberline {5.31}Pajak.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{95}{section.5.31}%
+\contentsline {section}{\numberline {5.32}Pajak.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{96}{section.5.32}%
+\contentsline {section}{\numberline {5.33}Pies.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{96}{section.5.33}%
+\contentsline {section}{\numberline {5.34}Pies.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{96}{section.5.34}%
+\contentsline {section}{\numberline {5.35}Planer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wizyt.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{96}{section.5.35}%
+\contentsline {section}{\numberline {5.36}Planer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wizyt.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{97}{section.5.36}%
+\contentsline {section}{\numberline {5.37}Plec.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{98}{section.5.37}%
+\contentsline {section}{\numberline {5.38}Plec.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{98}{section.5.38}%
+\contentsline {section}{\numberline {5.39}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grafiku\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pracy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{98}{section.5.39}%
+\contentsline {section}{\numberline {5.40}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grafiku\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pracy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{98}{section.5.40}%
+\contentsline {section}{\numberline {5.41}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lekarza.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{99}{section.5.41}%
+\contentsline {section}{\numberline {5.42}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lekarza.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{99}{section.5.42}%
+\contentsline {section}{\numberline {5.43}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Logowania\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Uzytkownika.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{99}{section.5.43}%
+\contentsline {section}{\numberline {5.44}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Uslug.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{100}{section.5.44}%
+\contentsline {section}{\numberline {5.45}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Uslug.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{100}{section.5.45}%
+\contentsline {section}{\numberline {5.46}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wizyt.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{100}{section.5.46}%
+\contentsline {section}{\numberline {5.47}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wizyt.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{101}{section.5.47}%
+\contentsline {section}{\numberline {5.48}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wlasiciela\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzecia.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{101}{section.5.48}%
+\contentsline {section}{\numberline {5.49}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{102}{section.5.49}%
+\contentsline {section}{\numberline {5.50}Serwis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{102}{section.5.50}%
+\contentsline {section}{\numberline {5.51}Sesja\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lekarza.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{102}{section.5.51}%
+\contentsline {section}{\numberline {5.52}Sesja\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lekarza.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{103}{section.5.52}%
+\contentsline {section}{\numberline {5.53}Sesja\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wlasciciela\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzecia.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{103}{section.5.53}%
+\contentsline {section}{\numberline {5.54}Sesja\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wlasciciela\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzecia.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{104}{section.5.54}%
+\contentsline {section}{\numberline {5.55}Sprawdzacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Liczb.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{104}{section.5.55}%
+\contentsline {section}{\numberline {5.56}Sprawdzacz\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Liczb.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{104}{section.5.56}%
+\contentsline {section}{\numberline {5.57}Status\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wizyty.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{105}{section.5.57}%
+\contentsline {section}{\numberline {5.58}Typ\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Uzytkownika.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{105}{section.5.58}%
+\contentsline {section}{\numberline {5.59}Typ\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Uzytkownika.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{105}{section.5.59}%
+\contentsline {section}{\numberline {5.60}Usluga.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{105}{section.5.60}%
+\contentsline {section}{\numberline {5.61}Usluga.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{106}{section.5.61}%
+\contentsline {section}{\numberline {5.62}Uzytkownik.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{106}{section.5.62}%
+\contentsline {section}{\numberline {5.63}Uzytkownik.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{106}{section.5.63}%
+\contentsline {section}{\numberline {5.64}Waz.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{106}{section.5.64}%
+\contentsline {section}{\numberline {5.65}Waz.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{107}{section.5.65}%
+\contentsline {section}{\numberline {5.66}Wizyta.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{107}{section.5.66}%
+\contentsline {section}{\numberline {5.67}Wizyta.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{107}{section.5.67}%
+\contentsline {section}{\numberline {5.68}Wlasciciel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzecia.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{108}{section.5.68}%
+\contentsline {section}{\numberline {5.69}Wlasciciel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Zwierzecia.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{108}{section.5.69}%
+\contentsline {section}{\numberline {5.70}Zwierze.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{109}{section.5.70}%
+\contentsline {section}{\numberline {5.71}Zwierze.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{109}{section.5.71}%
+\contentsline {chapter}{Index}{111}{section*.114}%

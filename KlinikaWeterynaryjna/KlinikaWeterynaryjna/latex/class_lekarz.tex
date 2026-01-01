@@ -1,0 +1,136 @@
+\doxysection{Lekarz Class Reference}
+\hypertarget{class_lekarz}{}\label{class_lekarz}\index{Lekarz@{Lekarz}}
+
+
+Klasa opisujaca lekarza, klasa pochodna. Dziedziczy po klasie \doxylink{class_uzytkownik}{Uzytkownik}.  
+
+
+
+
+{\ttfamily \#include $<$Lekarz.\+h$>$}
+
+Inheritance diagram for Lekarz\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lekarz}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_lekarz_ac81f3deb46c0a8848cc5359a107b3d68}\label{class_lekarz_ac81f3deb46c0a8848cc5359a107b3d68} 
+{\bfseries Lekarz} (string imie, string nazwisko, string specjalizacja, \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}} \&uzytkownik)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy pola imie, nazwisko, specjalizacje oraz typ uzytkownika lekarza. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_lekarz_a9cec3164df34a0f78b3ce98ed16255a1}{get\+Imie}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca imie danego lekarza. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_lekarz_a9b16defd71c6ecae5db5329183e99643}{get\+Nazwisko}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca nazwisko danego lekarza. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_lekarz_a9da72d7f153ffc361abef386d40f8aef}{get\+Specjalizacja}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca specjalizacje danego lekarza. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_godziny_pracy}{Godziny\+Pracy}} \mbox{\hyperlink{class_lekarz_a9dce65b26b45a8a8bdebec4bd2f9be8b}{zwroc\+Godziny\+Pracy\+Dla\+Dnia}} (\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} dzien)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca godziny pracy lekarza na dany dzien. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lekarz_aba6a649619c113735ca9913035a9944d}{czy\+Dostepny\+WGodzinach}} (int godzina, \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}} dzien\+Tygodnia)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca czy konkretny lekarz jest dostepny w godzinach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Uzytkownik} (string login, string haslo, int id, \mbox{\hyperlink{_typ_uzytkownika_8h_a1d74c5f1ea44ea3c51d59470e3ab7817}{Typ\+Uzytkownika}} typ\+Uzytkownika)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy login, haslo, typ uzytkownika. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_uzytkownik_a92326d68b5aee89f671b0662cd0d6df2}{zamien\+Na\+Tekst}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zamieniajaca obiekt uzytkownika na tekst, aby mozna bylo go zapisac do pliku. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_uzytkownik_a0ec0a1e3da6fbdd5b51c525dd4639eae}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca id uzytkownika. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_typ_uzytkownika_8h_a1d74c5f1ea44ea3c51d59470e3ab7817}{Typ\+Uzytkownika}} \mbox{\hyperlink{class_uzytkownik_a79d1a4ac068a2215312bd119aea6b10b}{get\+Typ\+Uzytkownika}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca typ uzytkownika (lekarz, wlasciciela zwierzecia) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}}}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries ID\+\_\+\+DLA\+\_\+\+NIEZNANEGO\+\_\+\+UZYTKOWNIKA} = -\/1
+\begin{DoxyCompactList}\small\item\em Stala okreslajaca id nieznanego uzytkownika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa opisujaca lekarza, klasa pochodna. Dziedziczy po klasie \doxylink{class_uzytkownik}{Uzytkownik}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_lekarz_aba6a649619c113735ca9913035a9944d}\label{class_lekarz_aba6a649619c113735ca9913035a9944d} 
+\index{Lekarz@{Lekarz}!czyDostepnyWGodzinach@{czyDostepnyWGodzinach}}
+\index{czyDostepnyWGodzinach@{czyDostepnyWGodzinach}!Lekarz@{Lekarz}}
+\doxysubsubsection{\texorpdfstring{czyDostepnyWGodzinach()}{czyDostepnyWGodzinach()}}
+{\footnotesize\ttfamily bool Lekarz\+::czy\+Dostepny\+WGodzinach (\begin{DoxyParamCaption}\item[{int}]{godzina,  }\item[{\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}}]{dzien\+Tygodnia }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca czy konkretny lekarz jest dostepny w godzinach. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em godzina} & -\/ godzina, ktora chcemy sprawdzic czy jest dostepny lekarz \\
+\hline
+{\em dzien\+Tygodnia} & -\/ dzien, dla ktorego chcemy sprawdzic dostepnosc lekarza \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_lekarz_a9cec3164df34a0f78b3ce98ed16255a1}\label{class_lekarz_a9cec3164df34a0f78b3ce98ed16255a1} 
+\index{Lekarz@{Lekarz}!getImie@{getImie}}
+\index{getImie@{getImie}!Lekarz@{Lekarz}}
+\doxysubsubsection{\texorpdfstring{getImie()}{getImie()}}
+{\footnotesize\ttfamily string Lekarz\+::get\+Imie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca imie danego lekarza. 
+
+\begin{DoxyReturn}{Returns}
+Imie lekarza 
+\end{DoxyReturn}
+\Hypertarget{class_lekarz_a9b16defd71c6ecae5db5329183e99643}\label{class_lekarz_a9b16defd71c6ecae5db5329183e99643} 
+\index{Lekarz@{Lekarz}!getNazwisko@{getNazwisko}}
+\index{getNazwisko@{getNazwisko}!Lekarz@{Lekarz}}
+\doxysubsubsection{\texorpdfstring{getNazwisko()}{getNazwisko()}}
+{\footnotesize\ttfamily string Lekarz\+::get\+Nazwisko (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca nazwisko danego lekarza. 
+
+\begin{DoxyReturn}{Returns}
+Nazwisko lekarza 
+\end{DoxyReturn}
+\Hypertarget{class_lekarz_a9da72d7f153ffc361abef386d40f8aef}\label{class_lekarz_a9da72d7f153ffc361abef386d40f8aef} 
+\index{Lekarz@{Lekarz}!getSpecjalizacja@{getSpecjalizacja}}
+\index{getSpecjalizacja@{getSpecjalizacja}!Lekarz@{Lekarz}}
+\doxysubsubsection{\texorpdfstring{getSpecjalizacja()}{getSpecjalizacja()}}
+{\footnotesize\ttfamily string Lekarz\+::get\+Specjalizacja (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca specjalizacje danego lekarza. 
+
+\begin{DoxyReturn}{Returns}
+Specjalizacja lekarza 
+\end{DoxyReturn}
+\Hypertarget{class_lekarz_a9dce65b26b45a8a8bdebec4bd2f9be8b}\label{class_lekarz_a9dce65b26b45a8a8bdebec4bd2f9be8b} 
+\index{Lekarz@{Lekarz}!zwrocGodzinyPracyDlaDnia@{zwrocGodzinyPracyDlaDnia}}
+\index{zwrocGodzinyPracyDlaDnia@{zwrocGodzinyPracyDlaDnia}!Lekarz@{Lekarz}}
+\doxysubsubsection{\texorpdfstring{zwrocGodzinyPracyDlaDnia()}{zwrocGodzinyPracyDlaDnia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_godziny_pracy}{Godziny\+Pracy}} Lekarz\+::zwroc\+Godziny\+Pracy\+Dla\+Dnia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{Dni\+Tygodnia}}}]{dzien }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwracajaca godziny pracy lekarza na dany dzien. 
+
+\begin{DoxyReturn}{Returns}
+dostepnosc na konkretny dzien 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em dzien} & -\/ dzien, dla ktorego chcemy sprawdzic godziny pracy \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_lekarz_8h}{Lekarz.\+h}}\item 
+Lekarz.\+cpp\end{DoxyCompactItemize}

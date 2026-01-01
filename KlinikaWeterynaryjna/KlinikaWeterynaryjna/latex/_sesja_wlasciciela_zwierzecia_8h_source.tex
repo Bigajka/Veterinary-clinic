@@ -1,0 +1,50 @@
+\doxysection{Sesja\+Wlasciciela\+Zwierzecia.\+h}
+\hypertarget{_sesja_wlasciciela_zwierzecia_8h_source}{}\label{_sesja_wlasciciela_zwierzecia_8h_source}\mbox{\hyperlink{_sesja_wlasciciela_zwierzecia_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_zwierze_8h}{Zwierze.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_usluga_8h}{Usluga.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_wlasciciel_zwierzecia_8h}{WlascicielZwierzecia.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia}{SesjaWlascicielaZwierzecia}}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ shared\_ptr<WlascicielZwierzecia>\ wlascicielZwierzecia;}
+\DoxyCodeLine{00021\ \ \ \ \ shared\_ptr<Zwierze>\ wybraneZwierze;}
+\DoxyCodeLine{00022\ \ \ \ \ vector<shared\_ptr<Zwierze>>\ zwierzetaUztkownika;}
+\DoxyCodeLine{00023\ \ \ \ \ shared\_ptr<Usluga>\ wybranaUsluga;}
+\DoxyCodeLine{00024\ \ \ \ \ shared\_ptr<pair<int,\ time\_t>>\ wybranyDzien;}
+\DoxyCodeLine{00025\ \ \ \ \ shared\_ptr<pair<int,\ time\_t>>\ wybranyMiesiac;}
+\DoxyCodeLine{00026\ \ \ \ \ shared\_ptr<pair<int,\ time\_t>>\ wybranyRok;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ wybranaGodzina;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ idWybranegoLekarza;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia}{SesjaWlascicielaZwierzecia}}(shared\_ptr<WlascicielZwierzecia>\ wlascicielZwierzecia,\ vector<shared\_ptr<Zwierze>>\ zwierzeta);}
+\DoxyCodeLine{00040\ \ \ \ \ vector<shared\_ptr<Zwierze>>\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a009e9667d2ffe474f2bfca8e3fec5e73}{getZwierzeta}}();}
+\DoxyCodeLine{00045\ \ \ \ \ shared\_ptr<Zwierze>\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a95b43bcfbe71d25e545be2b17122f1f1}{getWybarneZwierze}}();}
+\DoxyCodeLine{00050\ \ \ \ \ shared\_ptr<WlascicielZwierzecia>\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_ab9699715aca308b825c4770789fa036d}{getWlasicielZwierzecia}}();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a05e80dc2669645f4c2d922d3e2d41964}{setWybraneZwierze}}(shared\_ptr<Zwierze>\ zwierze);}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a9646fb204cb11f12a78d55799c251d96}{setWybranaUsluga}}(shared\_ptr<Usluga>\ wybranaUsluga);}
+\DoxyCodeLine{00065\ \ \ \ \ shared\_ptr<Usluga>\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a00a8eb5bb31aba46a9216a587ea31bef}{getWybranaUsluga}}();}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_ad41951367d621b859d66fb430e06dbf2}{setWybranyMiesiac}}(shared\_ptr<pair<int,\ time\_t>>\ wybranyMiesiac);}
+\DoxyCodeLine{00075\ \ \ \ \ shared\_ptr<pair<int,\ time\_t>>\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_ab4c60b807f0af2e6ac6ad6067e4f021e}{getWybranyMiesiac}}();}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a68b4db2095b779fe52a57f663b052c97}{setWybranyDzien}}(shared\_ptr<pair<int,\ time\_t>>\ wybranyDzien);}
+\DoxyCodeLine{00085\ \ \ \ \ shared\_ptr<pair<int,\ time\_t>>\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a3ab269903ec0de127dbe486ab0e7dfd3}{getWybranyDzien}}();}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a7cf750cb4b9338d977f9af0ad753317b}{setWybranyRok}}(shared\_ptr<pair<int,\ time\_t>>\ wybranyRok);}
+\DoxyCodeLine{00095\ \ \ \ \ shared\_ptr<pair<int,\ time\_t>>\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a449b92115598e368027e510526e60117}{getWybranyRok}}();}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_ada87e127ee2a35745dc6856378af46bb}{setWybranaGodzina}}(\textcolor{keywordtype}{int}\ wybranaGodzina);}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a65415fe20487f673b9c0680698942e77}{getWybranaGodzina}}();}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_aaee7f38c672e067ebe3890bc1e02038f}{setIdWybranegoLekarza}}(\textcolor{keywordtype}{int}\ idLekarza);}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a46483eaabeeef35b8b0ecb3dcf5c8bb6}{getIdWybranegoLekarza}}();}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a3307ea333aef4d8b7d70cb4755f1fad2}{czyMoznaUtworzycWizyte}}();}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_ae5a6a80e285f0fed963abf9b954f8ae0}{odswiezZwierzeta}}(vector<shared\_ptr<Zwierze>>\ zwierzeta);}
+\DoxyCodeLine{00126\ \};}
+
+\end{DoxyCode}

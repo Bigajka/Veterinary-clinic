@@ -1,0 +1,51 @@
+\doxysection{Wizyta.\+h}
+\hypertarget{_wizyta_8h_source}{}\label{_wizyta_8h_source}\mbox{\hyperlink{_wizyta_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_godziny_pracy_8h}{GodzinyPracy.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_data_godzina_wizyty}{DataGodzinaWizyty}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ dzien;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ miesiac;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ rok;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ godzina;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_data_godzina_wizyty_a4530eae771122b2d07d64d8421841995}{DataGodzinaWizyty}}(\textcolor{keywordtype}{int}\ godzina,\ \textcolor{keywordtype}{int}\ dzien,\ \textcolor{keywordtype}{int}\ miesiac,\ \textcolor{keywordtype}{int}\ rok);}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_data_godzina_wizyty_a4530eae771122b2d07d64d8421841995}{DataGodzinaWizyty}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data_godzina_wizyty_a0e069e06c0fcee6ab21567b018424835}{getDzien}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data_godzina_wizyty_a9623c355d37494bec92ff9cd8ec08623}{getMiesiac}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data_godzina_wizyty_a43bfae2a9cc507aacd5991057e9ce355}{getRok}}();}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data_godzina_wizyty_a5c27d4d469f0c0062dd7ea7e0e5608e4}{getGodzina}}();}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_wizyta}{Wizyta}}\ \{}
+\DoxyCodeLine{00059\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ idWizyty;}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_data_godzina_wizyty}{DataGodzinaWizyty}}\ dataWizyty;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ idWlasciciela;}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{int}\ idLekarza;}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{int}\ idZwierzecia;}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{string}\ typUslugi;}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{class_wizyta}{Wizyta}}(\mbox{\hyperlink{class_data_godzina_wizyty}{DataGodzinaWizyty}}\ dataWizty,\ \textcolor{keywordtype}{int}\ idWizyty,\ \textcolor{keywordtype}{int}\ idWlasciciela,\ \textcolor{keywordtype}{int}\ idZwierzecia,\ \textcolor{keywordtype}{int}\ idLekarza,\ \textcolor{keywordtype}{string}\ typUslugi);}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_wizyta_a520ddc424450cb3d929510d8c9bd396d}{zamieNaTekst}}();}
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{class_data_godzina_wizyty}{DataGodzinaWizyty}}\ \mbox{\hyperlink{class_wizyta_a1078cd9ed17b9f5f49dd6a2ca57c7fd5}{getDataGodzina}}();}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_wizyta_adae962f5fc0958b08fb142591138a9aa}{getIdWizyty}}();}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_wizyta_a096c1d28a73e7093854b8d8eafe53aa3}{getIdWlasciciela}}();}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_wizyta_a0be92e1364d646ae47ae4ce660e25102}{getIdLekarza}}();}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_wizyta_aadc2bd583e3aa9e87798cd561022ea10}{getIdZwierzecia}}();}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_wizyta_aa49cf5242d5314988485ac60de723a48}{getTypUslugi}}();}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_wizyta_adf4810923fcdd343d9f9651b162fd18c}{getData}}();}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_wizyta_ac197de3502b585870f4fb42aa6b137dd}{getGodzina}}();}
+\DoxyCodeLine{00117\ \};}
+
+\end{DoxyCode}

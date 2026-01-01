@@ -1,0 +1,86 @@
+\doxysection{Serwis\+Lekarza Class Reference}
+\hypertarget{class_serwis_lekarza}{}\label{class_serwis_lekarza}\index{SerwisLekarza@{SerwisLekarza}}
+
+
+Klasa odpowiedzialna za serwis lekarza.  
+
+
+
+
+{\ttfamily \#include $<$Serwis\+Lekarza.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_serwis_lekarza_aa433fde62671b1ce262b5f571f0e2e7c}\label{class_serwis_lekarza_aa433fde62671b1ce262b5f571f0e2e7c} 
+{\bfseries Serwis\+Lekarza} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_czytacz_lekarza}{Czytacz\+Lekarza}} $>$ czytacz\+Lekarza, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_serwis_logowania_uzytkownika}{Serwis\+Logowania\+Uzytkownika}} $>$ czytacz\+Uzytkownikow)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy czytacza lekarza, czytacza uzytkownikow. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ \mbox{\hyperlink{class_serwis_lekarza_a383ecba33b76ff8afad51ddd8301cee5}{zaladuj\+Lekarza}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}} $>$ uzytkownik)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca lekarza, na podstawie przekazanego uzytkownika. Szukamy lekarza po id uzytkownika. \end{DoxyCompactList}\item 
+list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ $>$ \mbox{\hyperlink{class_serwis_lekarza_a89d1a0ca25c4d0e07441eabbc83e0b58}{zaladuj\+Wszystkich\+Lekarzy}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wszystkich lekarzy. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ \mbox{\hyperlink{class_serwis_lekarza_a9309724cefc75bf248048c3c55a0ca67}{znajdz\+Lekarza\+Po\+Id}} (int id\+Lekarza, list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ $>$ lekarze)
+\begin{DoxyCompactList}\small\item\em Funkcja szukajaca lekarza po przekazanym id w podanej liscie lekarzy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za serwis lekarza. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_serwis_lekarza_a383ecba33b76ff8afad51ddd8301cee5}\label{class_serwis_lekarza_a383ecba33b76ff8afad51ddd8301cee5} 
+\index{SerwisLekarza@{SerwisLekarza}!zaladujLekarza@{zaladujLekarza}}
+\index{zaladujLekarza@{zaladujLekarza}!SerwisLekarza@{SerwisLekarza}}
+\doxysubsubsection{\texorpdfstring{zaladujLekarza()}{zaladujLekarza()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ Serwis\+Lekarza\+::zaladuj\+Lekarza (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}} $>$}]{uzytkownik }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca lekarza, na podstawie przekazanego uzytkownika. Szukamy lekarza po id uzytkownika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uzytkownik} & -\/ wskaznik na obiekt uzytkownik \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca wskaznik na lekarza, o ile zostal znaleziony 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_lekarza_a89d1a0ca25c4d0e07441eabbc83e0b58}\label{class_serwis_lekarza_a89d1a0ca25c4d0e07441eabbc83e0b58} 
+\index{SerwisLekarza@{SerwisLekarza}!zaladujWszystkichLekarzy@{zaladujWszystkichLekarzy}}
+\index{zaladujWszystkichLekarzy@{zaladujWszystkichLekarzy}!SerwisLekarza@{SerwisLekarza}}
+\doxysubsubsection{\texorpdfstring{zaladujWszystkichLekarzy()}{zaladujWszystkichLekarzy()}}
+{\footnotesize\ttfamily list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ $>$ Serwis\+Lekarza\+::zaladuj\+Wszystkich\+Lekarzy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wszystkich lekarzy. 
+
+\begin{DoxyReturn}{Returns}
+zwracajacy typ jest lista wskaznikow na lekarzy, jezeli go nie znajdzie to zwraca NULL 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_lekarza_a9309724cefc75bf248048c3c55a0ca67}\label{class_serwis_lekarza_a9309724cefc75bf248048c3c55a0ca67} 
+\index{SerwisLekarza@{SerwisLekarza}!znajdzLekarzaPoId@{znajdzLekarzaPoId}}
+\index{znajdzLekarzaPoId@{znajdzLekarzaPoId}!SerwisLekarza@{SerwisLekarza}}
+\doxysubsubsection{\texorpdfstring{znajdzLekarzaPoId()}{znajdzLekarzaPoId()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ Serwis\+Lekarza\+::znajdz\+Lekarza\+Po\+Id (\begin{DoxyParamCaption}\item[{int}]{id\+Lekarza,  }\item[{list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_lekarz}{Lekarz}} $>$ $>$}]{lekarze }\end{DoxyParamCaption})}
+
+
+
+Funkcja szukajaca lekarza po przekazanym id w podanej liscie lekarzy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Lekarza} & -\/ id szukanego lekarza \\
+\hline
+{\em lekarze} & -\/ lista lekarzy, wsrod ktorych chcemy znalezc o podanym id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca szukanego lekarza, jezeli go nie znajdzie to zwraca NULL 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_serwis_lekarza_8h}{Serwis\+Lekarza.\+h}}\item 
+Serwis\+Lekarza.\+cpp\end{DoxyCompactItemize}

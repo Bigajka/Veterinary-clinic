@@ -1,0 +1,72 @@
+\doxysection{Serwis\+Uslug Class Reference}
+\hypertarget{class_serwis_uslug}{}\label{class_serwis_uslug}\index{SerwisUslug@{SerwisUslug}}
+
+
+Klasa odpowiedzialna za serwis uslug.  
+
+
+
+
+{\ttfamily \#include $<$Serwis\+Uslug.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_serwis_uslug_a72ec0ef442f2d5f665e2cd08cf81f689}\label{class_serwis_uslug_a72ec0ef442f2d5f665e2cd08cf81f689} 
+{\bfseries Serwis\+Uslug} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor bezargumentowy. \end{DoxyCompactList}\item 
+\Hypertarget{class_serwis_uslug_a6931ebede99cf84f4c46ae72d1259461}\label{class_serwis_uslug_a6931ebede99cf84f4c46ae72d1259461} 
+void {\bfseries zainicjalizuj\+Uslugi} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca zainicjalizowane uslugi dla zwierzat. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_usluga}{Usluga}} $>$ \mbox{\hyperlink{class_serwis_uslug_ad048e0f52ccb558da9b413d411b2abc7}{znajdz\+Po\+Typie}} (string typ)
+\begin{DoxyCompactList}\small\item\em Funkcja szukajaca uslugi po przekazanym typie w podanej liscie uslug. \end{DoxyCompactList}\item 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_usluga}{Usluga}} $>$ $>$ \mbox{\hyperlink{class_serwis_uslug_a7b41647feeabfdfc917e769944fa921e}{stworz\+Usluge\+Dla\+Zwierzaka}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ zwierze)
+\begin{DoxyCompactList}\small\item\em Funkcja tworzaca usluge dla konkretnego juz zwierzaka. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za serwis uslug. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_serwis_uslug_a7b41647feeabfdfc917e769944fa921e}\label{class_serwis_uslug_a7b41647feeabfdfc917e769944fa921e} 
+\index{SerwisUslug@{SerwisUslug}!stworzUslugeDlaZwierzaka@{stworzUslugeDlaZwierzaka}}
+\index{stworzUslugeDlaZwierzaka@{stworzUslugeDlaZwierzaka}!SerwisUslug@{SerwisUslug}}
+\doxysubsubsection{\texorpdfstring{stworzUslugeDlaZwierzaka()}{stworzUslugeDlaZwierzaka()}}
+{\footnotesize\ttfamily vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_usluga}{Usluga}} $>$ $>$ Serwis\+Uslug\+::stworz\+Usluge\+Dla\+Zwierzaka (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$}]{zwierze }\end{DoxyParamCaption})}
+
+
+
+Funkcja tworzaca usluge dla konkretnego juz zwierzaka. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zwierze} & -\/ dla niego szukamy odpowiednich uslug \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca wektor uslug dla danego zwierzaka 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_uslug_ad048e0f52ccb558da9b413d411b2abc7}\label{class_serwis_uslug_ad048e0f52ccb558da9b413d411b2abc7} 
+\index{SerwisUslug@{SerwisUslug}!znajdzPoTypie@{znajdzPoTypie}}
+\index{znajdzPoTypie@{znajdzPoTypie}!SerwisUslug@{SerwisUslug}}
+\doxysubsubsection{\texorpdfstring{znajdzPoTypie()}{znajdzPoTypie()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_usluga}{Usluga}} $>$ Serwis\+Uslug\+::znajdz\+Po\+Typie (\begin{DoxyParamCaption}\item[{string}]{typ }\end{DoxyParamCaption})}
+
+
+
+Funkcja szukajaca uslugi po przekazanym typie w podanej liscie uslug. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em typ} & -\/ typ zwierzaka \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca szukana usluge 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_serwis_uslug_8h}{Serwis\+Uslug.\+h}}\item 
+Serwis\+Uslug.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\doxysection{Planer\+Wizyt.\+h}
+\hypertarget{_planer_wizyt_8h_source}{}\label{_planer_wizyt_8h_source}\mbox{\hyperlink{_planer_wizyt_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <ctime>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_godziny_pracy_8h}{GodzinyPracy.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dni_tygodnia_8h}{DniTygodnia.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_serwis_grafiku_pracy_8h}{SerwisGrafikuPracy.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_serwis_wizyt_8h}{SerwisWizyt.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_planer_wizyt}{PlanerWizyt}}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ unordered\_map<DniTygodnia,\ GodzinyPracy>\ dniOtwarcia;}
+\DoxyCodeLine{00027\ \ \ \ \ shared\_ptr<SerwisGrafikuPracy>\ serwisGrafikuPracy;}
+\DoxyCodeLine{00028\ \ \ \ \ shared\_ptr<SerwisWizyt>\ serwisWizyt;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{string}\ zaladuj(time\_t\ aktualnyCzas,\ std::string\ format);}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_planer_wizyt}{PlanerWizyt}}(shared\_ptr<SerwisGrafikuPracy>\ serwisGrafikuPracy,\ shared\_ptr<SerwisWizyt>\ serwisWizty);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_planer_wizyt_a854a44dcce495bb08f513fdd3cf19319}{zaladujAktualnyDzienTygodnia}}(time\_t\ currentTime);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_planer_wizyt_a0be16b29829df7fb04c7c0644947563f}{zaladujMiesiac}}(time\_t\ currentTime);}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_planer_wizyt_a02ae7a75d3b5cdb795b5c5d5179ccdd7}{zaladujDzienMiesiaca}}(time\_t\ currentTime);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_planer_wizyt_abc7df21fd0e8062d44a8c751afa3baae}{zaladujRok}}(time\_t\ czas);}
+\DoxyCodeLine{00068\ \ \ \ \ pair<DniTygodnia,\ int>\ \mbox{\hyperlink{class_planer_wizyt_a8c4f35b603585e8d1bda5d9b634b0ab5}{zaladujDostepnaGodzineNaDzienTygodnia}}(\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{DniTygodnia}}\ aktualnyDzienTygodnia,\ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{DniTygodnia}}\ terminNaNastepnyDzien,\ \textcolor{keywordtype}{int}\ aktualnaGodzina,\ \textcolor{keywordtype}{int}\ pierwszaDostepnaGodzinaWizty);}
+\DoxyCodeLine{00073\ \ \ \ \ pair<DniTygodnia,\ int>\ \mbox{\hyperlink{class_planer_wizyt_a3fc1010fc43db405285f132069f9416a}{znajdzPierwszyDostepnyTermin}}();}
+\DoxyCodeLine{00078\ \ \ \ \ pair<string,\ time\_t>\ \mbox{\hyperlink{class_planer_wizyt_a7c108151a2cafc9492a52f50dcabd1d1}{zaladujPierszaDostepnaDate}}();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00086\ \ \ \ \ pair<string,\ time\_t>\ \mbox{\hyperlink{class_planer_wizyt_acac9bcc6bab92426b73b5c890d7923b7}{zaladujOstatniaDostepnaDate}}(time\_t\ poczaktowyCzas,\ \textcolor{keywordtype}{string}\ format);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00098\ \ \ \ \ time\_t\ \mbox{\hyperlink{class_planer_wizyt_acd45e3bcc91a5e06e17bd6eb357428cf}{dodajDzien}}(time\_t\ poczaktowyCzas,\ \textcolor{keywordtype}{int}\ liczbaDni);}
+\DoxyCodeLine{00099\ \ \ \ \ }
+\DoxyCodeLine{00110\ \ \ \ \ time\_t\ \mbox{\hyperlink{class_planer_wizyt_a928fdbae6f403ff06db9c47804fe3b7b}{dodajGodzine}}(time\_t\ poczaktowyCzas,\ \textcolor{keywordtype}{int}\ liczbaGodzin);}
+\DoxyCodeLine{00123\ \ \ \ \ time\_t\ \mbox{\hyperlink{class_planer_wizyt_a9ba64f33536abb2d048cd38fea11f22b}{ustawCzas}}(time\_t\ poczaktowyCzas,\ \textcolor{keywordtype}{int}\ godzina,\ \textcolor{keywordtype}{int}\ minuta);}
+\DoxyCodeLine{00140\ \ \ \ \ time\_t\ \mbox{\hyperlink{class_planer_wizyt_a9d97cce2a1cc60fdc234bc9e812dc24c}{dodajGodzinePlusZaokraglenie}}(time\_t\ poczaktowyCzas,\ \textcolor{keywordtype}{int}\ liczbaGodzin);}
+\DoxyCodeLine{00150\ \ \ \ \ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{DniTygodnia}}\ \mbox{\hyperlink{class_planer_wizyt_adb876f823d86daa02bfee2640d96b123}{zamienNaDniTygonida}}(\textcolor{keywordtype}{string}\ dniTygodniaTekst);}
+\DoxyCodeLine{00160\ \ \ \ \ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{DniTygodnia}}\ \mbox{\hyperlink{class_planer_wizyt_a668f91bd5beba6214fdb4385477def25}{zaladujNastepnyDzienTygodnia}}(\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{DniTygodnia}}\ aktualnyDzienTygodnia);}
+\DoxyCodeLine{00166\ \ \ \ \ std::pair<DniTygodnia,\ time\_t>\ \mbox{\hyperlink{class_planer_wizyt_a049898922cfb8acac5bcbc3ff53bd4dd}{zaladujDostepyCzas}}(time\_t\ aktualnyCzas);}
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_planer_wizyt_a34da07ccd458d4bc8ad880ef65e65ab2}{wyswietl}}(time\_t\ currentTime,\ \textcolor{keywordtype}{string}\ format);}
+\DoxyCodeLine{00178\ \ \ \ \ \mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{DniTygodnia}}\ \mbox{\hyperlink{class_planer_wizyt_adb876f823d86daa02bfee2640d96b123}{zamienNaDniTygonida}}(time\_t\ czas);}
+\DoxyCodeLine{00185\ \ \ \ \ time\_t\ \mbox{\hyperlink{class_planer_wizyt_a15dd484bb1758432e3aa234d9ca0f5bc}{getGodzinaZamknieciaWDniu}}(\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{DniTygodnia}}\ ostatniDostepnyDzienTygodnia,\ time\_t\ czas);}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00193\ \ \ \ \ unordered\_map<int,\ time\_t>\ \mbox{\hyperlink{class_planer_wizyt_a1cec8154c82de641ee369dd6083702a5}{wygenerujMiesiace}}(time\_t\ czasRozpoczecia,\ time\_t\ czasZakonczenia);}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00205\ \ \ \ \ time\_t\ \mbox{\hyperlink{class_planer_wizyt_ab0ad19a3a66300e23f9d27ca2a0a2ffc}{dodajMiesiac}}(time\_t\ poczaktowyCzas,\ \textcolor{keywordtype}{int}\ liczbaMiesiecy);}
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_planer_wizyt_ac143ec9e7e2994bd306d8fd9189dbd8e}{getMiesiac}}(time\_t\ czas);}
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00225\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_planer_wizyt_ae0c96a60a6babf24502bddb18c0d38d6}{zamienNaMiesiac}}(time\_t\ czas);}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00235\ \ \ \ \ std::string\ \mbox{\hyperlink{class_planer_wizyt_ab340757be0df4bc5129d656f8db4d1cf}{zamienZAngielskiegoNaPolski}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ miesiacPoAngielsku);}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00244\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_planer_wizyt_a2acc098620098f071058c18bf8edd391}{wypiszKalendarz}}(\textcolor{keywordtype}{int}\ rok,\ \textcolor{keywordtype}{int}\ miesiac,\ \textcolor{keywordtype}{int}\ dzienPoczatkowy,\ \textcolor{keywordtype}{int}\ dzienKoncowy);}
+\DoxyCodeLine{00251\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_planer_wizyt_a2e49bed9208d4df76e28151b5c5cedbd}{czyPierwszDostepnyMiesiac}}(unordered\_map<int,\ time\_t>\ miesiace,\ time\_t\ miesiac);}
+\DoxyCodeLine{00258\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_planer_wizyt_a0238d9a7af9006f47c696301265d755d}{czyOstatniDostepnyMiesiac}}(unordered\_map<int,\ time\_t>\ miesiace,\ time\_t\ miesiac);}
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00265\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_planer_wizyt_a0747fce1eb7f80c269f9002e2f22bdd2}{ostatniDzienMiesiaca}}(time\_t\ czasWMillisekundach);}
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00275\ \ \ \ \ unordered\_map<int,\ time\_t>\ \mbox{\hyperlink{class_planer_wizyt_a58a49c7fbed6af82e04bb9c6c300985c}{wygenerujDni}}(\textcolor{keywordtype}{int}\ rok,\ \textcolor{keywordtype}{int}\ miesiac,\ \textcolor{keywordtype}{int}\ dzienPoczatkowy,\ \textcolor{keywordtype}{int}\ dzienKoncowy);}
+\DoxyCodeLine{00276\ }
+\DoxyCodeLine{00288\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_planer_wizyt_a4665c489dcbf3c5dd1cbd4cbb7d57539}{czyJestDniem}}(\mbox{\hyperlink{_dni_tygodnia_8h_a7c9199973a55ad2308fc71fe474d77b7}{DniTygodnia}}\ wybranyDzien,\ time\_t\ wybranyCzas);}
+\DoxyCodeLine{00295\ \ \ \ \ unordered\_map\ <int,\ unordered\_map<int,\ shared\_ptr<Lekarz>>>\ \mbox{\hyperlink{class_planer_wizyt_a29f5b0414d99908af2914b34cf209455}{wygenerujBlokiGodzinowe}}(time\_t\ wybranyDzien,\ list<shared\_ptr<Lekarz>>\ lekarze);}
+\DoxyCodeLine{00300\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_planer_wizyt_a0a6ee6025bd459810698ff39281684c9}{utworzWizyte}}(\mbox{\hyperlink{class_wizyta}{Wizyta}}\ wizyta);}
+\DoxyCodeLine{00301\ }
+\DoxyCodeLine{00306\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_planer_wizyt_a8e15c1ea5ddc339c35b868ca37848161}{wygenerujIdWizyty}}();}
+\DoxyCodeLine{00307\ \};}
+\DoxyCodeLine{00308\ }
+
+\end{DoxyCode}

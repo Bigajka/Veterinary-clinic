@@ -1,0 +1,20 @@
+\doxysection{Serwis\+Grafiku\+Pracy.\+h}
+\hypertarget{_serwis_grafiku_pracy_8h_source}{}\label{_serwis_grafiku_pracy_8h_source}\mbox{\hyperlink{_serwis_grafiku_pracy_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_czytacz_grafiku_pracy_8h}{CzytaczGrafikuPracy.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_lekarz_8h}{Lekarz.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_serwis_grafiku_pracy}{SerwisGrafikuPracy}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ shared\_ptr<CzytaczGrafikuPracy>\ czytaczGrafikuPracy;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_serwis_grafiku_pracy}{SerwisGrafikuPracy}}(shared\_ptr\ <CzytaczGrafikuPracy>\ czytaczGrafikuPracy);}
+\DoxyCodeLine{00027\ \ \ \ \ unordered\_map<DniTygodnia,\ GodzinyPracy>\ \mbox{\hyperlink{class_serwis_grafiku_pracy_a1f53def3476e96bccf6e3ee1258dda01}{zaladujGrafik}}(shared\_ptr\ <Lekarz>\ lekarz);}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+
+\end{DoxyCode}

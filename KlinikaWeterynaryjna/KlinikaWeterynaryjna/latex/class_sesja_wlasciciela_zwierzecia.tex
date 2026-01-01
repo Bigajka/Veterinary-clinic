@@ -1,0 +1,301 @@
+\doxysection{Sesja\+Wlasciciela\+Zwierzecia Class Reference}
+\hypertarget{class_sesja_wlasciciela_zwierzecia}{}\label{class_sesja_wlasciciela_zwierzecia}\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+
+
+Klasa odpowiedzialna za sesje wlasciciela zwierzecia.  
+
+
+
+
+{\ttfamily \#include $<$Sesja\+Wlasciciela\+Zwierzecia.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a6e22dcd67579f68367ced86af9fccf19}\label{class_sesja_wlasciciela_zwierzecia_a6e22dcd67579f68367ced86af9fccf19} 
+{\bfseries Sesja\+Wlasciciela\+Zwierzecia} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wlasciciel_zwierzecia}{Wlasciciel\+Zwierzecia}} $>$ wlasciciel\+Zwierzecia, vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ $>$ zwierzeta)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy wlasciciela zwierzecia, zwierzeta. \end{DoxyCompactList}\item 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ $>$ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a009e9667d2ffe474f2bfca8e3fec5e73}{get\+Zwierzeta}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wszystkie zwierzeta aktualnie zalogowanego wlasciciela. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a95b43bcfbe71d25e545be2b17122f1f1}{get\+Wybarne\+Zwierze}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wszystkie wybrane zwierzeta aktualnie zalogowanego wlasciciela. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wlasciciel_zwierzecia}{Wlasciciel\+Zwierzecia}} $>$ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_ab9699715aca308b825c4770789fa036d}{get\+Wlasiciel\+Zwierzecia}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca zalogowanego wlasciciela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a05e80dc2669645f4c2d922d3e2d41964}{set\+Wybrane\+Zwierze}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ zwierze)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca wybrane zwierze. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a9646fb204cb11f12a78d55799c251d96}{set\+Wybrana\+Usluga}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_usluga}{Usluga}} $>$ wybrana\+Usluga)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca wybrana usluge. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_usluga}{Usluga}} $>$ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a00a8eb5bb31aba46a9216a587ea31bef}{get\+Wybrana\+Usluga}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wybrana usluge. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_ad41951367d621b859d66fb430e06dbf2}{set\+Wybrany\+Miesiac}} (shared\+\_\+ptr$<$ pair$<$ int, time\+\_\+t $>$ $>$ wybrany\+Miesiac)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca wybrany miesiac. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ pair$<$ int, time\+\_\+t $>$ $>$ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_ab4c60b807f0af2e6ac6ad6067e4f021e}{get\+Wybrany\+Miesiac}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wybrany miesiac. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a68b4db2095b779fe52a57f663b052c97}{set\+Wybrany\+Dzien}} (shared\+\_\+ptr$<$ pair$<$ int, time\+\_\+t $>$ $>$ wybrany\+Dzien)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca wybrany dzien. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ pair$<$ int, time\+\_\+t $>$ $>$ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a3ab269903ec0de127dbe486ab0e7dfd3}{get\+Wybrany\+Dzien}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wybrany dzien. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a7cf750cb4b9338d977f9af0ad753317b}{set\+Wybrany\+Rok}} (shared\+\_\+ptr$<$ pair$<$ int, time\+\_\+t $>$ $>$ wybrany\+Rok)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca wybrany rok. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ pair$<$ int, time\+\_\+t $>$ $>$ \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a449b92115598e368027e510526e60117}{get\+Wybrany\+Rok}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wybrany rok. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_ada87e127ee2a35745dc6856378af46bb}{set\+Wybrana\+Godzina}} (int wybrana\+Godzina)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca wybrana godzine. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a65415fe20487f673b9c0680698942e77}{get\+Wybrana\+Godzina}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca wybrana godzine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_aaee7f38c672e067ebe3890bc1e02038f}{set\+Id\+Wybranego\+Lekarza}} (int id\+Lekarza)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca id wybranego lekarza. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a46483eaabeeef35b8b0ecb3dcf5c8bb6}{get\+Id\+Wybranego\+Lekarza}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca id wybranego lekarza. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sesja_wlasciciela_zwierzecia_a3307ea333aef4d8b7d70cb4755f1fad2}{czy\+Mozna\+Utworzyc\+Wizyte}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdzajaca czy wszystkie potrzebne dane sa ustawione do rezerwacji wizyty. \end{DoxyCompactList}\item 
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_ae5a6a80e285f0fed963abf9b954f8ae0}\label{class_sesja_wlasciciela_zwierzecia_ae5a6a80e285f0fed963abf9b954f8ae0} 
+void {\bfseries odswiez\+Zwierzeta} (vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ $>$ zwierzeta)
+\begin{DoxyCompactList}\small\item\em Funkcja odswiezajaca wszystkie zwierzeta. Jej wywolanie jest wymagane po dodaniu nowego zwierzaka, aby miec odswiezaona liste (ma zawierac nowo dodanego zwierzaka) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za sesje wlasciciela zwierzecia. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a3307ea333aef4d8b7d70cb4755f1fad2}\label{class_sesja_wlasciciela_zwierzecia_a3307ea333aef4d8b7d70cb4755f1fad2} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!czyMoznaUtworzycWizyte@{czyMoznaUtworzycWizyte}}
+\index{czyMoznaUtworzycWizyte@{czyMoznaUtworzycWizyte}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{czyMoznaUtworzycWizyte()}{czyMoznaUtworzycWizyte()}}
+{\footnotesize\ttfamily bool Sesja\+Wlasciciela\+Zwierzecia\+::czy\+Mozna\+Utworzyc\+Wizyte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdzajaca czy wszystkie potrzebne dane sa ustawione do rezerwacji wizyty. 
+
+\begin{DoxyReturn}{Returns}
+zwraca true jezeli mozna utworzyc wizyte, false jezeli nie mozna 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a46483eaabeeef35b8b0ecb3dcf5c8bb6}\label{class_sesja_wlasciciela_zwierzecia_a46483eaabeeef35b8b0ecb3dcf5c8bb6} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!getIdWybranegoLekarza@{getIdWybranegoLekarza}}
+\index{getIdWybranegoLekarza@{getIdWybranegoLekarza}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getIdWybranegoLekarza()}{getIdWybranegoLekarza()}}
+{\footnotesize\ttfamily int Sesja\+Wlasciciela\+Zwierzecia\+::get\+Id\+Wybranego\+Lekarza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca id wybranego lekarza. 
+
+\begin{DoxyReturn}{Returns}
+zwraca id wybranego lekarza przez wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_ab9699715aca308b825c4770789fa036d}\label{class_sesja_wlasciciela_zwierzecia_ab9699715aca308b825c4770789fa036d} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!getWlasicielZwierzecia@{getWlasicielZwierzecia}}
+\index{getWlasicielZwierzecia@{getWlasicielZwierzecia}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getWlasicielZwierzecia()}{getWlasicielZwierzecia()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_wlasciciel_zwierzecia}{Wlasciciel\+Zwierzecia}} $>$ Sesja\+Wlasciciela\+Zwierzecia\+::get\+Wlasiciel\+Zwierzecia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca zalogowanego wlasciciela. 
+
+\begin{DoxyReturn}{Returns}
+zwraca wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a95b43bcfbe71d25e545be2b17122f1f1}\label{class_sesja_wlasciciela_zwierzecia_a95b43bcfbe71d25e545be2b17122f1f1} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!getWybarneZwierze@{getWybarneZwierze}}
+\index{getWybarneZwierze@{getWybarneZwierze}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getWybarneZwierze()}{getWybarneZwierze()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ Sesja\+Wlasciciela\+Zwierzecia\+::get\+Wybarne\+Zwierze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wszystkie wybrane zwierzeta aktualnie zalogowanego wlasciciela. 
+
+\begin{DoxyReturn}{Returns}
+zwraca wybrane zwierzeta 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a65415fe20487f673b9c0680698942e77}\label{class_sesja_wlasciciela_zwierzecia_a65415fe20487f673b9c0680698942e77} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!getWybranaGodzina@{getWybranaGodzina}}
+\index{getWybranaGodzina@{getWybranaGodzina}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getWybranaGodzina()}{getWybranaGodzina()}}
+{\footnotesize\ttfamily int Sesja\+Wlasciciela\+Zwierzecia\+::get\+Wybrana\+Godzina (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wybrana godzine. 
+
+\begin{DoxyReturn}{Returns}
+zwraca wybrana godzine przez wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a00a8eb5bb31aba46a9216a587ea31bef}\label{class_sesja_wlasciciela_zwierzecia_a00a8eb5bb31aba46a9216a587ea31bef} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!getWybranaUsluga@{getWybranaUsluga}}
+\index{getWybranaUsluga@{getWybranaUsluga}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getWybranaUsluga()}{getWybranaUsluga()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_usluga}{Usluga}} $>$ Sesja\+Wlasciciela\+Zwierzecia\+::get\+Wybrana\+Usluga (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wybrana usluge. 
+
+\begin{DoxyReturn}{Returns}
+zwraca wybrana usluge przez wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a3ab269903ec0de127dbe486ab0e7dfd3}\label{class_sesja_wlasciciela_zwierzecia_a3ab269903ec0de127dbe486ab0e7dfd3} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!getWybranyDzien@{getWybranyDzien}}
+\index{getWybranyDzien@{getWybranyDzien}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getWybranyDzien()}{getWybranyDzien()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ pair$<$ int, time\+\_\+t $>$ $>$ Sesja\+Wlasciciela\+Zwierzecia\+::get\+Wybrany\+Dzien (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wybrany dzien. 
+
+\begin{DoxyReturn}{Returns}
+zwraca wybrany dzien przez wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_ab4c60b807f0af2e6ac6ad6067e4f021e}\label{class_sesja_wlasciciela_zwierzecia_ab4c60b807f0af2e6ac6ad6067e4f021e} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!getWybranyMiesiac@{getWybranyMiesiac}}
+\index{getWybranyMiesiac@{getWybranyMiesiac}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getWybranyMiesiac()}{getWybranyMiesiac()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ pair$<$ int, time\+\_\+t $>$ $>$ Sesja\+Wlasciciela\+Zwierzecia\+::get\+Wybrany\+Miesiac (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wybrany miesiac. 
+
+\begin{DoxyReturn}{Returns}
+zwraca wybrany miesiac przez wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a449b92115598e368027e510526e60117}\label{class_sesja_wlasciciela_zwierzecia_a449b92115598e368027e510526e60117} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!getWybranyRok@{getWybranyRok}}
+\index{getWybranyRok@{getWybranyRok}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getWybranyRok()}{getWybranyRok()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ pair$<$ int, time\+\_\+t $>$ $>$ Sesja\+Wlasciciela\+Zwierzecia\+::get\+Wybrany\+Rok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wybrany rok. 
+
+\begin{DoxyReturn}{Returns}
+zwraca wybrany rok przez wlasciciela zwierzecia 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a009e9667d2ffe474f2bfca8e3fec5e73}\label{class_sesja_wlasciciela_zwierzecia_a009e9667d2ffe474f2bfca8e3fec5e73} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!getZwierzeta@{getZwierzeta}}
+\index{getZwierzeta@{getZwierzeta}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{getZwierzeta()}{getZwierzeta()}}
+{\footnotesize\ttfamily vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$ $>$ Sesja\+Wlasciciela\+Zwierzecia\+::get\+Zwierzeta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca wszystkie zwierzeta aktualnie zalogowanego wlasciciela. 
+
+\begin{DoxyReturn}{Returns}
+zwraca wektor zwierzat 
+\end{DoxyReturn}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_aaee7f38c672e067ebe3890bc1e02038f}\label{class_sesja_wlasciciela_zwierzecia_aaee7f38c672e067ebe3890bc1e02038f} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!setIdWybranegoLekarza@{setIdWybranegoLekarza}}
+\index{setIdWybranegoLekarza@{setIdWybranegoLekarza}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{setIdWybranegoLekarza()}{setIdWybranegoLekarza()}}
+{\footnotesize\ttfamily void Sesja\+Wlasciciela\+Zwierzecia\+::set\+Id\+Wybranego\+Lekarza (\begin{DoxyParamCaption}\item[{int}]{id\+Lekarza }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca id wybranego lekarza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Lekarza} & -\/ id wybranego lekarza \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_ada87e127ee2a35745dc6856378af46bb}\label{class_sesja_wlasciciela_zwierzecia_ada87e127ee2a35745dc6856378af46bb} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!setWybranaGodzina@{setWybranaGodzina}}
+\index{setWybranaGodzina@{setWybranaGodzina}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{setWybranaGodzina()}{setWybranaGodzina()}}
+{\footnotesize\ttfamily void Sesja\+Wlasciciela\+Zwierzecia\+::set\+Wybrana\+Godzina (\begin{DoxyParamCaption}\item[{int}]{wybrana\+Godzina }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca wybrana godzine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wybrana\+Godzina} & -\/ wybrana godzina \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a9646fb204cb11f12a78d55799c251d96}\label{class_sesja_wlasciciela_zwierzecia_a9646fb204cb11f12a78d55799c251d96} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!setWybranaUsluga@{setWybranaUsluga}}
+\index{setWybranaUsluga@{setWybranaUsluga}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{setWybranaUsluga()}{setWybranaUsluga()}}
+{\footnotesize\ttfamily void Sesja\+Wlasciciela\+Zwierzecia\+::set\+Wybrana\+Usluga (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_usluga}{Usluga}} $>$}]{wybrana\+Usluga }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca wybrana usluge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wybrana\+Usluga} & -\/ wybrane usluga \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a05e80dc2669645f4c2d922d3e2d41964}\label{class_sesja_wlasciciela_zwierzecia_a05e80dc2669645f4c2d922d3e2d41964} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!setWybraneZwierze@{setWybraneZwierze}}
+\index{setWybraneZwierze@{setWybraneZwierze}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{setWybraneZwierze()}{setWybraneZwierze()}}
+{\footnotesize\ttfamily void Sesja\+Wlasciciela\+Zwierzecia\+::set\+Wybrane\+Zwierze (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_zwierze}{Zwierze}} $>$}]{zwierze }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca wybrane zwierze. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zwierze} & -\/ wybrane zwierze \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a68b4db2095b779fe52a57f663b052c97}\label{class_sesja_wlasciciela_zwierzecia_a68b4db2095b779fe52a57f663b052c97} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!setWybranyDzien@{setWybranyDzien}}
+\index{setWybranyDzien@{setWybranyDzien}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{setWybranyDzien()}{setWybranyDzien()}}
+{\footnotesize\ttfamily void Sesja\+Wlasciciela\+Zwierzecia\+::set\+Wybrany\+Dzien (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ pair$<$ int, time\+\_\+t $>$ $>$}]{wybrany\+Dzien }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca wybrany dzien. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wybrany\+Dzien} & -\/ wybrany dzien \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_ad41951367d621b859d66fb430e06dbf2}\label{class_sesja_wlasciciela_zwierzecia_ad41951367d621b859d66fb430e06dbf2} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!setWybranyMiesiac@{setWybranyMiesiac}}
+\index{setWybranyMiesiac@{setWybranyMiesiac}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{setWybranyMiesiac()}{setWybranyMiesiac()}}
+{\footnotesize\ttfamily void Sesja\+Wlasciciela\+Zwierzecia\+::set\+Wybrany\+Miesiac (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ pair$<$ int, time\+\_\+t $>$ $>$}]{wybrany\+Miesiac }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca wybrany miesiac. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wybrany\+Miesiac} & -\/ wybrany miesiac \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sesja_wlasciciela_zwierzecia_a7cf750cb4b9338d977f9af0ad753317b}\label{class_sesja_wlasciciela_zwierzecia_a7cf750cb4b9338d977f9af0ad753317b} 
+\index{SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}!setWybranyRok@{setWybranyRok}}
+\index{setWybranyRok@{setWybranyRok}!SesjaWlascicielaZwierzecia@{SesjaWlascicielaZwierzecia}}
+\doxysubsubsection{\texorpdfstring{setWybranyRok()}{setWybranyRok()}}
+{\footnotesize\ttfamily void Sesja\+Wlasciciela\+Zwierzecia\+::set\+Wybrany\+Rok (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ pair$<$ int, time\+\_\+t $>$ $>$}]{wybrany\+Rok }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiajaca wybrany rok. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wybrany\+Rok} & -\/ wybrany rok \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sesja_wlasciciela_zwierzecia_8h}{Sesja\+Wlasciciela\+Zwierzecia.\+h}}\item 
+Sesja\+Wlasciciela\+Zwierzecia.\+cpp\end{DoxyCompactItemize}

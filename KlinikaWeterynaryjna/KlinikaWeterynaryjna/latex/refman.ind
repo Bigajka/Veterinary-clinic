@@ -1,0 +1,567 @@
+\begin{theindex}
+
+  \item {anulujWizyte}
+    \subitem {SerwisWizyt}, \hyperpage{55}
+  \item {anulujWizyteDlaZwierzaka}
+    \subitem {SerwisWizyt}, \hyperpage{55}
+
+  \indexspace
+
+  \item {czyDostepnyWGodzinach}
+    \subitem {Lekarz}, \hyperpage{26}
+  \item {czyJestDniem}
+    \subitem {PlanerWizyt}, \hyperpage{37}
+  \item {czyMoznaUtworzycWizyte}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{64}
+  \item {czyOstatniDostepnyMiesiac}
+    \subitem {PlanerWizyt}, \hyperpage{37}
+  \item {czyPierwszDostepnyMiesiac}
+    \subitem {PlanerWizyt}, \hyperpage{38}
+  \item {CzytaczGrafikuPracy}, \hyperpage{7}
+  \item {CzytaczGrafikuPracy.h}, \hyperpage{87}
+  \item {CzytaczLekarza}, \hyperpage{8}
+  \item {CzytaczLekarza.h}, \hyperpage{87}
+  \item {CzytaczPlikow}, \hyperpage{9}
+    \subitem {dopiszDoPliku}, \hyperpage{10}
+    \subitem {getNastepneId}, \hyperpage{10}
+    \subitem {getPozycjaTextu}, \hyperpage{10}
+    \subitem {getPozycjaWiersza}, \hyperpage{11}
+    \subitem {podajNazwePliku}, \hyperpage{11}
+    \subitem {usunWieszPoId}, \hyperpage{11}
+    \subitem {wczytajPlik}, \hyperpage{11}
+    \subitem {zapiszDoPliku}, \hyperpage{12}
+    \subitem {zmaienNaWiersze}, \hyperpage{12}
+  \item {CzytaczPlikow.h}, \hyperpage{88}
+  \item {CzytaczUzytkownikow}, \hyperpage{12}
+    \subitem {podajNazwePliku}, \hyperpage{13}
+  \item {CzytaczUzytkownikow.h}, \hyperpage{89}
+  \item {CzytaczWizyt}, \hyperpage{14}
+    \subitem {podajNazwePliku}, \hyperpage{15}
+  \item {CzytaczWizyt.h}, \hyperpage{89}
+  \item {CzytaczWlasicielaZwierzecia}, \hyperpage{15}
+  \item {CzytaczZwierzat}, \hyperpage{16}
+    \subitem {podajNazwePliku}, \hyperpage{17}
+  \item {CzytaczZwierzat.h}, \hyperpage{90}
+
+  \indexspace
+
+  \item {DataGodzinaWizyty}, \hyperpage{18}
+    \subitem {getDzien}, \hyperpage{18}
+    \subitem {getGodzina}, \hyperpage{18}
+    \subitem {getMiesiac}, \hyperpage{19}
+    \subitem {getRok}, \hyperpage{19}
+  \item {DniTygodnia.h}, \hyperpage{90}
+  \item {dodaj}
+    \subitem {SerwisZwierzat}, \hyperpage{59}
+  \item {dodajDzien}
+    \subitem {PlanerWizyt}, \hyperpage{38}
+  \item {dodajGodzine}
+    \subitem {PlanerWizyt}, \hyperpage{38}
+  \item {dodajGodzinePlusZaokraglenie}
+    \subitem {PlanerWizyt}, \hyperpage{39}
+  \item {dodajMiesiac}
+    \subitem {PlanerWizyt}, \hyperpage{39}
+  \item {dopiszDoPliku}
+    \subitem {CzytaczPlikow}, \hyperpage{10}
+  \item {dzwiek}
+    \subitem {Kanarek}, \hyperpage{23}
+    \subitem {Kot}, \hyperpage{25}
+    \subitem {Pajak}, \hyperpage{33}
+    \subitem {Pies}, \hyperpage{35}
+    \subitem {Waz}, \hyperpage{73}
+    \subitem {Zwierze}, \hyperpage{82}
+
+  \indexspace
+
+  \item {getCena}
+    \subitem {Usluga}, \hyperpage{69}
+  \item {getData}
+    \subitem {Wizyta}, \hyperpage{74}
+  \item {getDataGodzina}
+    \subitem {Wizyta}, \hyperpage{74}
+  \item {getDzien}
+    \subitem {DataGodzinaWizyty}, \hyperpage{18}
+  \item {getFabrykaUslug}
+    \subitem {SesjaLekarza}, \hyperpage{62}
+  \item {getGodzina}
+    \subitem {DataGodzinaWizyty}, \hyperpage{18}
+    \subitem {Wizyta}, \hyperpage{74}
+  \item {getGodzinaRozpoczecia}
+    \subitem {GodzinyPracy}, \hyperpage{20}
+  \item {getGodzinaZakonczenia}
+    \subitem {GodzinyPracy}, \hyperpage{20}
+  \item {getGodzinaZamknieciaWDniu}
+    \subitem {PlanerWizyt}, \hyperpage{40}
+  \item {getHaslo}
+    \subitem {MenuLogowania}, \hyperpage{29}
+  \item {getId}
+    \subitem {Uzytkownik}, \hyperpage{71}
+    \subitem {WlascicielZwierzecia}, \hyperpage{77}
+    \subitem {Zwierze}, \hyperpage{82}
+  \item {getIdLekarza}
+    \subitem {Wizyta}, \hyperpage{74}
+  \item {getIdWizyty}
+    \subitem {Wizyta}, \hyperpage{74}
+  \item {getIdWlasciciela}
+    \subitem {Wizyta}, \hyperpage{75}
+    \subitem {Zwierze}, \hyperpage{82}
+  \item {getIdWybranegoLekarza}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{64}
+  \item {getIdZwierzecia}
+    \subitem {Wizyta}, \hyperpage{75}
+  \item {getImie}
+    \subitem {Lekarz}, \hyperpage{26}
+    \subitem {WlascicielZwierzecia}, \hyperpage{77}
+    \subitem {Zwierze}, \hyperpage{82}
+  \item {getKodPoczowy}
+    \subitem {WlascicielZwierzecia}, \hyperpage{77}
+  \item {getKolor}
+    \subitem {Zwierze}, \hyperpage{82}
+  \item {getLekarz}
+    \subitem {SesjaLekarza}, \hyperpage{62}
+  \item {getliczaNog}
+    \subitem {Zwierze}, \hyperpage{83}
+  \item {getLogin}
+    \subitem {MenuLogowania}, \hyperpage{29}
+  \item {getMiasto}
+    \subitem {WlascicielZwierzecia}, \hyperpage{77}
+  \item {getMiesiac}
+    \subitem {DataGodzinaWizyty}, \hyperpage{19}
+    \subitem {PlanerWizyt}, \hyperpage{40}
+  \item {getMinutaRozpoczecia}
+    \subitem {GodzinyPracy}, \hyperpage{20}
+  \item {getMinutaZakonczenia}
+    \subitem {GodzinyPracy}, \hyperpage{20}
+  \item {getNastepneId}
+    \subitem {CzytaczPlikow}, \hyperpage{10}
+    \subitem {SerwisWizyt}, \hyperpage{55}
+    \subitem {SerwisZwierzat}, \hyperpage{59}
+  \item {getNazwaUslugi}
+    \subitem {Usluga}, \hyperpage{69}
+  \item {getNazwisko}
+    \subitem {Lekarz}, \hyperpage{26}
+  \item {getNumerTelefonu}
+    \subitem {WlascicielZwierzecia}, \hyperpage{78}
+  \item {getPlec}
+    \subitem {Zwierze}, \hyperpage{83}
+  \item {getPozycjaTextu}
+    \subitem {CzytaczPlikow}, \hyperpage{10}
+  \item {getPozycjaWiersza}
+    \subitem {CzytaczPlikow}, \hyperpage{11}
+  \item {getRok}
+    \subitem {DataGodzinaWizyty}, \hyperpage{19}
+  \item {getSerwisWizyt}
+    \subitem {SesjaLekarza}, \hyperpage{62}
+  \item {getSerwisWlasicielaZwierzecia}
+    \subitem {SesjaLekarza}, \hyperpage{62}
+  \item {getSerwisZwierzat}
+    \subitem {SesjaLekarza}, \hyperpage{62}
+  \item {getSpecjalizacja}
+    \subitem {Lekarz}, \hyperpage{27}
+  \item {getTypUslugi}
+    \subitem {Usluga}, \hyperpage{69}
+    \subitem {Wizyta}, \hyperpage{75}
+  \item {getTypUzytkownika}
+    \subitem {Uzytkownik}, \hyperpage{71}
+  \item {getUlicaINumerDomu}
+    \subitem {WlascicielZwierzecia}, \hyperpage{78}
+  \item {getUmaszczenie}
+    \subitem {Zwierze}, \hyperpage{83}
+  \item {getWaga}
+    \subitem {Kanarek}, \hyperpage{23}
+    \subitem {Kot}, \hyperpage{25}
+    \subitem {Pajak}, \hyperpage{33}
+    \subitem {Pies}, \hyperpage{35}
+    \subitem {Waz}, \hyperpage{73}
+    \subitem {Zwierze}, \hyperpage{83}
+  \item {getWiek}
+    \subitem {Zwierze}, \hyperpage{83}
+  \item {getWlasicielZwierzecia}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{64}
+  \item {getWybarneZwierze}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{64}
+  \item {getWybranaGodzina}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{65}
+  \item {getWybranaUsluga}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{65}
+  \item {getWybranyDzien}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{65}
+  \item {getWybranyMiesiac}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{65}
+  \item {getWybranyRok}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{65}
+  \item {getZwierzeta}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{66}
+  \item {GodzinyPracy}, \hyperpage{19}
+    \subitem {getGodzinaRozpoczecia}, \hyperpage{20}
+    \subitem {getGodzinaZakonczenia}, \hyperpage{20}
+    \subitem {getMinutaRozpoczecia}, \hyperpage{20}
+    \subitem {getMinutaZakonczenia}, \hyperpage{20}
+  \item {GodzinyPracy.h}, \hyperpage{91}
+
+  \indexspace
+
+  \item {jestLiczba}
+    \subitem {SprawdzaczLiczb}, \hyperpage{68}
+
+  \indexspace
+
+  \item {Kanarek}, \hyperpage{21}
+    \subitem {dzwiek}, \hyperpage{23}
+    \subitem {getWaga}, \hyperpage{23}
+  \item {Kanarek.h}, \hyperpage{91}
+  \item {Kot}, \hyperpage{23}
+    \subitem {dzwiek}, \hyperpage{25}
+    \subitem {getWaga}, \hyperpage{25}
+  \item {Kot.h}, \hyperpage{92}
+
+  \indexspace
+
+  \item {Lekarz}, \hyperpage{25}
+    \subitem {czyDostepnyWGodzinach}, \hyperpage{26}
+    \subitem {getImie}, \hyperpage{26}
+    \subitem {getNazwisko}, \hyperpage{26}
+    \subitem {getSpecjalizacja}, \hyperpage{27}
+    \subitem {zwrocGodzinyPracyDlaDnia}, \hyperpage{27}
+  \item {Lekarz.h}, \hyperpage{92}
+
+  \indexspace
+
+  \item {MenuLekarza}, \hyperpage{27}
+    \subitem {wyswietlMenuPoczatkowe}, \hyperpage{28}
+  \item {MenuLekarza.h}, \hyperpage{93}
+  \item {MenuLogowania}, \hyperpage{28}
+    \subitem {getHaslo}, \hyperpage{29}
+    \subitem {getLogin}, \hyperpage{29}
+    \subitem {wyswietlMenuPoczatkowe}, \hyperpage{29}
+  \item {MenuLogowania.h}, \hyperpage{94}
+  \item {MenuLogowaniaStatusu.h}, \hyperpage{94}
+  \item {MenuWlasicielaZwierzecia}, \hyperpage{29}
+    \subitem {wswietlMenuUslug}, \hyperpage{30}
+    \subitem {wyswietlMenuDoPlanowaniaWizyty}, \hyperpage{30}
+    \subitem {wyswietlMenuPoczatkowe}, \hyperpage{30}
+    \subitem {wyswietlMenuWyboruTerminu}, \hyperpage{31}
+
+  \indexspace
+
+  \item {ostatniDzienMiesiaca}
+    \subitem {PlanerWizyt}, \hyperpage{40}
+
+  \indexspace
+
+  \item {Pajak}, \hyperpage{31}
+    \subitem {dzwiek}, \hyperpage{33}
+    \subitem {getWaga}, \hyperpage{33}
+  \item {Pajak.h}, \hyperpage{95}
+  \item {Pies}, \hyperpage{33}
+    \subitem {dzwiek}, \hyperpage{35}
+    \subitem {getWaga}, \hyperpage{35}
+  \item {Pies.h}, \hyperpage{96}
+  \item {PlanerWizyt}, \hyperpage{35}
+    \subitem {czyJestDniem}, \hyperpage{37}
+    \subitem {czyOstatniDostepnyMiesiac}, \hyperpage{37}
+    \subitem {czyPierwszDostepnyMiesiac}, \hyperpage{38}
+    \subitem {dodajDzien}, \hyperpage{38}
+    \subitem {dodajGodzine}, \hyperpage{38}
+    \subitem {dodajGodzinePlusZaokraglenie}, \hyperpage{39}
+    \subitem {dodajMiesiac}, \hyperpage{39}
+    \subitem {getGodzinaZamknieciaWDniu}, \hyperpage{40}
+    \subitem {getMiesiac}, \hyperpage{40}
+    \subitem {ostatniDzienMiesiaca}, \hyperpage{40}
+    \subitem {ustawCzas}, \hyperpage{41}
+    \subitem {utworzWizyte}, \hyperpage{41}
+    \subitem {wygenerujBlokiGodzinowe}, \hyperpage{41}
+    \subitem {wygenerujDni}, \hyperpage{42}
+    \subitem {wygenerujIdWizyty}, \hyperpage{42}
+    \subitem {wygenerujMiesiace}, \hyperpage{42}
+    \subitem {wypiszKalendarz}, \hyperpage{43}
+    \subitem {wyswietl}, \hyperpage{43}
+    \subitem {zaladujAktualnyDzienTygodnia}, \hyperpage{43}
+    \subitem {zaladujDostepnaGodzineNaDzienTygodnia}, \hyperpage{44}
+    \subitem {zaladujDostepyCzas}, \hyperpage{44}
+    \subitem {zaladujDzienMiesiaca}, \hyperpage{46}
+    \subitem {zaladujMiesiac}, \hyperpage{46}
+    \subitem {zaladujNastepnyDzienTygodnia}, \hyperpage{46}
+    \subitem {zaladujOstatniaDostepnaDate}, \hyperpage{47}
+    \subitem {zaladujPierszaDostepnaDate}, \hyperpage{47}
+    \subitem {zaladujRok}, \hyperpage{47}
+    \subitem {zamienNaDniTygonida}, \hyperpage{48}
+    \subitem {zamienNaMiesiac}, \hyperpage{48}
+    \subitem {zamienZAngielskiegoNaPolski}, \hyperpage{48}
+    \subitem {znajdzPierwszyDostepnyTermin}, \hyperpage{49}
+  \item {PlanerWizyt.h}, \hyperpage{96}
+  \item {Plec.h}, \hyperpage{98}
+  \item {podajNazwePliku}
+    \subitem {CzytaczPlikow}, \hyperpage{11}
+    \subitem {CzytaczUzytkownikow}, \hyperpage{13}
+    \subitem {CzytaczWizyt}, \hyperpage{15}
+    \subitem {CzytaczZwierzat}, \hyperpage{17}
+  \item {przegladWizytPoIdLekarza}
+    \subitem {SerwisWizyt}, \hyperpage{55}
+  \item {przegladWizytPoIdWlasiciela}
+    \subitem {SerwisWizyt}, \hyperpage{56}
+
+  \indexspace
+
+  \item {SerwisGrafikuPracy}, \hyperpage{49}
+    \subitem {zaladujGrafik}, \hyperpage{50}
+  \item {SerwisGrafikuPracy.h}, \hyperpage{98}
+  \item {SerwisLekarza}, \hyperpage{50}
+    \subitem {zaladujLekarza}, \hyperpage{51}
+    \subitem {zaladujWszystkichLekarzy}, \hyperpage{51}
+    \subitem {znajdzLekarzaPoId}, \hyperpage{51}
+  \item {SerwisLekarza.h}, \hyperpage{99}
+  \item {SerwisLogowaniaUzytkownika}, \hyperpage{52}
+    \subitem {zaloguj}, \hyperpage{52}
+    \subitem {znajdz}, \hyperpage{52}
+  \item {SerwisUslug}, \hyperpage{53}
+    \subitem {stworzUslugeDlaZwierzaka}, \hyperpage{53}
+    \subitem {znajdzPoTypie}, \hyperpage{54}
+  \item {SerwisUslug.h}, \hyperpage{100}
+  \item {SerwisWizyt}, \hyperpage{54}
+    \subitem {anulujWizyte}, \hyperpage{55}
+    \subitem {anulujWizyteDlaZwierzaka}, \hyperpage{55}
+    \subitem {getNastepneId}, \hyperpage{55}
+    \subitem {przegladWizytPoIdLekarza}, \hyperpage{55}
+    \subitem {przegladWizytPoIdWlasiciela}, \hyperpage{56}
+    \subitem {zaladujWizytyDlaDaty}, \hyperpage{56}
+    \subitem {zarezerujWizyte}, \hyperpage{57}
+  \item {SerwisWizyt.h}, \hyperpage{100}
+  \item {SerwisWlasicielaZwierzecia}, \hyperpage{57}
+    \subitem {zaladujWlascicielaZwierzecia}, \hyperpage{58}
+    \subitem {zaladujWlascicielaZwierzeciaPoId}, \hyperpage{58}
+  \item {SerwisZwierzat}, \hyperpage{58}
+    \subitem {dodaj}, \hyperpage{59}
+    \subitem {getNastepneId}, \hyperpage{59}
+    \subitem {usunZwierzaka}, \hyperpage{59}
+    \subitem {zaktualizuj}, \hyperpage{60}
+    \subitem {zaladujZwierzePoId}, \hyperpage{60}
+    \subitem {zaladujZwierzetaDlaWlasciciela}, \hyperpage{60}
+    \subitem {znajdzPoId}, \hyperpage{61}
+  \item {SerwisZwierzat.h}, \hyperpage{102}
+  \item {SesjaLekarza}, \hyperpage{61}
+    \subitem {getFabrykaUslug}, \hyperpage{62}
+    \subitem {getLekarz}, \hyperpage{62}
+    \subitem {getSerwisWizyt}, \hyperpage{62}
+    \subitem {getSerwisWlasicielaZwierzecia}, \hyperpage{62}
+    \subitem {getSerwisZwierzat}, \hyperpage{62}
+  \item {SesjaLekarza.h}, \hyperpage{102}
+  \item {SesjaWlascicielaZwierzecia}, \hyperpage{63}
+    \subitem {czyMoznaUtworzycWizyte}, \hyperpage{64}
+    \subitem {getIdWybranegoLekarza}, \hyperpage{64}
+    \subitem {getWlasicielZwierzecia}, \hyperpage{64}
+    \subitem {getWybarneZwierze}, \hyperpage{64}
+    \subitem {getWybranaGodzina}, \hyperpage{65}
+    \subitem {getWybranaUsluga}, \hyperpage{65}
+    \subitem {getWybranyDzien}, \hyperpage{65}
+    \subitem {getWybranyMiesiac}, \hyperpage{65}
+    \subitem {getWybranyRok}, \hyperpage{65}
+    \subitem {getZwierzeta}, \hyperpage{66}
+    \subitem {setIdWybranegoLekarza}, \hyperpage{66}
+    \subitem {setWybranaGodzina}, \hyperpage{66}
+    \subitem {setWybranaUsluga}, \hyperpage{66}
+    \subitem {setWybraneZwierze}, \hyperpage{67}
+    \subitem {setWybranyDzien}, \hyperpage{67}
+    \subitem {setWybranyMiesiac}, \hyperpage{67}
+    \subitem {setWybranyRok}, \hyperpage{67}
+  \item {SesjaWlascicielaZwierzecia.h}, \hyperpage{103}
+  \item {setIdWybranegoLekarza}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{66}
+  \item {setImie}
+    \subitem {Zwierze}, \hyperpage{84}
+  \item {setKodPocztowy}
+    \subitem {WlascicielZwierzecia}, \hyperpage{78}
+  \item {setMiasto}
+    \subitem {WlascicielZwierzecia}, \hyperpage{78}
+  \item {setNumerTelefonu}
+    \subitem {WlascicielZwierzecia}, \hyperpage{80}
+  \item {setUlicaINumerDomu}
+    \subitem {WlascicielZwierzecia}, \hyperpage{80}
+  \item {setWagaWGramach}
+    \subitem {Zwierze}, \hyperpage{84}
+  \item {setWybranaGodzina}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{66}
+  \item {setWybranaUsluga}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{66}
+  \item {setWybraneZwierze}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{67}
+  \item {setWybranyDzien}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{67}
+  \item {setWybranyMiesiac}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{67}
+  \item {setWybranyRok}
+    \subitem {SesjaWlascicielaZwierzecia}, \hyperpage{67}
+  \item {SprawdzaczLiczb}, \hyperpage{68}
+    \subitem {jestLiczba}, \hyperpage{68}
+  \item {SprawdzaczLiczb.h}, \hyperpage{104}
+  \item {stworzUslugeDlaZwierzaka}
+    \subitem {SerwisUslug}, \hyperpage{53}
+
+  \indexspace
+
+  \item {TypUzytkownika.h}, \hyperpage{105}
+
+  \indexspace
+
+  \item {Usluga}, \hyperpage{69}
+    \subitem {getCena}, \hyperpage{69}
+    \subitem {getNazwaUslugi}, \hyperpage{69}
+    \subitem {getTypUslugi}, \hyperpage{69}
+  \item {Usluga.h}, \hyperpage{105}
+  \item {ustawCzas}
+    \subitem {PlanerWizyt}, \hyperpage{41}
+  \item {usunWieszPoId}
+    \subitem {CzytaczPlikow}, \hyperpage{11}
+  \item {usunZwierzaka}
+    \subitem {SerwisZwierzat}, \hyperpage{59}
+  \item {utworzWizyte}
+    \subitem {PlanerWizyt}, \hyperpage{41}
+  \item {Uzytkownik}, \hyperpage{70}
+    \subitem {getId}, \hyperpage{71}
+    \subitem {getTypUzytkownika}, \hyperpage{71}
+    \subitem {zamienNaTekst}, \hyperpage{71}
+  \item {Uzytkownik.h}, \hyperpage{106}
+
+  \indexspace
+
+  \item {wagaWGramach}
+    \subitem {Zwierze}, \hyperpage{84}
+  \item {Waz}, \hyperpage{71}
+    \subitem {dzwiek}, \hyperpage{73}
+    \subitem {getWaga}, \hyperpage{73}
+  \item {Waz.h}, \hyperpage{106}
+  \item {wczytajPlik}
+    \subitem {CzytaczPlikow}, \hyperpage{11}
+  \item {Wizyta}, \hyperpage{73}
+    \subitem {getData}, \hyperpage{74}
+    \subitem {getDataGodzina}, \hyperpage{74}
+    \subitem {getGodzina}, \hyperpage{74}
+    \subitem {getIdLekarza}, \hyperpage{74}
+    \subitem {getIdWizyty}, \hyperpage{74}
+    \subitem {getIdWlasciciela}, \hyperpage{75}
+    \subitem {getIdZwierzecia}, \hyperpage{75}
+    \subitem {getTypUslugi}, \hyperpage{75}
+    \subitem {zamieNaTekst}, \hyperpage{75}
+  \item {Wizyta.h}, \hyperpage{107}
+  \item {WlascicielZwierzecia}, \hyperpage{76}
+    \subitem {getId}, \hyperpage{77}
+    \subitem {getImie}, \hyperpage{77}
+    \subitem {getKodPoczowy}, \hyperpage{77}
+    \subitem {getMiasto}, \hyperpage{77}
+    \subitem {getNumerTelefonu}, \hyperpage{78}
+    \subitem {getUlicaINumerDomu}, \hyperpage{78}
+    \subitem {setKodPocztowy}, \hyperpage{78}
+    \subitem {setMiasto}, \hyperpage{78}
+    \subitem {setNumerTelefonu}, \hyperpage{80}
+    \subitem {setUlicaINumerDomu}, \hyperpage{80}
+  \item {WlascicielZwierzecia.h}, \hyperpage{108}
+  \item {wswietlMenuUslug}
+    \subitem {MenuWlasicielaZwierzecia}, \hyperpage{30}
+  \item {wygenerujBlokiGodzinowe}
+    \subitem {PlanerWizyt}, \hyperpage{41}
+  \item {wygenerujDni}
+    \subitem {PlanerWizyt}, \hyperpage{42}
+  \item {wygenerujIdWizyty}
+    \subitem {PlanerWizyt}, \hyperpage{42}
+  \item {wygenerujMiesiace}
+    \subitem {PlanerWizyt}, \hyperpage{42}
+  \item {wypiszKalendarz}
+    \subitem {PlanerWizyt}, \hyperpage{43}
+  \item {wyswietl}
+    \subitem {PlanerWizyt}, \hyperpage{43}
+  \item {wyswietlMenuDoPlanowaniaWizyty}
+    \subitem {MenuWlasicielaZwierzecia}, \hyperpage{30}
+  \item {wyswietlMenuPoczatkowe}
+    \subitem {MenuLekarza}, \hyperpage{28}
+    \subitem {MenuLogowania}, \hyperpage{29}
+    \subitem {MenuWlasicielaZwierzecia}, \hyperpage{30}
+  \item {wyswietlMenuWyboruTerminu}
+    \subitem {MenuWlasicielaZwierzecia}, \hyperpage{31}
+
+  \indexspace
+
+  \item {zaktualizuj}
+    \subitem {SerwisZwierzat}, \hyperpage{60}
+  \item {zaladujAktualnyDzienTygodnia}
+    \subitem {PlanerWizyt}, \hyperpage{43}
+  \item {zaladujDostepnaGodzineNaDzienTygodnia}
+    \subitem {PlanerWizyt}, \hyperpage{44}
+  \item {zaladujDostepyCzas}
+    \subitem {PlanerWizyt}, \hyperpage{44}
+  \item {zaladujDzienMiesiaca}
+    \subitem {PlanerWizyt}, \hyperpage{46}
+  \item {zaladujGrafik}
+    \subitem {SerwisGrafikuPracy}, \hyperpage{50}
+  \item {zaladujLekarza}
+    \subitem {SerwisLekarza}, \hyperpage{51}
+  \item {zaladujMiesiac}
+    \subitem {PlanerWizyt}, \hyperpage{46}
+  \item {zaladujNastepnyDzienTygodnia}
+    \subitem {PlanerWizyt}, \hyperpage{46}
+  \item {zaladujOstatniaDostepnaDate}
+    \subitem {PlanerWizyt}, \hyperpage{47}
+  \item {zaladujPierszaDostepnaDate}
+    \subitem {PlanerWizyt}, \hyperpage{47}
+  \item {zaladujRok}
+    \subitem {PlanerWizyt}, \hyperpage{47}
+  \item {zaladujWizytyDlaDaty}
+    \subitem {SerwisWizyt}, \hyperpage{56}
+  \item {zaladujWlascicielaZwierzecia}
+    \subitem {SerwisWlasicielaZwierzecia}, \hyperpage{58}
+  \item {zaladujWlascicielaZwierzeciaPoId}
+    \subitem {SerwisWlasicielaZwierzecia}, \hyperpage{58}
+  \item {zaladujWszystkichLekarzy}
+    \subitem {SerwisLekarza}, \hyperpage{51}
+  \item {zaladujZwierzePoId}
+    \subitem {SerwisZwierzat}, \hyperpage{60}
+  \item {zaladujZwierzetaDlaWlasciciela}
+    \subitem {SerwisZwierzat}, \hyperpage{60}
+  \item {zaloguj}
+    \subitem {SerwisLogowaniaUzytkownika}, \hyperpage{52}
+  \item {zamieNaTekst}
+    \subitem {Wizyta}, \hyperpage{75}
+  \item {zamienNaDniTygonida}
+    \subitem {PlanerWizyt}, \hyperpage{48}
+  \item {zamienNaMiesiac}
+    \subitem {PlanerWizyt}, \hyperpage{48}
+  \item {zamienNaTekst}
+    \subitem {Uzytkownik}, \hyperpage{71}
+    \subitem {Zwierze}, \hyperpage{84}
+  \item {zamienZAngielskiegoNaPolski}
+    \subitem {PlanerWizyt}, \hyperpage{48}
+  \item {zapiszDoPliku}
+    \subitem {CzytaczPlikow}, \hyperpage{12}
+  \item {zarezerujWizyte}
+    \subitem {SerwisWizyt}, \hyperpage{57}
+  \item {zmaienNaWiersze}
+    \subitem {CzytaczPlikow}, \hyperpage{12}
+  \item {znajdz}
+    \subitem {SerwisLogowaniaUzytkownika}, \hyperpage{52}
+  \item {znajdzLekarzaPoId}
+    \subitem {SerwisLekarza}, \hyperpage{51}
+  \item {znajdzPierwszyDostepnyTermin}
+    \subitem {PlanerWizyt}, \hyperpage{49}
+  \item {znajdzPoId}
+    \subitem {SerwisZwierzat}, \hyperpage{61}
+  \item {znajdzPoTypie}
+    \subitem {SerwisUslug}, \hyperpage{54}
+  \item {Zwierze}, \hyperpage{80}
+    \subitem {dzwiek}, \hyperpage{82}
+    \subitem {getId}, \hyperpage{82}
+    \subitem {getIdWlasciciela}, \hyperpage{82}
+    \subitem {getImie}, \hyperpage{82}
+    \subitem {getKolor}, \hyperpage{82}
+    \subitem {getliczaNog}, \hyperpage{83}
+    \subitem {getPlec}, \hyperpage{83}
+    \subitem {getUmaszczenie}, \hyperpage{83}
+    \subitem {getWaga}, \hyperpage{83}
+    \subitem {getWiek}, \hyperpage{83}
+    \subitem {setImie}, \hyperpage{84}
+    \subitem {setWagaWGramach}, \hyperpage{84}
+    \subitem {wagaWGramach}, \hyperpage{84}
+    \subitem {zamienNaTekst}, \hyperpage{84}
+  \item {Zwierze.h}, \hyperpage{109}
+  \item {zwrocGodzinyPracyDlaDnia}
+    \subitem {Lekarz}, \hyperpage{27}
+
+\end{theindex}

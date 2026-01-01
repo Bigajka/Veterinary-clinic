@@ -1,0 +1,32 @@
+\doxysection{Serwis\+Uslug.\+h}
+\hypertarget{_serwis_uslug_8h_source}{}\label{_serwis_uslug_8h_source}\mbox{\hyperlink{_serwis_uslug_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_usluga_8h}{Usluga.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_zwierze_8h}{Zwierze.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pies_8h}{Pies.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_kot_8h}{Kot.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_kanarek_8h}{Kanarek.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_waz_8h}{Waz.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pajak_8h}{Pajak.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_serwis_uslug}{SerwisUslug}}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ list<shared\_ptr<Usluga>>\ dostepneUslugi;}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_serwis_uslug_a72ec0ef442f2d5f665e2cd08cf81f689}{SerwisUslug}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_serwis_uslug_a6931ebede99cf84f4c46ae72d1259461}{zainicjalizujUslugi}}();}
+\DoxyCodeLine{00041\ \ \ \ \ shared\_ptr<Usluga>\ \mbox{\hyperlink{class_serwis_uslug_ad048e0f52ccb558da9b413d411b2abc7}{znajdzPoTypie}}(\textcolor{keywordtype}{string}\ typ);}
+\DoxyCodeLine{00047\ \ \ \ \ vector<shared\_ptr<Usluga>>\ \mbox{\hyperlink{class_serwis_uslug_a7b41647feeabfdfc917e769944fa921e}{stworzUslugeDlaZwierzaka}}(shared\_ptr<Zwierze>\ zwierze);}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+
+\end{DoxyCode}

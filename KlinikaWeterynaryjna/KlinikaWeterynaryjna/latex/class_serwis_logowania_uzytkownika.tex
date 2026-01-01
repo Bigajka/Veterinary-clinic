@@ -1,0 +1,71 @@
+\doxysection{Serwis\+Logowania\+Uzytkownika Class Reference}
+\hypertarget{class_serwis_logowania_uzytkownika}{}\label{class_serwis_logowania_uzytkownika}\index{SerwisLogowaniaUzytkownika@{SerwisLogowaniaUzytkownika}}
+
+
+Klasa odpowiedzialna za serwis logowania uzytkownikow.  
+
+
+
+
+{\ttfamily \#include $<$Serwis\+Logowania\+Uzytkownika.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_serwis_logowania_uzytkownika_a48ca33637d457ef482dfec457bf1016f}\label{class_serwis_logowania_uzytkownika_a48ca33637d457ef482dfec457bf1016f} 
+{\bfseries Serwis\+Logowania\+Uzytkownika} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_czytacz_uzytkownikow}{Czytacz\+Uzytkownikow}} $>$ czytacz\+Uzytkownikow)
+\begin{DoxyCompactList}\small\item\em Konstruktor argumentowy, ustawiajacy czytacza uzytkownikow. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}} $>$ \mbox{\hyperlink{class_serwis_logowania_uzytkownika_a766344c9d8eafbe098dfe94d4009b738}{zaloguj}} (string login, string haslo)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca uzytkownikow, na podstawie przekazanego loginu i hasla. \end{DoxyCompactList}\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}} $>$ \mbox{\hyperlink{class_serwis_logowania_uzytkownika_a8c59b1bed4a09f019e44c7ca2eb28bc3}{znajdz}} (string id)
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca uzytkownika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za serwis logowania uzytkownikow. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_serwis_logowania_uzytkownika_a766344c9d8eafbe098dfe94d4009b738}\label{class_serwis_logowania_uzytkownika_a766344c9d8eafbe098dfe94d4009b738} 
+\index{SerwisLogowaniaUzytkownika@{SerwisLogowaniaUzytkownika}!zaloguj@{zaloguj}}
+\index{zaloguj@{zaloguj}!SerwisLogowaniaUzytkownika@{SerwisLogowaniaUzytkownika}}
+\doxysubsubsection{\texorpdfstring{zaloguj()}{zaloguj()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}} $>$ Serwis\+Logowania\+Uzytkownika\+::zaloguj (\begin{DoxyParamCaption}\item[{string}]{login,  }\item[{string}]{haslo }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca uzytkownikow, na podstawie przekazanego loginu i hasla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em login} & -\/ login uzytkownika \\
+\hline
+{\em haslo} & -\/ haslo uzytkownika \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca uzytkownika 
+\end{DoxyReturn}
+\Hypertarget{class_serwis_logowania_uzytkownika_a8c59b1bed4a09f019e44c7ca2eb28bc3}\label{class_serwis_logowania_uzytkownika_a8c59b1bed4a09f019e44c7ca2eb28bc3} 
+\index{SerwisLogowaniaUzytkownika@{SerwisLogowaniaUzytkownika}!znajdz@{znajdz}}
+\index{znajdz@{znajdz}!SerwisLogowaniaUzytkownika@{SerwisLogowaniaUzytkownika}}
+\doxysubsubsection{\texorpdfstring{znajdz()}{znajdz()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_uzytkownik}{Uzytkownik}} $>$ Serwis\+Logowania\+Uzytkownika\+::znajdz (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Funkcja zwracajaca uzytkownika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ id uzytkownika, ktorego szukamy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca id 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Serwis\+Logowania\+Uzytkownika.\+h\item 
+Serwis\+Logowania\+Uzytkownika.\+cpp\end{DoxyCompactItemize}
